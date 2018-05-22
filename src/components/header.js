@@ -1,32 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+const Navbar = ({data}) => (
+  <div className="navbar">
+    <ul>
+      <li><Link to="/">HOME</Link></li>
+      <li><Link to="/about">ABOUT</Link></li>
+      <li><Link to="/projects">PROJECTS</Link></li>
+      <li><Link to="/contact">CONTACT</Link></li>
+      <li><Link to="/cv">CV</Link></li>
+    </ul>
+  </div>
+)
+
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <div className="header">
+    <Navbar></Navbar>
   </div>
 )
 
