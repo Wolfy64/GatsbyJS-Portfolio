@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 
-// import SiteTemplate from '../templates/siteTemplate'
 const Project = () => (
   <div>
     test
@@ -9,17 +8,16 @@ const Project = () => (
 )
 
 export default ({ data }) => {
+  // console.log('From: project.js', {data});
+  
   return (
     <div>
-      <h1 display={"inline-block"} borderBottom={"1px solid"}>
-        Amazing Pandas Eating Things
+      <h1 display={"inline-block"}>
+        Projets
       </h1>
       {data.allMarkdownRemark.edges.map(({ node }) =>
         <div key={node.id}>
-          <Link
-            to={node.fields.slug}
-            css={{ textDecoration: `none`, color: `inherit` }}
-          >
+          <Link to={node.fields.slug}>
             {node.frontmatter.project ? <Project></Project> : `FALSE`}
             <h3>
               {node.frontmatter.title}{" "}

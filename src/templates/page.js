@@ -17,8 +17,9 @@ const Image = styled.div`
 const Text = styled.article`
   flex: 2;
 `
-
 export default ({ data }) => {
+  console.log({data});
+  
   const post = data.markdownRemark
   // const html = post.html.split('[SPLIT]');
   // const html = post.html;
@@ -44,8 +45,8 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        title
         slug
+        title
         date
       }
     }

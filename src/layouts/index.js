@@ -13,7 +13,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // background: pink;
 `;
 
 const Layout = ({ children, data }) => (
@@ -26,7 +25,9 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <Container>{children()}</Container>
+    <Container>
+      {children()}
+    </Container>
     <Footer/>
   </div>
 )
