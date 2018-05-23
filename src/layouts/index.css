@@ -85,6 +85,8 @@ sup {
 }
 img {
   border-style: none;
+  box-shadow: -1px 4px 19px 1px #7b7777;
+  border-radius: 5px;
 }
 svg:not(:root) {
   overflow: hidden;

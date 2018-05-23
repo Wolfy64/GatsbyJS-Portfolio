@@ -1,13 +1,11 @@
 ---
-slug: "about"
+slug: "/about"
+title: "title - About ME"
 date: "2017-11-07"
-title: "ABOUT ME"
-tags: ['david dewulf','portfolio','fullsatck','web developer']
-excerpt: "I am david a fullstack web developer"
 ---
 
-# PAGE ABOUT
+I’m a web **developer**, who changed careers to do a cool job.
 
-Est nulla aliqua officia reprehenderit. Quis duis dolore sunt laborum ut nulla aute velit aliqua anim sunt occaecat laborum ad. Consequat sunt veniam anim officia in consectetur quis proident dolor id elit amet culpa. Reprehenderit consequat elit sint non ea deserunt in consectetur velit consequat. Quis velit cillum cillum labore ipsum enim quis in. Anim officia cupidatat ex ea sint ea irure consectetur labore adipisicing eu laboris.
+I just finished an Bachelors coding course with Open Classrooms. Throughout this course I have learned a great deal when it comes to working independently, to self motivation and therefore to being highly adaptable, one of the greatest assets for a profile in today’s working society.
 
-Sint reprehenderit labore qui consectetur Lorem laboris laborum. Anim eu ullamco consectetur esse elit sint amet tempor. Ullamco pariatur non et Lorem qui est sunt fugiat in incididunt mollit.
+My goal is now to become a full-stack web developer. I always welcome feedback on ways to improve myself so please do not hesitate to share your advice or tell me what you think, it will be much appreciated.

@@ -1,18 +1,11 @@
 import React from "react";
 import Link from "gatsby-link";
+import Home from '../components/home'
+import About from '../components/about'
 
-// import SiteTemplate from '../templates/siteTemplate'
-
-const Home = () => (
-  <div className="home">
-    I am David De Wulf a fullstack web developer
-  </div>
-)
-
-export default ({ data }) => {
-  return (
+export default () =>(
     <div>
-      <Home></Home>
+      <Home />
+      <About/>
     </div>
   )
-}

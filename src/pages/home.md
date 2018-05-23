@@ -1,9 +1,7 @@
 ---
-slug: "home"
+slug: "/home"
+title: "title - My first blog post"
 date: "2017-11-07"
-title: "My first blog post"
-tags: ['david dewulf','portfolio','fullsatck','web developer']
-excerpt: "I am david a fullstack web developer"
 ---
 
 # PAGE HOME

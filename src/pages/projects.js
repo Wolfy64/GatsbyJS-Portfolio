@@ -39,7 +39,7 @@ export const query = graphql`
   query ProjectsQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { project: { eq: true } } }
+      filter: { frontmatter: { type: { eq: "project" } } }
     ) {
       totalCount
       edges {
@@ -48,7 +48,6 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            project
           }
           fields {
             slug

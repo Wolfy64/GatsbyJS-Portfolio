@@ -1,9 +1,8 @@
 ---
-slug: "project 2"
-project: true
-date: "2017-11-07"
+slug: "projects/project-2"
 title: "Project 2"
-tags: ['david dewulf','portfolio','fullsatck','web developer']
+date: "2017-11-07"
+type: "project"
 excerpt: "I am david a fullstack web developer"
 ---
 
