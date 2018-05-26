@@ -1,20 +1,14 @@
 import React from "react";
 import Link from "gatsby-link";
 
-const Project = () => (
-  <div>
-    test
-  </div>
-)
-
 export default ({ data }) => {
-  // console.log('From: project.js', {data});
+  console.log('From: project', {data});
   
   return (
     <div>
-      <h1 display={"inline-block"}>
-        Projets
-      </h1>
+      <h1>PROJECTS - Page container</h1>
+      <h1>Projets</h1>
+      
       {data.allMarkdownRemark.edges.map(({ node }) =>
         <div key={node.id}>
           <Link to={node.fields.slug}>
@@ -23,9 +17,7 @@ export default ({ data }) => {
               {node.frontmatter.title}{" "}
               <span color="#BBB">— {node.frontmatter.date}</span>
             </h3>
-            <p>
-              {node.excerpt}
-            </p>
+            <p>{node.excerpt}</p>
           </Link>
         </div>
       )}
@@ -43,6 +35,7 @@ export const query = graphql`
       edges {
         node {
           id
+          html
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")

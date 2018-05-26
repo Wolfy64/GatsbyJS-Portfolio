@@ -1,22 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Navbar = ({data}) => (
-  <div className="navbar">
+const Navbar = () => (
+  <div>
     <ul>
       <li><Link to="/">HOME</Link></li>
       <li><Link to="/about">ABOUT</Link></li>
       <li><Link to="/projects">PROJECTS</Link></li>
       <li><Link to="/contact">CONTACT</Link></li>
-      <li><Link to="/cv">CV</Link></li>
     </ul>
   </div>
 )
 
-const Header = ({ siteTitle }) => (
-  <div className="header">
-    <Navbar></Navbar>
+export default ({ siteTitle }) => (
+  <div className="container navbar">
+    <div className="wrapper">
+      <Navbar/>
+    </div>  
   </div>
 )
-
-export default Header

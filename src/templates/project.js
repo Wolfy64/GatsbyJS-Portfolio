@@ -4,6 +4,7 @@ export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div>
+      <h1>Project - Template container</h1>
       <h1>{post.frontmatter.title}</h1>
       <div style={{
         background: 'red',

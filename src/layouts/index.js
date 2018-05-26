@@ -2,18 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from "styled-components";
+import './sass/index.scss'
+import './sass/style.scss'
+
 import Header from '../components/header'
 import Footer from '../components/footer'
-import './index.css'
-
-const Container = styled.div`
-  margin: 3rem auto;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
 
 const Layout = ({ children, data }) => (
   <div>
@@ -25,9 +18,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <Container>
-      {children()}
-    </Container>
+    {children()}
     <Footer/>
   </div>
 )

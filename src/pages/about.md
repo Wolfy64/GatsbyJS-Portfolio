@@ -1,10 +1,9 @@
 ---
 slug: "/about"
-title: "title - About ME"
+title: "ABOUT ME"
 date: "2017-11-07"
+type: "page"
 ---
-
-# PAGE ABOUT
 
 I’m a web **developer**, who changed careers to do a cool job.
 

@@ -18,7 +18,7 @@ const Text = styled.article`
   flex: 2;
 `
 export default ({ data }) => {
-  console.log({data});
+  console.log("From Page: ",{data});
   
   const post = data.markdownRemark
   // const html = post.html.split('[SPLIT]');
@@ -27,6 +27,7 @@ export default ({ data }) => {
 
   return (
     <div>
+      <h1>PAGE - Template container</h1>
       <Title>{title}</Title>
       <Wrapper>
         <Image>
