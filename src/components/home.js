@@ -16,30 +16,30 @@ const Terminal = () => (
       <br/>
       <code>david:~ ls /Users/david/skills:</code>
       <br />
-      <code>HTML5</code>
-      <code>CSS3</code>
-      <code>Javascript</code>
-      <code>jQuery</code>
-      <code>PHP</code>
-      <code>OOP</code>
-      <code>Symfony4</code>
-      <code>MySQL</code>
-      <code>ORM</code>
-      <code>MVC</code>
-      <code>React</code>
-      <code>GatsbyJS</code>
-      <code>Wordpress</code>
-      <code>Bootstrap</code>
-      <code>JamStack</code>
-      <code>Sass</code>
-      <code>Git</code>
-      <code>GitHub</code>
-      <code>REST APIs</code>
-      <code>Graphql</code>
-      <code>CLI</code>
-      <code>VScode</code>
-      <code>Linux</code>
-      <code>macOS</code>
+      <code className="skills">HTML5</code>
+      <code className="skills">CSS3</code>
+      <code className="skills">Javascript</code>
+      <code className="skills">jQuery</code>
+      <code className="skills">PHP</code>
+      <code className="skills">OOP</code>
+      <code className="skills">Symfony4</code>
+      <code className="skills">MySQL</code>
+      <code className="skills">ORM</code>
+      <code className="skills">MVC</code>
+      <code className="skills">React</code>
+      <code className="skills">GatsbyJS</code>
+      <code className="skills">Wordpress</code>
+      <code className="skills">Bootstrap</code>
+      <code className="skills">JAMStack</code>
+      <code className="skills">Sass</code>
+      <code className="skills">Git</code>
+      <code className="skills">GitHub</code>
+      <code className="skills">REST APIs</code>
+      <code className="skills">Graphql</code>
+      <code className="skills">CLI</code>
+      <code className="skills">VScode</code>
+      <code className="skills">Linux</code>
+      <code className="skills">macOS</code>
     </div>
 
   </div>

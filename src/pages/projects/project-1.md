@@ -1,13 +1,15 @@
 ---
-slug: "/projects/project-1"
-title: "Project 1"
-date: "2017-11-07"
+slug: "/projects/biarritz"
+title: "City of Biarritz"
+date: "2017-02"
+tags: "Wordpress"
 type: "project"
-excerpt: "I am david a fullstack web developer"
+excerpt: "Website to promote the town’s cultural activity."
 ---
 
-# PAGE PROJECT 1
+# Develop and deploy an online website
 
-Est nulla aliqua officia reprehenderit. Quis duis dolore sunt laborum ut nulla aute velit aliqua anim sunt occaecat laborum ad. Consequat sunt veniam anim officia in consectetur quis proident dolor id elit amet culpa. Reprehenderit consequat elit sint non ea deserunt in consectetur velit consequat. Quis velit cillum cillum labore ipsum enim quis in. Anim officia cupidatat ex ea sint ea irure consectetur labore adipisicing eu laboris.
-
-Sint reprehenderit labore qui consectetur Lorem laboris laborum. Anim eu ullamco consectetur esse elit sint amet tempor. Ullamco pariatur non et Lorem qui est sunt fugiat in incididunt mollit.
+- Developed website to promote cultural activity of your town
+- Created a website, from conception to delivery (WordPress)  
+- Defined and presented a site plan and the appropriate technical solutions for different browsers
+- Presented a graphic charter

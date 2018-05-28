@@ -3,15 +3,17 @@ import React from 'react'
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div>
-      <h1>Project - Template container</h1>
-      <h1>{post.frontmatter.title}</h1>
-      <div style={{
-        background: 'red',
-      }}>
-        <h1>PUTAIN CA MARCHE !!!!</h1>  
-        <img src="https://source.unsplash.com/random/200x200" alt=""/>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <div className="container project">
+      <div className="wrapper">
+        <div className="project-image">
+          <img src="https://source.unsplash.com/random/600x600" alt="project-image"/>  
+        </div>
+        <article
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          className="content"
+        >
+        </article>
+        <a href=""><button className="button grow">Take a look</button></a>
       </div>
     </div>
   );
@@ -25,6 +27,7 @@ export const query = graphql`
         slug
         title
         date
+        tags
       }
     }
   }

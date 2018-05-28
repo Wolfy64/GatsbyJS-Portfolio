@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
 
-html{
+body{
+  font-family: 'Raleway', sans-serif;
   ul>li>a{
     font-family: 'Playfair Display', serif;
     font-weight: lighter;
     text-align: center;
     letter-spacing: 0.3rem;
-  }
-
-  p{
-    font-family: 'Raleway', sans-serif;
   }
 }
 
@@ -32,6 +29,7 @@ h3{
 p{
   text-align: justify;
   margin-left: 2rem;
+  margin-right: 2rem;
   color: #333;
   line-height: 1.8rem;
 }
@@ -40,16 +38,10 @@ p{
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  background-color: #fafafa;
-  // background-size: cover;
-  
-  // background: radial-gradient(#ebebebd6, #ebebeb), url(https://images.unsplash.com/photo-1499175860898-fa38bee4bcdd?ixlib=rb-0.3.5…EyMDd9&s=42e30b0…&auto=format&fit=crop&w=2460&q=80) center fixed;
-
-  // background: radial-gradient( #ebebebd6, #ebebeb),
-  // url("https://images.unsplash.com/photo-1518600654093-2a24cddafa38?ixlib=rb-0.3.5&s=d89da5b98e50f66dd07e935336655199&auto=format&fit=crop&w=2917&q=80") center fixed;
+  background-color: #f2f2f2;
 }
 
-.flex-container{display: flex;flex-wrap: wrap;}
+.flex-container{display: flex;flex-wrap: wrap; height: 340px;}
 
 .navbar{
   height: 48px;
@@ -59,9 +51,10 @@ p{
   li{
     list-style: none;
     padding: 9px 12px 9px 12px;
-    &:hover{ outline: solid 1px rgb(241, 7, 7) } 
   }
-  a{color: white; text-decoration: none;}
+  a{
+    color: white; text-decoration: none;
+  }
 }
 
 .wrapper{
@@ -113,7 +106,10 @@ p{
       display: inline-block;
       background: #002c36;
       border-radius: 0 0 4px 4px;
-      color: #79ef14;
+      color: #f2f2f2;
+      .skills{
+        color: #79ef14;
+      }
       code{
         margin-left: 10px;
       }
@@ -125,6 +121,7 @@ p{
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  background-color: #fafafa;
   .profil-image{flex: 30%;}
   .profil-text{min-width: 300px;flex: 70%;}
 }
@@ -148,12 +145,6 @@ p{
     color: white;
     background: #ffa50000;
   }
-}
-
-.contact{
-  // background-color: #fafafa;
-  // height: 692px;
-  // background-color: #79ef14!important;
 }
 
 .network{
@@ -196,11 +187,6 @@ p{
     box-shadow: none;
     border: 1px solid;
     padding: 10px;
-    &:hover{
-      box-shadow: 0px 7px 6px 0px #cec8c8;
-      transform: translate(0,-3px); 
-      transition: all 0.3s ease;
-    }
   }
   .wrapper{
     margin-bottom: 0px;
@@ -208,4 +194,98 @@ p{
   a{color: #555; text-decoration: none;}
 }
 
-// transition: all 0.3s ease; */
+// ### List Projects
+.projects{
+  background-color: #f2f2f2;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .project-image{
+    flex: 50%;
+    img{
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 0px 0px 0px 0px;
+      box-shadow: none;
+    }
+  }
+  .project-details{
+    background: white;
+    border-radius: 0px 3px 3px 0px;
+    flex: 50%;
+  }
+
+  h2{
+    font-family: 'Playfair Display', serif;
+    margin: 3rem 0px 0px 2rem;
+    color:#333;
+  }
+
+  hr{
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .subtitle{
+    color: #555;
+    margin-right: 15px;
+  }
+
+  .project-box{
+    margin-bottom: 1rem;
+  }
+
+}
+
+// ### Page Project
+.project{
+  background: #fff;
+  .project-image{
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    margin: auto;
+    margin-top:120px;
+
+    img{
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 0px 0px 0px 0px;
+      box-shadow: none;
+    }
+  }
+  .content{
+    margin: auto;
+    max-width: 700px;
+  }
+}
+
+// ### Effect
+.grow:hover{
+  box-shadow: 0px 7px 6px 0px #cec8c8;
+  transform: translate(0,-3px); 
+  transition: all 0.3s ease;
+}
+
+.skills{
+  color: #79b6f2;
+}
+
+.button{
+  border-radius: 0px;
+  box-shadow: none;
+  border: 1px solid #333;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}

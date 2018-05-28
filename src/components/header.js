@@ -4,10 +4,9 @@ import Link from 'gatsby-link'
 const Navbar = () => (
   <div>
     <ul>
-      <li><Link to="/">HOME</Link></li>
-      <li><Link to="/about">ABOUT</Link></li>
+      <li><Link to="/">DAVID</Link></li>
       <li><Link to="/projects">PROJECTS</Link></li>
-      <li><Link to="/contact">CONTACT</Link></li>
+      <li><Link to="/contact">CV</Link></li>
     </ul>
   </div>
 )
