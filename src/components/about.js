@@ -1,7 +1,5 @@
 import React from 'react'
 import david from "../images/david.svg";
-import david3 from "../images/david3.svg";
-import david4 from "../images/david4.svg";
 
 export default ({ data }) => (
   <div className="container about"

@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import img from '../images/louvre.jpeg'
 
 export default ({ data }) => {
   console.log('From: project', { data })
@@ -15,7 +16,7 @@ export default ({ data }) => {
                 {/* PROJECT IMAGE */}  
                 <div className="flex-container project-box grow">
                   <div className="project-image">
-                    <img src="https://source.unsplash.com/random/300x200" />
+                    <img src={img} alt="Image of project"/>
                   </div>
 
                   {/* PROJECT DETAIL */}
@@ -29,7 +30,6 @@ export default ({ data }) => {
                     </p>
                   </div>
                 </div>  
-
               </Link>
             </div>
           )}
@@ -58,6 +58,7 @@ export const query = graphql`
             slug
             tags
             excerpt
+            img
           }
           fields {
             slug

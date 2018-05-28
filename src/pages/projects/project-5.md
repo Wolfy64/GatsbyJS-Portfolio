@@ -3,6 +3,8 @@ slug: "/projects/nao"
 title: "N.A.O"
 date: "2018-03"
 tags: "Symfony 4"
+projectUrl: "www.google.com"
+img: "louvre.jpeg"
 type: "project"
 excerpt: "Team Project Management and Development"
 ---
@@ -18,5 +20,3 @@ excerpt: "Team Project Management and Development"
 - Write a quote and submit a service contract
 - Develop Front-End & Back-End
 - All Back-end and Google Map API
-
-http://project5.dewulfdavid.com

@@ -2,11 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from "styled-components";
-import './sass/index.scss'
-import './sass/style.scss'
-
 import Header from '../components/header'
 import Footer from '../components/footer'
+import './sass/index.scss'
+import './sass/style.scss'
 
 const Layout = ({ children, data }) => (
   <div>

@@ -1,7 +1,23 @@
 import React from 'react'
 
+const ProjectUrl = ({ url }) => {
+
+  return (
+    <a
+      href="www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+    
+      <button className="button grow">Take a look</button>
+    </a>
+  )
+}
+
 export default ({ data }) => {
   const post = data.markdownRemark;
+  console.log(post.projectUrl);
+  
   return (
     <div className="container project">
       <div className="wrapper">
@@ -13,7 +29,8 @@ export default ({ data }) => {
           className="content"
         >
         </article>
-        <a href=""><button className="button grow">Take a look</button></a>
+        
+        {true ? <ProjectUrl url={post.frontmatter.projectUrl}/> : ''}
       </div>
     </div>
   );
@@ -28,7 +45,23 @@ export const query = graphql`
         title
         date
         tags
+        projectUrl
       }
     }
   }
 `;
+
+// export const query = graphql`
+//   query ProjectQuery($slug: String!) {
+//     markdownRemark(fields: { slug: { eq: $slug } }) {
+//       html
+//       frontmatter {
+//         slug
+//         title
+//         date
+//         tags
+//         projectUrl
+//       }
+//     }
+//   }
+// `;
