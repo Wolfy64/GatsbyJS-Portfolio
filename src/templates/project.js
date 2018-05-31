@@ -2,13 +2,12 @@ import React from 'react'
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  console.log(post);
-  
+
   return (
     <div className="container project">
       <div className="wrapper">
         <div className="project-image">
-          <img src={`/img/${post.frontmatter.img}`} alt="Project's image" />  
+          <img src={`static/img/${post.frontmatter.img}`} alt="Project's image" />  
         </div>
         <h1>{ post.frontmatter.title }</h1>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />

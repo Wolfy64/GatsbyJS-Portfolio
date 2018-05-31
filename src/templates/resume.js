@@ -2,8 +2,6 @@ import React from 'react'
 import styled from "styled-components";
 
 export default ({ data }) => {
-  console.log("From Page: ",{data});
-  
   const post = data.markdownRemark
 
   return (

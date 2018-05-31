@@ -3,42 +3,42 @@ import Link from 'gatsby-link'
 import Img from "gatsby-image";
 
 export default ({ data }) => {
-  console.log('From: project', { data })
   
   return (
     <div>
       <div className="container projects">
         <div className="wrapper">
           <h1>My Projects</h1>
-          
-          {data.allMarkdownRemark.edges.map(({ node }) => 
 
-            <div key={node.id}>
-              
-              <Link to={node.frontmatter.slug}>
-                <div className="flex-container project-box grow">
-                  
-                  <div className="project-image">
-                    <img src={`/img/${node.frontmatter.img}`} alt="Project's image" />
-                  </div>
+          {data.allMarkdownRemark.edges.map(({ node }) => {
 
-                  <div className="project-details">
-                    <h2 className="title">{node.frontmatter.title}</h2>
-                    <p className="subtitle">
-                      {node.frontmatter.date} - {node.frontmatter.tags}</p>
-                    <hr/>
-                    <p className="body">
-                      {node.frontmatter.excerpt}
-                    </p>
-                  </div>
+            return (
+              <div key={node.id}>
+                
+                <Link to={node.frontmatter.slug}>
+                  <div className="flex-container project-box grow">
+                    
+                    <div className="project-image">
+                      <img src={`static/img/${node.frontmatter.img}`} alt="Project's image" />
+                    </div>
 
-                </div>  
-              </Link>
+                    <div className="project-details">
+                      <h2 className="title">{node.frontmatter.title}</h2>
+                      <p className="subtitle">
+                        {node.frontmatter.date} - {node.frontmatter.tags}</p>
+                      <hr/>
+                      <p className="body">
+                        {node.frontmatter.excerpt}
+                      </p>
+                    </div>
 
-            </div>
+                  </div>  
+                </Link>
 
-          )}
-    
+              </div>
+            )            
+          })}
+
         </div>
       </div>
 
@@ -48,14 +48,9 @@ export default ({ data }) => {
 
 export const query = graphql`
   query ProjectsQuery {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { type: { eq: "project" } } }
-    ) {
-      totalCount
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {type: {eq: "project"}}}) {
       edges {
         node {
-          id
           html
           frontmatter {
             title
@@ -65,10 +60,6 @@ export const query = graphql`
             excerpt
             img
           }
-          fields {
-            slug
-          }
-          excerpt
         }
       }
     }
