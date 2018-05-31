@@ -19,7 +19,7 @@ export default ({ data }) => {
                   <div className="flex-container project-box grow">
                     
                     <div className="project-image">
-                      <img src={`static/img/${node.frontmatter.img}`} alt="Project's image" />
+                      <img src={`/static/img/${node.frontmatter.img}`} alt="Project's image" />
                     </div>
 
                     <div className="project-details">

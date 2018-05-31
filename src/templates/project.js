@@ -7,7 +7,7 @@ export default ({ data }) => {
     <div className="container project">
       <div className="wrapper">
         <div className="project-image">
-          <img src={`static/img/${post.frontmatter.img}`} alt="Project's image" />  
+          <img src={`/static/img/${post.frontmatter.img}`} alt="Project's image" />  
         </div>
         <h1>{ post.frontmatter.title }</h1>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
