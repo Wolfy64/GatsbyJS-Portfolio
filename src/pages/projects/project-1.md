@@ -3,11 +3,11 @@ slug: "/projects/biarritz"
 title: "City of Biarritz"
 date: "2017-02"
 tags: "Wordpress"
+projectUrl: "http://project1.dewulfdavid.com"
+img: "project-1.jpg"
 type: "project"
 excerpt: "Website to promote the town’s cultural activity."
 ---
-
-# Develop and deploy an online website
 
 - Developed website to promote cultural activity of your town
 - Created a website, from conception to delivery (WordPress)  

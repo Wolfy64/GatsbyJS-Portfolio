@@ -3,12 +3,11 @@ slug: "/projects/louvre"
 title: "Le Louvre"
 date: "2018-01"
 tags: "Symfony 4"
+projectUrl: "http://project4.dewulfdavid.com"
+img: "project-4.jpg"
 type: "project"
 excerpt: "System for booking and managing tickets online with Stripe."
 ---
-
-#Develop a Back-End for a client
-
 
 - Created a new system for booking and managing tickets online
 - Payment Management by credit card with the Stripe API

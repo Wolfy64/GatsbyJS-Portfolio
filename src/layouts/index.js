@@ -9,13 +9,26 @@ import './sass/style.scss'
 
 const Layout = ({ children, data }) => (
   <div>
+    
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'David De Wulf - Portfolio' },
+        { name: 'author', content: 'David De Wulf' },
+        { name: 'creator', content: 'David De Wulf' },
+        { name: 'publisher', content: 'David De Wulf' },
+        { name: 'generator', content: 'GatsbyJS' },
+        { name: 'keywords', content: 'Web Developer, Fullstack, Front end,Back end' },
+        { property: 'og:title', content: 'Portfolio - David De Wulf' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:local', content: 'en_US' },
+        { property: 'og:description', content: 'David De Wulf - Portfolio' },
+        { property: 'og:url', content: 'https://dewulfdavid.com/' },
+        { property: 'og:site_name', content: 'David De Wulf' },
       ]}
-    />
+    >
+      <html lang="en-US" />   
+    </Helmet>  
     <Header siteTitle={data.site.siteMetadata.title} />
     {children()}
     <Footer/>

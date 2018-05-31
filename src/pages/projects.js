@@ -1,25 +1,27 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import img from '../images/louvre.jpeg'
+import Img from "gatsby-image";
 
 export default ({ data }) => {
   console.log('From: project', { data })
-
+  
   return (
     <div>
       <div className="container projects">
         <div className="wrapper">
-          <h1>My Projects</h1>  
-          {data.allMarkdownRemark.edges.map(({ node }) =>
+          <h1>My Projects</h1>
+          
+          {data.allMarkdownRemark.edges.map(({ node }) => 
+
             <div key={node.id}>
+              
               <Link to={node.frontmatter.slug}>
-                {/* PROJECT IMAGE */}  
                 <div className="flex-container project-box grow">
+                  
                   <div className="project-image">
-                    <img src={img} alt="Image of project"/>
+                    <img src={`/img/${node.frontmatter.img}`} alt="Project's image" />
                   </div>
 
-                  {/* PROJECT DETAIL */}
                   <div className="project-details">
                     <h2 className="title">{node.frontmatter.title}</h2>
                     <p className="subtitle">
@@ -29,11 +31,14 @@ export default ({ data }) => {
                       {node.frontmatter.excerpt}
                     </p>
                   </div>
+
                 </div>  
               </Link>
-            </div>
-          )}
 
+            </div>
+
+          )}
+    
         </div>
       </div>
 
@@ -54,7 +59,7 @@ export const query = graphql`
           html
           frontmatter {
             title
-            date(formatString: "YYYY MMMM")
+            date(formatString: "MMM. YYYY ")
             slug
             tags
             excerpt

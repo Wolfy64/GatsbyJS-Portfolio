@@ -3,13 +3,11 @@ slug: "/projects/nao"
 title: "N.A.O"
 date: "2018-03"
 tags: "Symfony 4"
-projectUrl: "www.google.com"
-img: "louvre.jpeg"
+projectUrl: "http://project5.dewulfdavid.com"
+img: "project-5.jpg"
 type: "project"
 excerpt: "Team Project Management and Development"
 ---
-
-#Team Project Management and Development
 
 - Build a production schedule
 - Create a website, from conception to delivery

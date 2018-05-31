@@ -1,36 +1,26 @@
 import React from 'react'
 
-const ProjectUrl = ({ url }) => {
-
-  return (
-    <a
-      href="www.google.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-    
-      <button className="button grow">Take a look</button>
-    </a>
-  )
-}
-
 export default ({ data }) => {
   const post = data.markdownRemark;
-  console.log(post.projectUrl);
+  console.log(post);
   
   return (
     <div className="container project">
       <div className="wrapper">
         <div className="project-image">
-          <img src="https://source.unsplash.com/random/600x600" alt="project-image"/>  
+          <img src={`/img/${post.frontmatter.img}`} alt="Project's image" />  
         </div>
-        <article
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          className="content"
-        >
-        </article>
-        
-        {true ? <ProjectUrl url={post.frontmatter.projectUrl}/> : ''}
+        <h1>{ post.frontmatter.title }</h1>
+        <article dangerouslySetInnerHTML={{ __html: post.html }} />
+        { post.frontmatter.projectUrl &&
+          <a
+            href={ post.frontmatter.projectUrl }
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button grow">Take a look</button>
+          </a>
+        }
       </div>
     </div>
   );
@@ -45,23 +35,9 @@ export const query = graphql`
         title
         date
         tags
+        img
         projectUrl
       }
     }
   }
 `;
-
-// export const query = graphql`
-//   query ProjectQuery($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       html
-//       frontmatter {
-//         slug
-//         title
-//         date
-//         tags
-//         projectUrl
-//       }
-//     }
-//   }
-// `;

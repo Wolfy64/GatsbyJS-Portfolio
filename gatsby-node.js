@@ -35,6 +35,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               frontmatter {
                 type
                 slug
+                img
               }
             }
           }
@@ -42,26 +43,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.frontmatter.type == 'project') {
-          createPage({
-            path: node.frontmatter.slug,
-            component: path.resolve(`./src/templates/project.js`),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug,
-            },
-          })
-        }
-        else {
-          createPage({
-            path: node.frontmatter.slug,
-            component: path.resolve(`./src/templates/page.js`),
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug,
-            },
-          })
-        }
+        createPage({
+          path: node.frontmatter.slug,
+          component: path.resolve(`./src/templates/${node.frontmatter.type}.js`),
+          context: {
+            // Data passed to context is available in page queries as GraphQL variables.
+            slug: node.fields.slug,
+          },
+        })
       })
       resolve()
     })

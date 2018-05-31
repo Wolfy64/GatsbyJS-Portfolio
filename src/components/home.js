@@ -48,7 +48,7 @@ const Terminal = () => (
 export default ({ data }) => (
   <div className="container home">
     <div className="wrapper">
-      <h1>Hi, I'm David De Wulf</h1>
+      <h1>Hi, I'm David <span className="nowrap">De Wulf</span></h1>
       <span className="title">Fullstack Web Developer</span>
       <Terminal/>
     </div>  

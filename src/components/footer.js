@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import mailIcon from '../images/mail.svg';
-import linkedinIcon from '../images/linkedin.svg';
-import githubIcon from '../images/github.svg';
-import twitterIcon from '../images/twitter.svg';
+import mailIcon from '../img/mail.svg';
+import linkedinIcon from '../img/linkedin.svg';
+import githubIcon from '../img/github.svg';
+import twitterIcon from '../img/twitter.svg';
 
 const mail = 'mailto:contact@dewulfdavid.com'
 const linkedin = 'https://www.linkedin.com/in/dewulfdavid/'
@@ -20,7 +20,7 @@ export default () => (
       <ul>
         <li>
           <a href={mail}>
-          <img src={mailIcon} alt="mail" className="icon grow" />
+            <img src={mailIcon} alt="mail" className="icon grow" />
           </a>
         </li>
         <li>
@@ -43,16 +43,17 @@ export default () => (
       <p>
         This site was made with the excellent Gatsby.js and is hosted on Netlify. 
         You can look at its code
-        <a href={sourceCode}
+        <a
+          href={sourceCode}
           title="GitHub"
           target="_blank"
           rel="noopener noreferrer">
           here.
         </a>
-      </p>
-      <p>
+        <br />  
         Icons made by{' '}
-        <a href="https://www.flaticon.com/authors/simpleicon"
+        <a
+          href="https://www.flaticon.com/authors/simpleicon"
           title="SimpleIcon"
           target="_blank"
           rel="noopener noreferrer"
@@ -60,7 +61,8 @@ export default () => (
           SimpleIcon{' '}
         </a>
         from{' '}
-        <a href="https://www.flaticon.com/"
+        <a
+          href="https://www.flaticon.com/"
           title="Flaticon"
           target="_blank"
           rel="noopener noreferrer"
@@ -68,7 +70,8 @@ export default () => (
           www.flaticon.com{' '}
         </a> 
         is licensed by{' '}
-        <a href="http://creativecommons.org/licenses/by/3.0/"
+        <a
+          href="http://creativecommons.org/licenses/by/3.0/"
           title="Creative Commons BY 3.0"
           target="_blank"
           rel="noopener noreferrer"
