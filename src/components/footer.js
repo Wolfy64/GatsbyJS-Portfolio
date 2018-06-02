@@ -1,16 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import mailIcon from '../img/mail.svg';
-import linkedinIcon from '../img/linkedin.svg';
-import githubIcon from '../img/github.svg';
-import twitterIcon from '../img/twitter.svg';
+import mailIcon from '../img/mail.svg'
+import linkedinIcon from '../img/linkedin.svg'
+import githubIcon from '../img/github.svg'
+import twitterIcon from '../img/twitter.svg'
 
 const mail = 'mailto:contact@dewulfdavid.com'
 const linkedin = 'https://www.linkedin.com/in/dewulfdavid/'
 const github = 'https://github.com/Wolfy64'
 const twitter = 'https://twitter.com/TweetWolf64'
-const sourceCode = '#'
-
+const sourceCode = 'https://github.com/Wolfy64/GatsbyJS-Portfolio'
 
 export default () => (
   <div className="container footer">

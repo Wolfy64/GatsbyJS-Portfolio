@@ -6,13 +6,17 @@ $primary-bg-color: #f2f2f2;
 $light-grey: #fafafa;
 $white: #fff;
 $grey: #555;
-$terminal-color: #79ef14;
+$text-bg: #0b26e41f;
+$terminal-color: #79b6f2;
+// $terminal-color: #79ef14;
 
 body{ font-family: $primary-font-stack; font-weight: lighter;}
 
 button{ outline: none;}
 
-a{ text-decoration: none; color: #333}
+a{ 
+  text-decoration: none; color: #333;
+}
 
 article{ margin: auto; max-width: 700px; }
 
@@ -31,6 +35,29 @@ p{
   text-align: justify;
   color: $primary-color;
   line-height: 1.8rem;
+
+  a{
+    transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 1px solid $text-bg;
+    box-shadow: inset 0 -2px 0px 0px $text-bg;
+    padding: 0.2rem;
+    &:hover{
+      background: rgba(11, 38, 228, 0.4392156862745098);
+      border-radius: 3px;
+      color: $white;
+    }
+  }
+
+}
+
+mark{
+  color: inherit;
+  border-radius: 3px;
+  padding: 0.2rem;
+  background-color: $text-bg;
+  &:hover{
+    color: inherit;
+  }
 }
 
 img{
@@ -38,14 +65,11 @@ img{
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 2px;
+  border-radius: 0px;
   box-shadow: none;
 }
 
-hr{
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
+hr{ margin-right: 1rem; margin-left: 1rem; }
 
 .container {
   display: flex;
@@ -62,7 +86,11 @@ hr{
   padding: 0px 20px;
 }
 
-.flex-container{display: flex;flex-wrap: wrap; min-height: 340px;}
+.flex-container{
+  display: flex; 
+  flex-wrap: wrap; 
+  max-height: 300px;
+}
 
 .navbar{
   height: 48px;
@@ -97,11 +125,13 @@ hr{
     font-family: $title-font-stack;
     color: $grey;
   }
+
   .terminal {
     max-width: 640px;
     margin: auto;
     margin-top: 3rem;
     text-align: initial;
+
     .top-bar{
       height: 30px;
       border-radius: 4px 4px 0 0;
@@ -110,6 +140,7 @@ hr{
       background: #ebebeb;
       .circles{
         margin: 1px 10px;
+
         .circle{
           height: 10px;
           width: 10px;
@@ -118,6 +149,7 @@ hr{
           background-color: white;
           margin-left: 5px;
         }
+
         .circle-red{background-color: #fe5f55;}
         .circle-yellow{background-color: #ffbd2e;}
         .circle-green{background-color: #29ca3f;}
@@ -131,12 +163,15 @@ hr{
       background: #002c36;
       border-radius: 0 0 2px 2px;
       color: $primary-bg-color;
+
       .skills{
         color: $terminal-color;
       }
+
       code{
         font-family: $primary-font-stack;
         margin-left: 10px;
+        background: none;
       }
     }
   }
@@ -147,8 +182,6 @@ hr{
   display: flex;
   flex-wrap: wrap;
   background-color: $light-grey;
-  background-image: url(/static/img/about.jpg);
-  background-repeat: no-repeat;
 
   article{
     margin-right: 0px;
@@ -169,10 +202,8 @@ hr{
   margin-bottom: 0px;
 
   p{
-    // font-size: 0.7rem;
     color: $grey;
-    // line-height: 0.7rem;
-    line-height: 1rem;
+    line-height: unset;
     margin-left: 1rem;
   }
 
@@ -182,27 +213,10 @@ hr{
 
   a{ color: #555;}
 
-  .name{
-    font-size: 1rem;
-    font-family: $title-font-stack;
-    color:$primary-color;
-    margin-top: 120px;
-    margin-bottom: 20px;
-  }
-
-  .icon{
-    width: 50px;
-    height: auto;
-    border-radius: 0px;
-    box-shadow: none;
-    border: 1px solid;
-    padding: 10px;
-  }
-
-  .wrapper{  margin-bottom: 0px;}
+  .wrapper{ margin-bottom: 0px;}
 }
 
-// ### List Projects
+// === List Projects === //
 .projects{
   background-color: $primary-bg-color;
   height: 100%;
@@ -211,12 +225,9 @@ hr{
 
   h2{margin: 3rem 0px 0px 0px; text-align: left; }
 
-  img{ border-radius: 2px 0px 0px 2px }
-
   .project-details{
     background: white;
     padding: 0 2rem;
-    border-radius: 0px 3px 3px 0px;
     flex: 50%;
   }
 
@@ -227,9 +238,9 @@ hr{
   .project-box{ margin-bottom: 1rem; }
 }
 
-// ### Page Project
+// === Page Project === //
 .project{
-  background: $white;
+  background: $primary-bg-color;
 
   img{max-height: 400px;}
 
@@ -237,13 +248,44 @@ hr{
   
   .project-image{
     max-width: 800px;
-    // max-height: 300px;
     text-align: center;
     margin: auto;
     margin-top:120px;
   }
 
-  
+  .project-button{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+// === Page Resume === //
+.resume{
+  background-color: $light-grey;
+  h2{
+    margin-bottom: 0.5rem;
+  }
+
+  h3{
+    text-align: left;
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  hr{
+    background: $text-bg;
+  }
+
+  code{
+    background-color: $text-bg;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 0.2rem;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
 }
 
 .button{
@@ -258,13 +300,49 @@ hr{
   color: $white;
 }
 
-// ### Effect
+.name{
+  font-size: 1.3rem;
+  font-family: $title-font-stack;
+  color:$primary-color;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.icon{
+  width: 50px;
+  height: auto;
+  border-radius: 0px;
+  box-shadow: none;
+  border: 1px solid;
+  padding: 10px;
+}
+
+// === Effects === //
 .grow:hover{
   box-shadow: 0px 7px 6px 0px #cec8c8;
   transform: translate(0,-3px); 
   transition: all 0.3s ease;
 }
 
-.nowrap{
-  white-space: nowrap;
+.nowrap{ white-space: nowrap; }
+
+@media screen and  (max-width: 600px){
+
+  h1{ margin: 50px 0px 50px 0px }
+
+  .flex-container{
+    display: flex; 
+    flex-wrap: wrap; 
+    max-height: none;
+  }
+
+  .projects{
+    .project-image{ max-height: 200px; min-width: 100%; }
+  }
+
+  .project{
+    img{ max-height: 200px; }
+
+    .project-image{ margin-top: 50px; }
+  }
 }

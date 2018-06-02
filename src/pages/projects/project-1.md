@@ -2,9 +2,10 @@
 slug: "/projects/biarritz"
 title: "City of Biarritz"
 date: "2017-02"
-tags: "Wordpress"
+tags: "Wordpress CSS"
 projectUrl: "http://project1.dewulfdavid.com"
-img: "project-1.jpg"
+git: ""
+img: "project1"
 type: "project"
 excerpt: "Website to promote the town’s cultural activity."
 ---

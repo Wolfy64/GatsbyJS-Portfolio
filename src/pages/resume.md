@@ -10,19 +10,23 @@ type: "resume"
 I just finished a Bachelors coding course with Open Classrooms.  
 Throughout this course I have learned a great deal when it comes to working independently, to self motivation and therefore to being highly adaptable.
 
-## Programming Languages
----
-* HTML5
-* CSS3
-* Javascript 
-* jQuery
-* PHP
-* MySQL
-* React.JS (in progress)
-
 ## Skills
 ---
-Framework PHP Symfony 4 - Bootstrap - Wordpress - Git/Github - Oriented Object Programming - MVC - Object relational Mapping - CLI - Rest API - Linux - MacOS - Wireframe - VSCode - UML
+### Programming and query language
+`PHP` `Javascript/jQuery` `MySQL` `GraphQL` `Doctrine`
+
+### Markup and web technologies
+`HTML5` `CSS3` `SASS` `Markdown` `Json` `YAML` `Twig`
+
+### Library and Framework
+`Symfony 4` `GatsbyJS` `jQuery` `Bootstrap 4` `React.JS (in progress)`
+
+### CMS
+`Wordpress`
+
+### Others
+`Git/Github` `Oriented Object Programming` `MVC` `UML` `Object relational Mapping` 
+`CLI` `Rest API` `Linux` `MacOS` `Wireframe` `VSCode` `LAMP Stack`
 
 ## Experience
 ---
@@ -39,7 +43,7 @@ Framework PHP Symfony 4 - Bootstrap - Wordpress - Git/Github - Oriented Object P
 
 ## Languages:
 ---
-* **French** - Fluent
+* **French** - Mother tongue
 * **English** - Conversational 
 
 ## Hobbies
