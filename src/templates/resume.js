@@ -11,11 +11,7 @@ export default ({ data }) => {
         <h1>{ post.frontmatter.title }</h1>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
         <a
-<<<<<<< HEAD
-            href="/static/img/resume.pdf"
-=======
             href={resume}
->>>>>>> dev_1.0.1
             target="_blank"
             rel="noopener noreferrer"
           >

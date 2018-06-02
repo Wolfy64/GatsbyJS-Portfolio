@@ -14,17 +14,6 @@ export default ({ data }) => (
 
         {data.allMarkdownRemark.edges.map(({ node }) => {
 
-<<<<<<< HEAD
-            return (
-              <div key={node.id}>
-                
-                <Link to={node.frontmatter.slug}>
-                  <div className="flex-container project-box grow">
-                    
-                    <div className="project-image">
-                      <img src={`/static/img/${node.frontmatter.img}`} alt="Project's image" />
-                    </div>
-=======
           // To find the relative path (image src) for each image 
           const images = data.allImageSharp.edges.map( ({node}) =>  node.original.src )
           const regex = new RegExp(`${node.frontmatter.img}\\W`,'gi');             
@@ -39,7 +28,6 @@ export default ({ data }) => (
                   <div className="project-image">
                     <img src={imgSrc} alt="Project's image" />
                   </div>
->>>>>>> dev_1.0.1
 
                   <div className="project-details">
                     <h2 className="title">{node.frontmatter.title}</h2>

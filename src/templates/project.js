@@ -17,15 +17,6 @@ export default ({ data }) => {
     <div className="container project">
       <div className="wrapper">
         <div className="project-image">
-<<<<<<< HEAD
-          <img src={`/static/img/${post.frontmatter.img}`} alt="Project's image" />  
-        </div>
-        <h1>{ post.frontmatter.title }</h1>
-        <article dangerouslySetInnerHTML={{ __html: post.html }} />
-        { post.frontmatter.projectUrl &&
-=======
-
->>>>>>> dev_1.0.1
           <a
             href={ post.frontmatter.projectUrl }
             target="_blank"
