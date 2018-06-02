@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `minimal-ui`,
-        icon: `${__dirname}/src/img/project-1.jpg`, // This path is relative to the root of the site. size at least 512x512
+        // icon: `${__dirname}/src/img/project-1.jpg`, // This path is relative to the root of the site. size at least 512x512
       },
     },
     `gatsby-plugin-offline`,

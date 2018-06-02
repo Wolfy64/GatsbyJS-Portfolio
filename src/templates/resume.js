@@ -1,16 +1,17 @@
 import React from 'react'
 import styled from "styled-components";
+import resume from '../img/resume.pdf'
 
 export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
-    <div>
-      <div className="wrapper resume">
+    <div className="container resume">
+      <div className="wrapper">
         <h1>{ post.frontmatter.title }</h1>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
         <a
-            href="/img/resume.pdf"
+            href={resume}
             target="_blank"
             rel="noopener noreferrer"
           >

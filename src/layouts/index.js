@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import styled from "styled-components";
+import styled from "styled-components"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import './sass/index.scss'
@@ -31,7 +31,7 @@ const Layout = ({ children, data }) => (
     </Helmet>  
     <Header siteTitle={data.site.siteMetadata.title} />
     {children()}
-    <Footer/>
+    <Footer />
   </div>
 )
 
