@@ -3,14 +3,16 @@ import project1 from '../img/project1.jpg'
 import project3 from '../img/project3.jpg'
 import project4 from '../img/project4.jpg'
 import project5 from '../img/project5.jpg'
+import project6 from '../img/project6.jpg'
 
 export default ({ data }) => {
-  const post = data.markdownRemark;
+  const post = data.markdownRemark
   const images = {
     project1,
     project3,
     project4,
     project5,
+    project6,
   }
 
   return (
@@ -18,44 +20,43 @@ export default ({ data }) => {
       <div className="wrapper">
         <div className="project-image">
           <a
-            href={ post.frontmatter.projectUrl }
+            href={post.frontmatter.projectUrl}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={images[`${post.frontmatter.img}`]} alt="Project's image" />  
-          </a>          
+            <img
+              src={images[`${post.frontmatter.img}`]}
+              alt="Project's image"
+            />
+          </a>
         </div>
-        <h1>{ post.frontmatter.title }</h1>
+        <h1>{post.frontmatter.title}</h1>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
         <div className="project-button">
-
-          {post.frontmatter.projectUrl &&
+          {post.frontmatter.projectUrl && (
             <a
               href={post.frontmatter.projectUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
               <button className="button grow">Take a look</button>
-            </a>          
-          }
+            </a>
+          )}
 
-          {post.frontmatter.git &&
+          {post.frontmatter.git && (
             <a
               href={post.frontmatter.git}
               target="_blank"
               rel="noopener noreferrer"
             >
               <button className="button grow">Check the code</button>
-            </a>          
-          }
-
+            </a>
+          )}
         </div>
-
-
       </div>
     </div>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query ProjectQuery($slug: String!) {
@@ -72,4 +73,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
