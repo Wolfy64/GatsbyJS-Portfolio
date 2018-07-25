@@ -1,6 +1,33 @@
 import React from 'react'
 import background from '../img/about.jpg'
 
+const skills = [
+  'HTML5',
+  'CSS3',
+  'Javascript',
+  'jQuery',
+  'PHP',
+  'OOP',
+  'Symfony4',
+  'MySQL',
+  'ORM',
+  'MVC',
+  'React',
+  'GatsbyJS',
+  'Wordpress',
+  'Bootstrap',
+  'JAMStack',
+  'Sass',
+  'Git',
+  'GitHub',
+  'REST APIs',
+  'Graphql',
+  'CLI',
+  'VScode',
+  'Linux',
+  'macOS',
+]
+
 export default ({ data }) => (
   <div>
     <div
@@ -9,7 +36,7 @@ export default ({ data }) => (
         backgroundColor: `#fafafa`,
         backgroundImage: `url( ${background} )`,
         backgroundRepeat: `no-repeat`,
-        backgroundPosition: `top`,
+        backgroundPosition: `bottom`,
       }}
     >
       <div className="wrapper">
