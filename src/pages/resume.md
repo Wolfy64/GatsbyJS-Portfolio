@@ -13,13 +13,13 @@ Throughout this course I have learned a great deal when it comes to working inde
 ## Skills
 ---
 ### Programming and query language
-`PHP` `Javascript/jQuery` `MySQL` `GraphQL` `Doctrine`
+`PHP` `Javascript/jQuery` `MySQL` `NoSQL` `GraphQL` `Doctrine`
 
 ### Markup and web technologies
 `HTML5` `CSS3` `SASS` `Markdown` `Json` `YAML` `Twig`
 
 ### Library and Framework
-`Symfony 4` `GatsbyJS` `jQuery` `Bootstrap 4` `React.JS (in progress)`
+`Symfony 4` `GatsbyJS` `jQuery` `Bootstrap 4` `ReactJS`
 
 ### CMS
 `Wordpress`
@@ -34,6 +34,7 @@ Throughout this course I have learned a great deal when it comes to working inde
 * Developed a blog from scratch both Front-End & Back-End with PHP OOP
 * Developed a new system for booking and managing tickets online with <span class="nowrap">Symfony 4</span>
 * Developed a website, from conception to delivery as a team project
+* Developed a charity website using ReactJS, Styled-Components JustGiving API, Firebase.
 
 ## Education
 ---
@@ -48,4 +49,4 @@ Throughout this course I have learned a great deal when it comes to working inde
 
 ## Hobbies
 ---
-I am passionate about traveling and discovering new exciting sports (surfing, snowboarding, Krav Maga and hiking). 
+I am passionate about traveling and discovering new exciting sports (Surfing, Snowboarding, Krav Maga and hiking). 
