@@ -1,11 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import mailIcon from '../img/mail.svg'
 import linkedinIcon from '../img/linkedin.svg'
 import githubIcon from '../img/github.svg'
 import twitterIcon from '../img/twitter.svg'
 
-const mail = 'mailto:contact@dewulfdavid.com'
+const mail = 'mailto:contact.dewulf@gmail.com'
 const linkedin = 'https://www.linkedin.com/in/dewulfdavid/'
 const github = 'https://github.com/Wolfy64'
 const twitter = 'https://twitter.com/TweetWolf64'
@@ -38,18 +37,19 @@ export default () => (
           </a>
         </li>
       </ul>
-      <hr/>
+      <hr />
       <p>
-        This site was made with the excellent Gatsby.js and is hosted on Netlify. 
-        You can look at its code
+        This site was made with the excellent Gatsby.js and is hosted on
+        Netlify. You can look at its code
         <a
           href={sourceCode}
           title="GitHub"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           here.
         </a>
-        <br />  
+        <br />
         Icons made by{' '}
         <a
           href="https://www.flaticon.com/authors/simpleicon"
@@ -67,7 +67,7 @@ export default () => (
           rel="noopener noreferrer"
         >
           www.flaticon.com{' '}
-        </a> 
+        </a>
         is licensed by{' '}
         <a
           href="http://creativecommons.org/licenses/by/3.0/"
@@ -78,7 +78,7 @@ export default () => (
           CC 3.0 BY
         </a>
       </p>
-      <hr/>
-    </div>   
+      <hr />
+    </div>
   </div>
 )

@@ -7,8 +7,9 @@ type: "resume"
 
 ## Summary
 ---
-I just finished a Bachelors coding course with Open Classrooms.  
-Throughout this course I have learned a great deal when it comes to working independently, to self motivation and therefore to being highly adaptable.
+I have just completed a Bachelor's Degree in Web Development with Open Classrooms. Throughout this course I have learned how to effectively work independently and the importance of self-motivation, allowing me to be efficient as well as highly adaptable, one of the greatest assets for a profile in today’s working society.
+
+I would like to work as a Javascript full-stack web developer.
 
 ## Skills
 ---
@@ -30,11 +31,11 @@ Throughout this course I have learned a great deal when it comes to working inde
 
 ## Experience
 ---
-* Developed a website to promote the cultural activity of a town
-* Developed a blog from scratch both Front-End & Back-End with PHP OOP
-* Developed a new system for booking and managing tickets online with <span class="nowrap">Symfony 4</span>
-* Developed a website, from conception to delivery as a team project
 * Developed a charity website using ReactJS, Styled-Components JustGiving API, Firebase.
+* Developed a website, from conception to delivery as a team project
+* Developed a new system for booking and managing tickets online with <span class="nowrap">Symfony 4</span>
+* Developed a blog from scratch both Front-End & Back-End with PHP OOP
+* Developed a website to promote the cultural activity of a town
 
 ## Education
 ---
