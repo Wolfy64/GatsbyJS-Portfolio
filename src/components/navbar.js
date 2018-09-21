@@ -1,8 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
+
+const Nav = styled.nav.attrs({
+  className: 'grey darken-3',
+})`
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+`
 
 export default () => (
-  <nav class="navbar-fixed">
+  <Nav>
     <ul>
       <li>
         <Link to="/">Home</Link>
@@ -14,5 +23,5 @@ export default () => (
         <Link to="/resume/">Resume</Link>
       </li>
     </ul>
-  </nav>
+  </Nav>
 )
