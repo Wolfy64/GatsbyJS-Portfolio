@@ -2,12 +2,30 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Nav = styled.nav.attrs({
-  className: 'grey darken-3',
-})`
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
+const Nav = styled.nav`
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    margin: 0;
+    align-self: center;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+  }
 `
 
 export default () => (
