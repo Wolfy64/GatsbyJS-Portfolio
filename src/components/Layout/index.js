@@ -7,7 +7,7 @@ import Footer from './Footer'
 const Layout = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3 1fr);
+  grid-template-rows: 50px auto 450px;
   grid-template-areas:
     'Navbar'
     'Main'

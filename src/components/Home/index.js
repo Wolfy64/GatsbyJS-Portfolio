@@ -1,10 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
 import Terminal from './Terminal'
 
+const Header = styled.header`
+  grid-column: ML-end / MR-start;
+`
+
 export default () => (
-  <header className="col s12 grey lighten-4">
-    <h1 className="center">Hi, I'm David De Wulf</h1>
-    <p className="center">Fullstack Web Developer</p>
+  <Header>
+    <h1>Hi, I'm David De Wulf</h1>
+    <p>Web Developer</p>
     <Terminal />
-  </header>
+  </Header>
 )
