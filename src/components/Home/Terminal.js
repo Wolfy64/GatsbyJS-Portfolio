@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Emoji from '../UI/Emoji'
+
 const Terminal = styled.div`
   max-width: 600px;
   margin: auto;
@@ -59,9 +61,7 @@ export default () => (
         <Circle color="#fe5f55;" margin="5px" />
         <Circle color="#ffbd2e" margin="20px" />
         <Circle color="#29ca3f" margin="35px" />
-        <span className="center" role="img" aria-label="emoji">
-          👨‍💻 David - skills:
-        </span>
+        <Emoji symbol="👨🏻‍💻 David - Skills" />
       </Topbar>
       <Window bgColor="#002c36" textColor="#f2f2f2">
         <Code>

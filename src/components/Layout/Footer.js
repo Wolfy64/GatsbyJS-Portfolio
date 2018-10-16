@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import mailIcon from '../../images/mail.svg'
 import linkedinIcon from '../../images/linkedin.svg'
 import githubIcon from '../../images/github.svg'
 import twitterIcon from '../../images/twitter.svg'
+import Emoji from '../UI/Emoji'
 
 const mail = 'mailto:contact.dewulf@gmail.com'
 const linkedin = 'https://www.linkedin.com/in/dewulfdavid/'
@@ -58,7 +60,7 @@ export default () => (
     <Footer>
       <p className="name">David De Wulf</p>
       <p>
-        Developed by me with the <span>❤️</span> of code
+        Developed by me with the <Emoji symbol="❤️" /> of code
       </p>
       <ul>
         <li>
