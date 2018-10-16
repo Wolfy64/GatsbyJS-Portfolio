@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    title: `Title from siteMetadata 👍`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
@@ -13,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/path/to/markdown/files`,
+        path: `${__dirname}/src/markdown/projects`,
         name: 'markdown-pages',
       },
     },
