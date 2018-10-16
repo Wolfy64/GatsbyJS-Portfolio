@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  branch: migration-V2
 
 media_folder: static/assets
 public_folder: assets
