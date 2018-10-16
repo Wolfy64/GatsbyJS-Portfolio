@@ -5,7 +5,7 @@ backend:
 # This line should *not* be indented
 publish_mode: editorial_workflow
 media_folder: 'src/images/uploads'
-public_folder: 'uploads'
+public_folder: 'src/images/uploads'
 
 collections:
   - name: project
