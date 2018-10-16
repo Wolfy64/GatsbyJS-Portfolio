@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import mailIcon from '../../images/mail.svg'
-import linkedinIcon from '../../images/linkedin.svg'
-import githubIcon from '../../images/github.svg'
-import twitterIcon from '../../images/twitter.svg'
-import Emoji from '../UI/Emoji'
+// import mailIcon from '../../images/mail.svg'
+// import linkedinIcon from '../../images/linkedin.svg'
+// import githubIcon from '../../images/github.svg'
+// import twitterIcon from '../../images/twitter.svg'
+// import Emoji from '../UI/Emoji'
 
 const mail = 'mailto:contact.dewulf@gmail.com'
 const linkedin = 'https://www.linkedin.com/in/dewulfdavid/'
@@ -61,7 +61,7 @@ export default () => (
     <p>
       Developed by me with the <Emoji symbol="❤️" /> of code
     </p>
-    <ul>
+    {/* <ul>
       <li>
         <a href={mail}>
           <Icon src={mailIcon} alt="mail" />
@@ -82,7 +82,7 @@ export default () => (
           <Icon src={twitterIcon} alt="twitter" />
         </a>
       </li>
-    </ul>
+    </ul> */}
     <hr />
     <p>
       This site was made with the excellent{' '}
