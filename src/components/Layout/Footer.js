@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import mailIcon from './mail.svg'
-import linkedinIcon from './linkedin.svg'
-import githubIcon from './github.svg'
-import twitterIcon from './twitter.svg'
-import Emoji from '../../UI/Emoji'
+import mailIcon from '../../images/mail.svg'
+import linkedinIcon from '../../images/linkedin.svg'
+import githubIcon from '../../images/github.svg'
+import twitterIcon from '../../images/twitter.svg'
+import Emoji from '../UI/Emoji'
 
 const mail = 'mailto:contact.dewulf@gmail.com'
 const linkedin = 'https://www.linkedin.com/in/dewulfdavid/'
