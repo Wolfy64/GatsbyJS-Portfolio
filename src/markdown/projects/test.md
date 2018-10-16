@@ -7,6 +7,6 @@ title: My first blog post
 
 Ca marche trop cool 🤪 !!
 
-![null](/images/uploads/firewatch_style.jpg)
+test 4:21PM
 
-test charlie bravo
+![avion](/uploads/plane.jpg)
