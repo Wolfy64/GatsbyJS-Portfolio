@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: Wolfy64/GatsbyJS-Portfolio
+  name: git-gateway
 
 media_folder: static/assets
 public_folder: assets
