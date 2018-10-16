@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // import linkedinIcon from '../../images/linkedin.svg'
 // import githubIcon from '../../images/github.svg'
 // import twitterIcon from '../../images/twitter.svg'
-// import Emoji from '../UI/Emoji'
+import Emoji from '../UI/Emoji'
 
 const mail = 'mailto:contact.dewulf@gmail.com'
 const linkedin = 'https://www.linkedin.com/in/dewulfdavid/'
