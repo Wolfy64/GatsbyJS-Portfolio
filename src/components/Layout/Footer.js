@@ -56,93 +56,91 @@ const Icon = styled.img`
 `
 
 export default () => (
-  <div className="col s12 grey lighten-4">
-    <Footer>
-      <p className="name">David De Wulf</p>
-      <p>
-        Developed by me with the <Emoji symbol="❤️" /> of code
-      </p>
-      <ul>
-        <li>
-          <a href={mail}>
-            <Icon src={mailIcon} alt="mail" />
-          </a>
-        </li>
-        <li>
-          <a href={linkedin} target="_blank" rel="noopener noreferrer">
-            <Icon src={linkedinIcon} alt="linkedin" />
-          </a>
-        </li>
-        <li>
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            <Icon src={githubIcon} alt="github" />
-          </a>
-        </li>
-        <li>
-          <a href={twitter} target="_blank" rel="noopener noreferrer">
-            <Icon src={twitterIcon} alt="twitter" />
-          </a>
-        </li>
-      </ul>
-      <hr />
-      <p>
-        This site was made with the excellent{' '}
-        <a
-          href="https://www.gatsbyjs.com/"
-          title="Gatsby.js"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Gatsby.js
-        </a>{' '}
-        and is hosted on{' '}
-        <a
-          href="https://www.netlify.com/"
-          title="Netlify"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Netlify
-        </a>{' '}
-        Netlify. You can look at its code{' '}
-        <a
-          href={sourceCode}
-          title="GitHub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          here.
+  <Footer>
+    <p>David De Wulf</p>
+    <p>
+      Developed by me with the <Emoji symbol="❤️" /> of code
+    </p>
+    <ul>
+      <li>
+        <a href={mail}>
+          <Icon src={mailIcon} alt="mail" />
         </a>
-        <br />
-        Icons made by{' '}
-        <a
-          href="https://www.flaticon.com/authors/simpleicon"
-          title="SimpleIcon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          SimpleIcon{' '}
+      </li>
+      <li>
+        <a href={linkedin} target="_blank" rel="noopener noreferrer">
+          <Icon src={linkedinIcon} alt="linkedin" />
         </a>
-        from{' '}
-        <a
-          href="https://www.flaticon.com/"
-          title="Flaticon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          www.flaticon.com{' '}
+      </li>
+      <li>
+        <a href={github} target="_blank" rel="noopener noreferrer">
+          <Icon src={githubIcon} alt="github" />
         </a>
-        is licensed by{' '}
-        <a
-          href="http://creativecommons.org/licenses/by/3.0/"
-          title="Creative Commons BY 3.0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CC BY 3.0
+      </li>
+      <li>
+        <a href={twitter} target="_blank" rel="noopener noreferrer">
+          <Icon src={twitterIcon} alt="twitter" />
         </a>
-      </p>
-      <hr />
-    </Footer>
-  </div>
+      </li>
+    </ul>
+    <hr />
+    <p>
+      This site was made with the excellent{' '}
+      <a
+        href="https://www.gatsbyjs.com/"
+        title="Gatsby.js"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Gatsby.js
+      </a>{' '}
+      and is hosted on{' '}
+      <a
+        href="https://www.netlify.com/"
+        title="Netlify"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Netlify
+      </a>{' '}
+      Netlify. You can look at its code{' '}
+      <a
+        href={sourceCode}
+        title="GitHub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        here.
+      </a>
+      <br />
+      Icons made by{' '}
+      <a
+        href="https://www.flaticon.com/authors/simpleicon"
+        title="SimpleIcon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        SimpleIcon{' '}
+      </a>
+      from{' '}
+      <a
+        href="https://www.flaticon.com/"
+        title="Flaticon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        www.flaticon.com{' '}
+      </a>
+      is licensed by{' '}
+      <a
+        href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CC BY 3.0
+      </a>
+    </p>
+    <hr />
+  </Footer>
 )
