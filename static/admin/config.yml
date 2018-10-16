@@ -1,16 +1,16 @@
 backend:
   name: git-gateway
   branch: migration-V2
-  # This line should *not* be indented
-  publish_mode: editorial_workflow
-  # This line should *not* be indented
-  media_folder: 'static/images/uploads' # Media files will be stored in the repo under static/images/uploads
-  public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
+
+# This line should *not* be indented
+publish_mode: editorial_workflow
+media_folder: 'src/images/uploads' # Media files will be stored in the repo under static/images/uploads
+public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: project
     label: Project
-    folder: projects
+    folder: src/markdown/projects
     create: true
     fields:
       - { name: path, label: Path }
