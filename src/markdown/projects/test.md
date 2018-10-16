@@ -7,6 +7,6 @@ title: My first blog post
 
 Ca marche trop cool 🤪 !!
 
-test 4:21PM
+test 4:53PM
 
-![avion](/src/images/uploads/plane.jpg)
+![avion](/images/uploads/plane.jpg)
