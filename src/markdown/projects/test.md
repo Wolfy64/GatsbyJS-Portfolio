@@ -9,4 +9,4 @@ Ca marche trop cool 🤪 !!
 
 test 4:21PM
 
-![avion](/uploads/plane.jpg)
+![avion](/src/images/uploads/plane.jpg)
