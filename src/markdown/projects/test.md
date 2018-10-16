@@ -7,4 +7,4 @@ title: My first blog post
 
 Ca marche trop cool 🤪 !!
 
-![](/images/uploads/firewatch_style.jpg)
+![null](/images/uploads/firewatch_style.jpg)
