@@ -8,5 +8,3 @@ title: My first blog post
 Ca marche trop cool 🤪 !!
 
 test 5:16PM
-
-![](/static/images/uploads/mini-stormtrooper.jpg)
