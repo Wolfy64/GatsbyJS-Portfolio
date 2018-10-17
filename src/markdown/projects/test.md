@@ -11,4 +11,4 @@ test 12:32
 
 ![bird](/images/uploads/labs.png)
 
-![test](/static/images/uploads/1257394183730.jpg)
+![test AVION](/images/uploads/plane.jpg)
