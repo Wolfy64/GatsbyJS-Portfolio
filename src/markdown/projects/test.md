@@ -7,4 +7,6 @@ title: My first blog post
 
 Ca marche trop cool 🤪 !!
 
-test 5:16PM
+test 5:31PM
+
+![world](/static/images/uploads/timezone.jpg)
