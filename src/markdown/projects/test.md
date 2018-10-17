@@ -5,8 +5,8 @@ title: My first blog post
 ---
 # TEST PAGE MARKDOWN
 
-Ca marche trop cool 🤪 !!
+Ca marche trop cool !!
 
-test 5:31PM
+test 5:43
 
-![world](/static/images/uploads/timezone.jpg)
+![bird](/images/uploads/firewatch_style.jpg)
