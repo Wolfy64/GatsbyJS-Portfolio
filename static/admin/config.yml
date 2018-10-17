@@ -3,9 +3,9 @@ backend:
   branch: migration-V2
 
 # This line should *not* be indented
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: 'src/images/uploads'
-# public_folder: '/images/uploads'
+public_folder: 'static/images/uploads'
 
 collections:
   - name: project
