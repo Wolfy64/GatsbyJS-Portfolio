@@ -9,4 +9,4 @@ Ca marche trop cool 🤪 !!
 
 test 5:16PM
 
-![vroom](/src/images/uploads/plane.jpg)
+![](/static/images/uploads/mini-stormtrooper.jpg)
