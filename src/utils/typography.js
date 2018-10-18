@@ -1,18 +1,28 @@
 import Typography from 'typography'
+import lincolnTheme from 'typography-theme-lincoln'
 
-const typography = new Typography({
-  baseFontSize: '18px',
-  baseLineHeight: 1.666,
-  headerFontFamily: [
-    'Varela Round',
-    'Avenir Next',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif',
-  ],
-  bodyFontFamily: ['Playfair Display', 'Georgia', 'serif'],
+lincolnTheme.headerFontFamily = [
+  'Lato',
+  'Helvetica Neue',
+  'Avenir Next',
+  'Segoe UI',
+  'Helvetica',
+  'Arial',
+  'sans-serif',
+]
+lincolnTheme.bodyFontFamily = ['Lato', 'Helvetica Neue', 'Georgia', 'serif']
+lincolnTheme.bodyWeight = 300
+lincolnTheme.boldWeight = 400
+lincolnTheme.baseLineHeight = 1.8
+lincolnTheme.overrideThemeStyles = () => ({
+  a: {
+    textShadow: 'none',
+    backgroundImage: 'none',
+    color: 'hsla(0,0%,0%,0.73)',
+  },
+  hr: { margin: '0 1em' },
 })
+
+const typography = new Typography(lincolnTheme)
 
 export default typography
