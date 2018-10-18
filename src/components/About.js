@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Mark from '../UI/Mark'
-import ALink from '../UI/ALink'
+import Mark from './UI/Mark'
+import ALink from './UI/ALink'
 
 const Article = styled.article`
   grid-column: ML-end / MR-start;

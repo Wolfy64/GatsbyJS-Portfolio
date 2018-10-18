@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Emoji from '../UI/Emoji'
+import Emoji from './UI/Emoji'
 
 const Terminal = styled.div`
   max-width: 600px;
