@@ -2,9 +2,8 @@ backend:
   name: git-gateway
   branch: migration-V2
 
-# This line should *not* be indented
 # publish_mode: editorial_workflow
-media_folder: '/images/uploads'
+media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
 
 collections:
