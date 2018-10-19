@@ -2,14 +2,27 @@ import React from 'react'
 import styled from 'styled-components'
 import Terminal from './Terminal'
 
-const Header = styled.header`
-  grid-column: ML-end / MR-start;
+const Title = styled.h1`
+  text-align: center;
+  font-weight: 100;
+  font-size: 2.5em;
+  span {
+    white-space: nowrap;
+  }
+`
+
+const SubTitle = styled.p`
+  text-align: center;
+  font-weight: 100;
+  font-size: 2em;
 `
 
 export default () => (
-  <Header>
-    <h1>Hi, I'm David De Wulf</h1>
-    <p>Web Developer</p>
+  <header>
+    <Title>
+      Hi, I'm <span>David De Wulf</span>
+    </Title>
+    <SubTitle>Web Developer</SubTitle>
     <Terminal />
-  </Header>
+  </header>
 )
