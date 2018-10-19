@@ -18,7 +18,7 @@ lincolnTheme.overrideThemeStyles = () => ({
   a: {
     textShadow: 'none',
     backgroundImage: 'none',
-    color: 'hsla(0,0%,0%,0.73)',
+    color: 'hsla(0,0%,0%,0.70)',
   },
   hr: { margin: '0 1em' },
 })
