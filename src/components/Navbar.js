@@ -3,43 +3,46 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const Nav = styled.nav`
-  background-color: black;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-
-  ul {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 20px;
-    list-style: none;
-    margin: 0;
-  }
-
-  li {
-    margin: 0;
-    align-self: center;
-  }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-weight: 400;
+  background-color: hsl(230, 80%, 70%);
+  box-shadow: 0 6px 34px 0px hsl(230, 80%, 70%);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
   a {
-    text-decoration: none;
-    text-transform: uppercase;
     color: white;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    transition: all ease-out 300ms;
+    &:hover {
+      opacity: 0.8;
+      transition: all ease-out 300ms;
+    }
+    &:active {
+      transform: scale(0.95);
+      opacity: 0.6;
+    }
   }
+`
+const NavSeparator = styled.span`
+  height: 0.3em;
+  width: 0.3em;
+  opacity: 0.35;
+  border-radius: 50%;
+  background-color: white;
 `
 
 export default () => (
   <Nav>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/projects/">Projects</Link>
-      </li>
-      <li>
-        <Link to="/resume/">Resume</Link>
-      </li>
-    </ul>
+    <Link to="/">Home</Link>
+    <NavSeparator />
+    <Link to="/projects/">Projects</Link>
+    <NavSeparator />
+    <Link to="/resume/">Resume</Link>
   </Nav>
 )
