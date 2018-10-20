@@ -20,7 +20,6 @@ lincolnTheme.overrideThemeStyles = () => ({
     backgroundImage: 'none',
     color: 'hsla(0,0%,0%,0.70)',
   },
-  hr: { margin: '0 1em' },
 })
 
 const typography = new Typography(lincolnTheme)
