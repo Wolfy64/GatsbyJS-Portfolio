@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import Terminal from './Terminal'
+import BusinessCard from './BusinessCard'
 
 const Title = styled.h1`
   text-align: center;
@@ -8,6 +10,7 @@ const Title = styled.h1`
   font-size: 2.5em;
   span {
     white-space: nowrap;
+    font-weight: 300;
   }
 `
 
@@ -17,12 +20,21 @@ const SubTitle = styled.p`
   font-size: 2em;
 `
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+`
+
 export default () => (
   <header>
     <Title>
       Hi, I'm <span>David De Wulf</span>
     </Title>
     <SubTitle>Web Developer</SubTitle>
-    <Terminal />
+    <Wrapper>
+      <BusinessCard />
+      <Terminal />
+    </Wrapper>
   </header>
 )

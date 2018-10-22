@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
 export default styled.div`
-  margin: 0px 20px;
+  max-width: 930px;
+  margin: auto;
+  padding: 0 1em;
 `
