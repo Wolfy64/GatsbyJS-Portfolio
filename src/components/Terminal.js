@@ -13,9 +13,14 @@ const SKILLS = [
 
 const Terminal = styled.div`
   max-width: 500px;
-  margin: auto;
+  height: 300px;
+  margin: 2em 0;
   box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
   border-radius: 5px;
+  background: white;
+  @media (max-width: 850px) {
+    margin: 2em auto;
+  }
 `
 
 const Topbar = styled.div`
@@ -43,9 +48,7 @@ const Window = styled.div`
   margin: 0px;
   padding: 10px;
   width: 100%;
-  min-height: 300px;
   display: inline-block;
-  background: white;
   color: hsla(0, 0%, 0%, 0.7);
   border-radius: 0px 0px 5px 5px;
 `
