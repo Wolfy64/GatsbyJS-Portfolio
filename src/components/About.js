@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Mark from './UI/Mark'
-import ALink from './UI/ALink'
+import A from './UI/A'
 
 const About = styled.article`
   text-align: justify;
@@ -24,25 +23,22 @@ const About = styled.article`
 `
 
 const OpenClassrooms = (
-  <ALink
-    href="https://openclassrooms.com/en/for-business"
-    name="OpenClassrooms"
-  />
+  <A href="https://openclassrooms.com/en/for-business" name="OpenClassrooms" />
 )
 
 export default () => (
   <About>
     <h1>About</h1>
     <p>
-      I’m a <Mark>web developer,</Mark> who changed careers to do a cool job.
+      I’m a <mark>web developer,</mark> who changed careers to do a cool job.
       <br />I have just completed a{' '}
-      <Mark>Bachelor's Degree in Web Development</Mark> with {OpenClassrooms}.
+      <mark>Bachelor's Degree in Web Development</mark> with {OpenClassrooms}.
       <br />
       Throughout this course I have learned how to effectively work
       independently and the importance of self-motivation, allowing me to be
       efficient as well as highly adaptable, one of the greatest assets for a
       profile in today’s working society.
-      <br /> I would like to work as a <Mark>Javascript web developer.</Mark>
+      <br /> I would like to work as a <mark>Javascript web developer.</mark>
     </p>
   </About>
 )

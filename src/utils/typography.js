@@ -20,6 +20,12 @@ lincolnTheme.overrideThemeStyles = () => ({
     backgroundImage: 'none',
     color: 'hsla(0,0%,0%,0.70)',
   },
+  mark: {
+    color: 'hsla(0,0%,0%,0.70)',
+    padding: '0 0.2rem',
+    borderRadius: '3px',
+    backgroundColor: 'hsl(230, 100%, 97%)',
+  },
 })
 
 const typography = new Typography(lincolnTheme)
