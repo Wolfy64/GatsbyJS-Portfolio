@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
-import ProjectCard from '../components/Card'
+import ProjectCard from '../components/ProjectCard'
 import Container from '../components/UI/Container'
 
 const Grid = styled.div`

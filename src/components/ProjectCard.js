@@ -40,7 +40,7 @@ const TagCard = styled.p`
   margin: 1rem;
 `
 
-const PostCard = ({ project }) => (
+const ProjectCard = ({ project }) => (
   <Link className="link" to={project.frontmatter.path}>
     <Card>
       <ImgCard src={project.frontmatter.cover} alt="Project" />
@@ -52,4 +52,4 @@ const PostCard = ({ project }) => (
   </Link>
 )
 
-export default PostCard
+export default ProjectCard
