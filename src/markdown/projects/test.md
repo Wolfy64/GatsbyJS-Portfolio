@@ -9,6 +9,4 @@ Ca marche trop cool !!
 
 test 12:32
 
-![bird](/images/uploads/labs.png)
-
-![test AVION](/images/uploads/plane.jpg)
+![labs](/images/uploads/labs.png)
