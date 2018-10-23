@@ -2,7 +2,9 @@
 path: /projects/my-first-post
 date: 2018-07
 title: High Speeds for Good Deeds
+cover: /images/uploads/jasnbiyat3vy.png
 ---
+
 # TEST PAGE MARKDOWN
 
 High Speeds for Good Deeds
