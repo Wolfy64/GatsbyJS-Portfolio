@@ -15,10 +15,4 @@ Jun 2018 – Jul 2018
 Charity website inspiring communities to do good deeds and donate to charity through sport.
 ![david](/static/david.png)
 
-- Build and design a charity website
-- Made with React.js - Material UI - Styled Components
-- Used Firebase API for database, authentication and storage
-- Used JustGiving API for users donation
-- Build to be a Progressive Web Apps
-
-![bird](/images/uploads/labs.png)
+![labs](/images/uploads/labs.png)
