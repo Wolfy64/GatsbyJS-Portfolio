@@ -24,7 +24,7 @@ const Terminal = styled.div`
 `
 
 const Topbar = styled.div`
-  background-color: hsl(230, 80%, 70%);
+  background-color: hsl(230, 65%, 60%);
   border-radius: 5px 5px 0px 0px;
   display: flex;
   height: 30px;
@@ -39,8 +39,9 @@ const Circle = styled.div`
   display: inline-block;
   border-radius: 50%;
   margin-left: 5px;
-  background-color: ${props => props.color || 'white'};
+  background-color: white;
   position: absolute;
+  opacity: ${props => props.opacity};
   left: ${props => props.margin};
 `
 
@@ -63,13 +64,13 @@ const Code = styled.code`
 export default () => (
   <Terminal>
     <Topbar>
-      <Circle margin="5px" color="hsl(230, 80%, 90%)" />
+      <Circle margin="5px" opacity={0.6} />
       <Circle margin="20px" />
       <Circle margin="35px" />
     </Topbar>
     <Window>
       <Code children={`Last login: ${new Date().toString().slice(0, 15)}`} />
-      <Code skills="hsl(230, 80%, 70%)">
+      <Code skills="hsl(230, 65%, 60%)">
         {SKILLS.reduce((output, skill) => (output += `${skill}\n`), '')}
       </Code>
     </Window>

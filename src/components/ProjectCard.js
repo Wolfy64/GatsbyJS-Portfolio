@@ -12,7 +12,7 @@ const Card = styled.div`
   :hover {
     transform: scale(1.05);
     transition: all ease-out 300ms;
-    box-shadow: 0 6px 34px 0px hsl(230, 80%, 70%);
+    box-shadow: 0 6px 34px 0px hsl(230, 65%, 60%);
   }
 
   hr{ margin: 0 1em; },

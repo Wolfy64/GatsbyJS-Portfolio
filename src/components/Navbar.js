@@ -8,8 +8,8 @@ const Nav = styled.nav`
   align-items: center;
   height: 50px;
   font-weight: 400;
-  background-color: hsl(230, 80%, 70%);
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 70%);
+  background-color: hsl(230, 65%, 60%);
+  box-shadow: 0 6px 34px 0px hsl(230, 65%, 60%);
   position: sticky;
   width: 100%;
   top: 0;
