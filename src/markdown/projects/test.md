@@ -3,6 +3,9 @@ path: /projects/my-first-post
 date: 2018-07
 title: High Speeds for Good Deeds
 cover: /images/uploads/jasnbiyat3vy.png
+summary: Charity website inspiring communities to do good deeds and donate to charity through sport.
+
+tag: 'ReactJS'
 ---
 
 # TEST PAGE MARKDOWN
