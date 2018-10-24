@@ -1,21 +1,22 @@
 backend:
-  name: git-gateway
-  branch: migration-V2
+  name: 'git-gateway'
+  branch: 'migration-V2'
 
 # publish_mode: editorial_workflow
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
 
 collections:
-  - name: project
-    label: Project
+  - name: 'project'
+    label: 'Project'
     folder: src/markdown/projects
     create: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
-      - { name: path, label: Path, widget: hidden, default: /projects/{title} }
-      - { name: cover, label: Cover Image, widget: image }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: summary, label: Summary, widget: text }
-      - { name: tags, label: Tags }
-      - { name: body, label: Body, widget: markdown }
+      - { name: 'path', label: 'Path' }
+      - { name: 'cover', label: 'Cover Image', widget: 'image' }
+      - { name: 'date', label: 'Date', widget: 'date' }
+      - { name: 'title', label: 'Title' }
+      - { name: 'summary', label: 'Summary', widget: 'text', default: 'blabla' }
+      - { name: 'tags', label: 'Tags' }
+      - { name: 'body', label: 'Body', widget: 'markdown' }
