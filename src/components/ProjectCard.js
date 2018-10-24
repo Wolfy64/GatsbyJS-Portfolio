@@ -41,7 +41,7 @@ const TagCard = styled.p`
 `
 
 const ProjectCard = ({ project, cover }) => {
-  const { path, summary, tag, title } = project.frontmatter
+  const { path, summary, tags, title } = project.frontmatter
   const { fixed } = cover
   return (
     <Link to={path}>
@@ -50,7 +50,7 @@ const ProjectCard = ({ project, cover }) => {
         <TitleCard children={title} />
         <SummaryCard children={summary} />
         <hr />
-        <TagCard children={tag} />
+        <TagCard children={tags} />
       </Card>
     </Link>
   )

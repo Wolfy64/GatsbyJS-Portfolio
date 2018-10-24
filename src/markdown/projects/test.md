@@ -1,9 +1,12 @@
 ---
 path: /projects/my-first-post
+cover: /images/uploads/forest-king-tree-hd-wallpaper.jpg
 date: 2018-07
 title: High Speeds for Good Deeds
-cover: /images/uploads/forest-king-tree-hd-wallpaper.jpg
+summary: Blabla
+tags: ReactJS toto
 ---
+
 # TEST PAGE MARKDOWN
 
 High Speeds for Good Deeds

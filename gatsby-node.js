@@ -32,7 +32,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: projectPostTemplate,
         context: {
           // additional data can be passed via context
-          cover: node.frontmatter.cover,
+          cover: node.frontmatter.cover.replace('/images/uploads/', ''),
         },
       })
     })

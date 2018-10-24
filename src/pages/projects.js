@@ -55,7 +55,7 @@ export const pageQuery = graphql`
             cover
             title
             summary
-            tag
+            tags
           }
         }
       }
