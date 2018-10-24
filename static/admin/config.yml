@@ -12,10 +12,10 @@ collections:
     folder: src/markdown/projects
     create: true
     fields:
-      - { name: path, label: Path - Url }
+      - { name: path, label: Path, widget: hidden, default: /projects/{title} }
       - { name: cover, label: Cover Image, widget: image }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: summary, label: Summary }
+      - { name: summary, label: Summary, widget: text }
       - { name: tags, label: Tags }
       - { name: body, label: Body, widget: markdown }
