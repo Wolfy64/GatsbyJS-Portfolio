@@ -17,11 +17,18 @@ const Grid = styled.div`
 const ProjectsList = ({
   data: {
     allMarkdownRemark: { edges },
+    projectCover: { childImageSharp },
   },
 }) => {
   const Projects = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <ProjectCard key={edge.node.id} project={edge.node} />)
+    .map(edge => (
+      <ProjectCard
+        key={edge.node.id}
+        project={edge.node}
+        cover={childImageSharp}
+      />
+    ))
 
   return (
     <Layout>
@@ -36,7 +43,7 @@ const ProjectsList = ({
 export default ProjectsList
 
 export const pageQuery = graphql`
-  query {
+  query($cover: String) {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
@@ -50,6 +57,13 @@ export const pageQuery = graphql`
             summary
             tag
           }
+        }
+      }
+    }
+    projectCover: file(relativePath: { eq: $cover }) {
+      childImageSharp {
+        fixed(width: 270, height: 170) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

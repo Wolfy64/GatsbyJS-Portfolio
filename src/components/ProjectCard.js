@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 const Card = styled.div`
@@ -17,9 +18,8 @@ const Card = styled.div`
 
   hr{ margin: 0 1em; },
 `
-const ImgCard = styled.img`
+const ImgCard = styled(Img)`
   border-radius: 5px 5px 0px 0px;
-  margin: 0;
 `
 
 const TitleCard = styled.h1`
@@ -40,16 +40,20 @@ const TagCard = styled.p`
   margin: 1rem;
 `
 
-const ProjectCard = ({ project }) => (
-  <Link className="link" to={project.frontmatter.path}>
-    <Card>
-      <ImgCard src={project.frontmatter.cover} alt="Project" />
-      <TitleCard children={project.frontmatter.title} />
-      <SummaryCard children={project.frontmatter.summary} />
-      <hr />
-      <TagCard children={project.frontmatter.tag} />
-    </Card>
-  </Link>
-)
+const ProjectCard = ({ project, cover }) => {
+  const { path, summary, tag, title } = project.frontmatter
+  const { fixed } = cover
+  return (
+    <Link to={path}>
+      <Card>
+        <ImgCard fixed={fixed} alt={`Cover: ${title}`} />
+        <TitleCard children={title} />
+        <SummaryCard children={summary} />
+        <hr />
+        <TagCard children={tag} />
+      </Card>
+    </Link>
+  )
+}
 
 export default ProjectCard
