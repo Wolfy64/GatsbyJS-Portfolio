@@ -11,12 +11,11 @@ collections:
     label: 'Project'
     folder: src/markdown/projects
     create: true
-    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
-      - { name: 'path', label: 'Path' }
+      - { name: 'templateKey', widget: 'hidden', default: 'project' }
       - { name: 'cover', label: 'Cover Image', widget: 'image' }
       - { name: 'date', label: 'Date', widget: 'date' }
-      - { name: 'title', label: 'Title' }
-      - { name: 'summary', label: 'Summary', widget: 'text', default: 'blabla' }
+      - { name: 'title', label: 'Title', widget: 'string' }
+      - { name: 'summary', label: 'Summary', widget: 'text' }
       - { name: 'tags', label: 'Tags' }
       - { name: 'body', label: 'Body', widget: 'markdown' }

@@ -25,6 +25,7 @@ const ProjectsList = ({
     .map(edge => (
       <ProjectCard
         key={edge.node.id}
+        url={edge.node.frontmatter.templateKey + edge.node.fields.slug}
         project={edge.node}
         cover={childImageSharp}
       />
@@ -48,10 +49,13 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           excerpt(pruneLength: 250)
           frontmatter {
+            templateKey
             date(formatString: "MMMM DD, YYYY")
-            path
             cover
             title
             summary

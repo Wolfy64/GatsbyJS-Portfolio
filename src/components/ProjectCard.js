@@ -40,11 +40,11 @@ const TagCard = styled.p`
   margin: 1rem;
 `
 
-const ProjectCard = ({ project, cover }) => {
-  const { path, summary, tags, title } = project.frontmatter
+const ProjectCard = ({ cover, project, url }) => {
+  const { summary, tags, title } = project.frontmatter
   const { fixed } = cover
   return (
-    <Link to={path}>
+    <Link to={url}>
       <Card>
         <ImgCard fixed={fixed} alt={`Cover: ${title}`} />
         <TitleCard children={title} />
