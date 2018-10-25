@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Container from '../components/UI/Container'
 
 export default function Template({ data }) {
+  console.log('DATA', data)
   const { fluid } = data.projectCover.childImageSharp
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
@@ -22,8 +23,8 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($cover: String!) {
-    markdownRemark {
+  query($id: String!, $cover: String!) {
+    markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")

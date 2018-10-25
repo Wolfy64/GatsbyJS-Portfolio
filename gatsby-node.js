@@ -39,6 +39,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/${templateKey}.js`),
         context: {
           // additional data can be passed via context
+          id: node.id,
           cover: cover.replace('/images/uploads/', ''),
         },
       })
