@@ -4,7 +4,9 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
-import Container from '../components/UI/Container'
+
+// To Ride of path (/image/uploads) and file extension (.something)
+const REGEX = /(^\/images\/uploads\/)|(.\w+$)/gi
 
 const Grid = styled.div`
   display: grid;
@@ -17,26 +19,37 @@ const Grid = styled.div`
 const ProjectsList = ({
   data: {
     allMarkdownRemark: { edges },
-    projectCover: { childImageSharp },
+    allImageSharp,
   },
 }) => {
   const Projects = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => (
-      <ProjectCard
-        key={edge.node.id}
-        url={edge.node.frontmatter.templateKey + edge.node.fields.slug}
-        project={edge.node}
-        cover={childImageSharp}
-      />
-    ))
+    // You can filter your posts based on some criteria
+    .filter(edge => !!edge.node.frontmatter.date)
+    .map(edge => {
+      const { id, frontmatter, fields } = edge.node
+      // Get cover name
+      // Ex:/image/uploads/my-pic.png => my-pic
+      const coverName = frontmatter.cover.replace(REGEX, '')
+
+      // Find Fixed src image by index
+      const index = allImageSharp.edges
+        .map(img => img.node.fixed)
+        .findIndex(img => img.src.includes(coverName))
+
+      return (
+        <ProjectCard
+          key={id}
+          url={frontmatter.templateKey + fields.slug}
+          project={edge.node}
+          cover={allImageSharp.edges[index].node}
+        />
+      )
+    })
 
   return (
     <Layout>
-      <Container>
-        <h1 style={{ textAlign: 'center' }}>My Projects</h1>
-        <Grid>{Projects}</Grid>
-      </Container>
+      <h1 style={{ textAlign: 'center' }}>My Projects</h1>
+      <Grid>{Projects}</Grid>
     </Layout>
   )
 }
@@ -44,11 +57,10 @@ const ProjectsList = ({
 export default ProjectsList
 
 export const pageQuery = graphql`
-  query($cover: String) {
+  query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          id
           fields {
             slug
           }
@@ -64,10 +76,12 @@ export const pageQuery = graphql`
         }
       }
     }
-    projectCover: file(relativePath: { eq: $cover }) {
-      childImageSharp {
-        fixed(width: 270, height: 170) {
-          ...GatsbyImageSharpFixed
+    allImageSharp {
+      edges {
+        node {
+          fixed(width: 270, height: 170) {
+            ...GatsbyImageSharpFixed
+          }
         }
       }
     }
