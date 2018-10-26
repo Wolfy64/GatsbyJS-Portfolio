@@ -7,6 +7,7 @@ const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   height: 50px;
+  margin-bottom: 3em;
   font-weight: 400;
   background-color: hsl(230, 65%, 60%);
   box-shadow: 0 6px 34px 0px hsl(230, 65%, 60%);
