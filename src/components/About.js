@@ -5,20 +5,28 @@ import A from './UI/A'
 
 const About = styled.article`
   text-align: justify;
-  padding: 4em 8em;
-  padding: 10% 20%;
+  padding: 2em 0;
   background: white;
   border-radius: 5px;
   box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
-  @media (max-width: 630px) {
-    margin: 2em auto;
-    padding: 1em;
-  }
 
   h1 {
     text-align: center;
     font-weight: 300;
     margin: 1em;
+  }
+
+  p {
+    padding: 1em;
+    max-width: 600px;
+    margin: auto;
+    text-align: justify;
+  }
+
+  @media (max-width: 374px) {
+    h1 {
+      margin: 0;
+    }
   }
 `
 
@@ -28,7 +36,7 @@ const OpenClassrooms = (
 
 export default () => (
   <About>
-    <h1>About</h1>
+    <h1>About Me</h1>
     <p>
       I’m a <mark>web developer,</mark> who changed careers to do a cool job.
       <br />I have just completed a{' '}

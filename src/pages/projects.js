@@ -12,7 +12,7 @@ const Grid = styled.div`
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(auto-fill, 270px);
-  grid-gap: 3em;
+  grid-gap: 2em 1em;
   padding: 5em;
 `
 
