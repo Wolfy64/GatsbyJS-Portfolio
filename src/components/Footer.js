@@ -9,8 +9,13 @@ const Footer = styled.footer`
   margin-top: 3em;
   padding: 1em;
   text-align: center;
+
   p {
     margin: 0;
+  }
+
+  @media (max-width: 374px) {
+    margin-top: 0;
   }
 `
 
