@@ -1,10 +1,11 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Container from '../components/UI/Container'
+import Button from '../components/UI/Button'
 
 const ImgCover = styled(Img)`
   margin: 2em auto;
@@ -16,6 +17,7 @@ const Wrapper = styled.article`
   padding: 2em 0;
   border-radius: 5px;
   box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  text-align: center;
 
   h1 {
     text-align: center;
@@ -44,6 +46,8 @@ export default function Template({ data }) {
             className="markdown"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          {frontmatter.git && <Button git href={frontmatter.git} />}
+          {frontmatter.web && <Button web href={frontmatter.web} />}
         </Wrapper>
       </Container>
     </Layout>
@@ -58,6 +62,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         templateKey
         title
+        git
+        web
       }
     }
     projectCover: file(relativePath: { eq: $cover }) {
