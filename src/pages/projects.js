@@ -24,9 +24,10 @@ const ProjectsList = ({
 }) => {
   const Projects = edges
     // You can filter your posts based on some criteria
-    .filter(edge => !!edge.node.frontmatter.date)
+    // .filter(edge => !!edge.node.frontmatter.date)
     .map(edge => {
       const { id, frontmatter, fields } = edge.node
+
       // Get cover name
       // Ex:/image/uploads/my-pic.png => my-pic
       const coverName = frontmatter.cover.replace(REGEX, '')
@@ -58,7 +59,10 @@ export default ProjectsList
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "project" } } }
+    ) {
       edges {
         node {
           fields {
@@ -67,7 +71,6 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             templateKey
-            date(formatString: "MMMM DD, YYYY")
             cover
             title
             summary
