@@ -1,3 +1,76 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import styled from 'styled-components'
+
 import Layout from '../components/Layout'
-export default () => <Layout>Resume</Layout>
+import Container from '../components/UI/Container'
+import Button from '../components/UI/Button'
+import resume from '../images/resume_david.pdf'
+
+const Wrapper = styled.article`
+  margin: 2em 0em;
+  padding: 2em 0;
+  border-radius: 5px;
+  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  text-align: center;
+
+  h2 {
+    color: hsl(230, 65%, 60%);
+    margin-bottom: 0.2em;
+  }
+
+  h3 {
+    color: inherit;
+    font-variant: petite-caps;
+    font-weight: 300;
+    margin: 0.3em 0em;
+  }
+
+  hr {
+    background-color: hsl(230, 80%, 90%);
+  }
+
+  li {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  .markdown {
+    text-align: left;
+    font-size: 0.9em;
+    padding: 1em;
+    max-width: 600px;
+    margin: auto;
+  }
+`
+
+const Resume = ({ data }) => (
+  <Layout>
+    <h1 style={{ textAlign: 'center' }}>My Resume</h1>
+    <Container>
+      <Wrapper>
+        <div
+          className="markdown"
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
+        <Button href={resume}>Download it</Button>
+      </Wrapper>
+    </Container>
+  </Layout>
+)
+
+export default Resume
+
+export const pageQuery = graphql`
+  query {
+    markdownRemark(fields: { slug: { eq: "/resume/" } }) {
+      html
+      fields {
+        slug
+      }
+    }
+  }
+`

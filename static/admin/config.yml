@@ -7,6 +7,13 @@ media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
 
 collections:
+  - name: 'resume'
+    label: 'Resume'
+    folder: src/markdown/
+    fields:
+      - { name: 'body', label: 'Body', widget: 'markdown' }
+
+collections:
   - name: 'project'
     label: 'Project'
     folder: src/markdown/projects
