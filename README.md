@@ -1,10 +1,20 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# Portfolio
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+This portfolio is made with GatsbyJS and lot of 💜 and ☕️ ! Feel free to fork it or contribute
+
+## Feature
+
+- [x]Styled-Components
+- [x]NetlifyCMS
+
+## Install Gatsby CLI
+
 ```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+npm install --global gatsby-cli
 ```
 
 ## Running in development
-`gatsby develop`
+
+```
+gatsby develop
+```
