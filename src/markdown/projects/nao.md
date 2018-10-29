@@ -2,12 +2,13 @@
 templateKey: project
 cover: /images/uploads/nao.jpg
 date: 2018-03-31T18:20:25.844Z
-title: N.A.O
+title: NAO
 summary: Team Project Management and Development
 git: 'https://github.com/Wolfy64/Project5'
 web: 'http://project5.dewulfdavid.com'
 tags: Symfony4 Doctrine API
 ---
+
 - Build a production schedule
 - Create a website, from conception to delivery
 - Define a budget and its timetable
