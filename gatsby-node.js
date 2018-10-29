@@ -29,7 +29,10 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    // Create Page only if there's "templatekey" field
+    const posts = result.data.allMarkdownRemark.edges.filter(
+      post => post.node.frontmatter.templateKey
+    )
 
     posts.forEach(({ node }) => {
       const { cover, templateKey } = node.frontmatter
