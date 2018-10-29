@@ -6,7 +6,7 @@ title: N.A.O
 summary: Team Project Management and Development
 git: 'https://github.com/Wolfy64/Project5'
 web: 'http://project5.dewulfdavid.com'
-tags: Symfony 4 Doctrine API
+tags: Symfony4 Doctrine API
 ---
 - Build a production schedule
 - Create a website, from conception to delivery
