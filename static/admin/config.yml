@@ -14,14 +14,19 @@ collections:
     folder: src/markdown/projects
     create: true
     fields:
-      - { name: 'templateKey', widget: 'hidden', default: 'project' }
-      - { name: 'cover', label: 'Cover Image', widget: 'image' }
-      - { name: 'date', label: 'Date', widget: 'date' }
-      - { name: 'title', label: 'Title', widget: 'string' }
-      - { name: 'summary', label: 'Summary', widget: 'text' }
+      - {
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'project',
+          required: true,
+        }
+      - { name: 'cover', label: 'Cover Image', widget: 'image', required: true }
+      - { name: 'date', label: 'Date', widget: 'date', required: true }
+      - { name: 'title', label: 'Title', widget: 'string', required: true }
+      - { name: 'summary', label: 'Summary', widget: 'text', required: true }
       - { name: 'git', label: 'Git Url', widget: 'string' }
       - { name: 'web', label: 'Web Url', widget: 'string' }
-      - { name: 'tags', label: 'Tags' }
+      - { name: 'tags', label: 'Tags', required: true }
       - { name: 'body', label: 'Body', widget: 'markdown' }
   #  Page Resume
   - name: 'pages'
@@ -32,4 +37,4 @@ collections:
         label: 'Resume'
         file: 'src/markdown/resume.md'
         fields:
-          - { name: 'body', label: 'Body', widget: 'markdown' }
+          - { name: 'body', label: 'Resume Content', widget: 'markdown' }
