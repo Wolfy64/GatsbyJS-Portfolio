@@ -8,6 +8,8 @@ const Card = styled.div`
   background: white;
   border-radius: 5px;
   max-width: 270px;
+  height: 450px;
+  position: relative;
   box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
   transition: all ease-out 300ms;
   :hover {
@@ -33,11 +35,16 @@ const SummaryCard = styled.p`
 `
 
 const TagCard = styled.p`
+  border-top: 1px solid hsla(0, 0%, 0%, 0.2);
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: bolder;
   border-radius: 0 0 5px 5px;
   margin: 1rem;
+  padding-top: 1em;
+  position: absolute;
+  bottom: 0;
+  width: -webkit-fill-available;
 `
 
 const ProjectCard = ({ cover, project, url }) => {
@@ -49,7 +56,6 @@ const ProjectCard = ({ cover, project, url }) => {
         <ImgCard fixed={fixed} alt={`Cover: ${title}`} />
         <TitleCard children={title} />
         <SummaryCard children={summary} />
-        <hr />
         <TagCard children={tags} />
       </Card>
     </Link>
