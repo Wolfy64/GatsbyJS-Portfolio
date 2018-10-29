@@ -4,8 +4,8 @@ This portfolio is made with GatsbyJS and lot of 💜 and ☕️ ! Feel free to f
 
 ## Feature
 
-- [x]Styled-Components
-- [x]NetlifyCMS
+- [x] Styled-Components
+- [x] NetlifyCMS
 
 ## Install Gatsby CLI
 
