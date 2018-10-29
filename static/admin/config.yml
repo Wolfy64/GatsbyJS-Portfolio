@@ -7,13 +7,7 @@ media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
 
 collections:
-  - name: 'resume'
-    label: 'Resume'
-    folder: src/markdown/
-    fields:
-      - { name: 'body', label: 'Body', widget: 'markdown' }
-
-collections:
+  #  Page Project
   - name: 'project'
     label: 'Project'
     folder: src/markdown/projects
@@ -27,4 +21,10 @@ collections:
       - { name: 'git', label: 'Git Url', widget: 'string' }
       - { name: 'web', label: 'Web Url', widget: 'string' }
       - { name: 'tags', label: 'Tags' }
+      - { name: 'body', label: 'Body', widget: 'markdown' }
+  #  Page Resume
+  - name: 'resume'
+    label: 'Resume'
+    folder: src/markdown/
+    fields:
       - { name: 'body', label: 'Body', widget: 'markdown' }
