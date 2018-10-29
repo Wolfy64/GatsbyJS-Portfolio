@@ -38,7 +38,7 @@ export default () => (
   <About>
     <h1>About Me</h1>
     <p>
-      I’m a <mark>web developer,</mark> who changed careers to do a cool job.
+      I’m a <mark>web developer</mark>, who changed careers to do a cool job.
       <br />I have just completed a{' '}
       <mark>Bachelor's Degree in Web Development</mark> with {OpenClassrooms}.
       <br />

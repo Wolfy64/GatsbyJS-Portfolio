@@ -6,9 +6,10 @@ title: City of Biarritz
 summary: Website to promote the town’s cultural activity.
 git: 'https://github.com/Wolfy64/Project1'
 web: 'http://project1.dewulfdavid.com'
-tags: HTML5 CSS3 Wordpress
+tags: Wordpress | HTML5 | CSS3
 ---
-- Developed website to promote cultural activity of your town
-- Created a website, from conception to delivery (WordPress)  
+
+- Developed a website to promote cultural activity of your town
+- Created a website, from conception to delivery (WordPress)
 - Defined and presented a site plan and the appropriate technical solutions for different browsers
 - Presented a graphic charter

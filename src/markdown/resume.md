@@ -7,9 +7,10 @@ title: Resume
 
 ---
 
-I have just completed a Bachelor's Degree in Web Development with Open Classrooms. Throughout this course I have learned how to effectively work independently and the importance of self-motivation, allowing me to be efficient as well as highly adaptable, one of the greatest assets for a profile in today’s working society.
+I have just completed a Bachelor's Degree in Web Development with
+<a href="https://openclassrooms.com/en/for-business" target="\_blank" rel="noopener noreferrer">Open Classrooms</a>. Throughout this course I have learned how to effectively work independently and the importance of self-motivation, allowing me to be efficient as well as highly adaptable, one of the greatest assets for a profile in today’s working society.
 
-I would like to work as a Javascript web developer.
+I would like to work as a <mark>Javascript web developer</mark>.
 
 ## Skills
 
@@ -41,7 +42,7 @@ I would like to work as a Javascript web developer.
 <mark>Bootstrap 4</mark>
 <mark>jQuery</mark>
 
-### CMS
+### Cms
 
 <mark>Wordpress</mark>
 
@@ -67,7 +68,7 @@ I would like to work as a Javascript web developer.
 - Developed a charity website using ReactJS, Styled-Components JustGiving API, Firebase.
 - Developed a website, from conception to delivery as a team project
 - Developed a new system for booking and managing tickets online with Symfony 4
-- Developed a blog from scratch both Front-End & Back-End with PHP OOP
+- Developed a blog from scratch both the Front-End & Back-End with PHP OOP
 - Developed a website to promote the cultural activity of a town
 
 ## Education
@@ -76,7 +77,7 @@ I would like to work as a Javascript web developer.
 
 2018 - <b>Bachelor’s Degree</b>
 
-Multimedia Project Manager & Development
+"Multimedia Project Manager & Development" from
 IESA multimédia School (Paris, FR) in partnership with Open Classrooms
 
 ## Languages
@@ -84,10 +85,10 @@ IESA multimédia School (Paris, FR) in partnership with Open Classrooms
 ---
 
 - <b>French</b> - Mother tongue
-- <b>English</b> - Conversational
+- <b>English</b> - Conversational & Professional
 
 ## Hobbies
 
 ---
 
-I am passionate about traveling and discovering new exciting sports (Surfing, Snowboarding, Krav Maga and hiking).
+I am passionate about traveling and discovering new exciting sports (Surfing, Snowboarding, Krav Maga and hiking) as well as learning about new technologies.

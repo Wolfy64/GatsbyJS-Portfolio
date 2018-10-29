@@ -44,6 +44,18 @@ const Wrapper = styled.article`
     padding: 1em;
     max-width: 600px;
     margin: auto;
+
+    a {
+      transition: all ease-out 300ms;
+      border-bottom: 1px solid hsla(230, 90%, 50%, 0.1);
+      box-shadow: inset 0 -2px 0 0 hsla(230, 90%, 50%, 0.1);
+      padding: 0 0.2rem;
+      :hover {
+        border-radius: 3px;
+        background: hsl(230, 100%, 97%);
+        transition: all ease-out 300ms;
+      }
+    }
   }
 `
 

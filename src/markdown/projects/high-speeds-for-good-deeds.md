@@ -8,14 +8,15 @@ summary: >-
   through sport.
 git: 'https://github.com/Wolfy64/High-Speeds-for-Good-Deeds'
 web: 'http://www.highspeedsforgooddeeds.com'
-tags: ReactJS Firebase
+tags: ReactJS | Firebase | Material UI |
 ---
-- Build and design a charity website 
+
+- Built and designed a charity website
 
 - Made with ReactJS - Material UI - Styled Components
 
-- Used Firebase API for database, authentication and storage
+- Used the Firebase API for database, authentication and storage
 
-- Used JustGiving API for users donation
+- Used the JustGiving API for users donation
 
-- Build to be a Progressive Web Apps
+- Built to be a Progressive Web App
