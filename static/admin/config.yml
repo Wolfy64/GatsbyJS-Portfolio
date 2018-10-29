@@ -8,8 +8,9 @@ public_folder: '/images/uploads'
 
 collections:
   #  Page Project
-  - name: 'project'
-    label: 'Project'
+  - name: 'projects'
+    label: 'Projects'
+    label_singular: 'Project'
     folder: src/markdown/projects
     create: true
     fields:
@@ -23,8 +24,12 @@ collections:
       - { name: 'tags', label: 'Tags' }
       - { name: 'body', label: 'Body', widget: 'markdown' }
   #  Page Resume
-  - name: 'resume'
-    label: 'Resume'
-    folder: src/markdown/
-    fields:
-      - { name: 'body', label: 'Body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    delete: false
+    files:
+      - name: 'resume'
+        label: 'Resume'
+        file: 'src/markdown/resume.md'
+        fields:
+          - { name: 'body', label: 'Body', widget: 'markdown' }
