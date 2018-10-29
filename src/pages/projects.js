@@ -13,7 +13,7 @@ const Grid = styled.div`
   justify-content: space-evenly;
   grid-template-columns: repeat(auto-fill, 270px);
   grid-gap: 2em 1em;
-  padding: 5em;
+  padding: 2em 5em;
 `
 
 const ProjectsList = ({

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Button = styled.a`
   display: inline-block;
-  margin: 0 1em;
+  margin: 1em;
   border: none;
   border-radius: 3px;
   padding: 10px;

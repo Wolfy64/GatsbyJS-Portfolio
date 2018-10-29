@@ -20,11 +20,23 @@ lincolnTheme.overrideThemeStyles = () => ({
     backgroundImage: 'none',
     color: 'hsla(0,0%,0%,0.70)',
   },
+  b: {
+    color: 'hsla(0,0%,0%,0.70)',
+    fontWeight: '400',
+  },
   mark: {
     color: 'hsla(0,0%,0%,0.70)',
     padding: '0 0.2rem',
     borderRadius: '3px',
     backgroundColor: 'hsl(230, 100%, 97%)',
+    fontWeight: '400',
+  },
+  strong: {
+    color: 'hsla(0,0%,0%,0.70)',
+    padding: '0 0.2rem',
+    borderRadius: '3px',
+    backgroundColor: 'hsl(230, 100%, 97%)',
+    fontWeight: '600',
   },
 })
 
