@@ -5,7 +5,7 @@ import A from './UI/A'
 
 const About = styled.article`
   text-align: justify;
-  padding: 2em 0;
+  padding: 5em 0;
   background: white;
   border-radius: 5px;
   box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
@@ -13,7 +13,7 @@ const About = styled.article`
   h1 {
     text-align: center;
     font-weight: 300;
-    margin: 1em;
+    margin: 0em;
   }
 
   p {
