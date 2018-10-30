@@ -27,7 +27,7 @@ const SocialNetwork = styled.aside`
   img {
     width: 50px;
     height: auto;
-    border: 1px solid hsla(0, 0%, 0%, 0.73);
+    border: 1px solid hsl(230, 65%, 60%);
     border-radius: 3px;
     padding: 10px;
     transition: all ease-out 300ms;
