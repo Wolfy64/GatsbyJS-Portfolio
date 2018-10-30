@@ -4,23 +4,39 @@ import styled from 'styled-components'
 const Button = styled.a`
   display: inline-block;
   margin: 1em;
-  border: none;
-  border-radius: 3px;
   padding: 10px;
   outline: none;
-  background-color: hsl(230, 65%, 60%);
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
-  color: white;
+  border: 1px solid hsl(230, 65%, 60%);
+  border-radius: 3px;
+  color: hsl(230, 65%, 60%);
   font-weight: 400;
   transition: all ease-out 300ms;
   :hover {
-    transform: scale(1.05);
+    box-shadow: 0px 7px 6px 0px hsla(0, 0%, 0%, 0.2);
+    transform: translate(0, -3px);
     transition: all ease-out 300ms;
-    box-shadow: 0 6px 34px 0px hsl(230, 65%, 60%);
+  }
+
+  .fa {
+    padding-left: 0.5em;
   }
 `
 export default props => (
   <Button href={props.href} target="_blank" rel="noopener noreferrer">
-    {props.git ? 'Check the code' : props.web ? 'Take a look' : props.children}
+    {props.git
+      ? 'Check the code'
+      : props.web
+        ? 'Take a look'
+        : props.download
+          ? 'Download it'
+          : props.children}
+
+    {props.git ? (
+      <i className="fa fa-github fa-lg" aria-hidden="true" />
+    ) : props.web ? (
+      <i className="fa fa-external-link fa-lg" aria-hidden="true" />
+    ) : props.download ? (
+      <i className="fa fa-file-pdf-o fa-lg" aria-hidden="true" />
+    ) : null}
   </Button>
 )

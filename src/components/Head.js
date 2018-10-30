@@ -30,6 +30,10 @@ export default () => (
     <meta name="twitter:image:alt" content="logo" />
     <meta name="twitter:url" content="https://dewulfdavid.com" />
     <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>David De Wulf</title>
   </Helmet>
 )

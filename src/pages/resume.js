@@ -68,7 +68,7 @@ const Resume = ({ data }) => (
           className="markdown"
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         />
-        <Button href={resume}>Download it</Button>
+        <Button href={resume} download />
       </Wrapper>
     </Container>
   </Layout>
