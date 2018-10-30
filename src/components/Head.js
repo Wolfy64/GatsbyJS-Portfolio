@@ -4,8 +4,7 @@ import { Helmet } from 'react-helmet'
 export default () => (
   <Helmet>
     <meta charSet="utf-8" />
-    <html lang="en_US" />
-    <meta name="theme-color" content="#ffffff00" />
+    <html lang="en" />
     <meta
       name="description"
       content="David De Wulf Porfolio Javascript Web Developer"

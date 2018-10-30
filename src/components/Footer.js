@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import SocialNetwork from '../components/SocialNetwork'
-import Emoji from './UI/Emoji'
 
 const Footer = styled.footer`
   background-color: hsl(230, 100%, 97%);
@@ -23,7 +22,7 @@ export default () => (
   <Footer>
     <SocialNetwork />
     <p>
-      Developed by me with the <Emoji symbol="💙" label="Blue heart" /> of code.
+      Developed by me with the <span children="💙" /> of code.
     </p>
   </Footer>
 )
