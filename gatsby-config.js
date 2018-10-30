@@ -54,5 +54,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    // Google Analytics
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: `UA-128381066-1`,
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // enable ip anonymization
+        anonymize: true,
+      },
+    },
   ],
 }
