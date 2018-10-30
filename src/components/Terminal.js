@@ -2,17 +2,22 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SKILLS = [
-  'JavaScript-ReactJS',
-  'HTML5-CSS3',
-  'REST-APIs',
+  'JavaScript',
+  'ReactJS',
+  'GatsbyJs',
+  'HTML5',
+  'CSS3',
+  'APIs',
   'GraphQL',
-  'PHP-Symfony4',
-  'MySQL-NoSQL',
-  'Git-GitHub',
+  'PHP',
+  'Symfony4',
+  'MySQL',
+  'NoSQL',
+  'Git',
 ]
 
 const Terminal = styled.div`
-  max-width: 500px;
+  width: 450px;
   height: 300px;
   margin: 2em 0;
   box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
@@ -49,16 +54,17 @@ const Window = styled.div`
   margin: 0px;
   padding: 10px;
   width: 100%;
-  display: inline-block;
   color: hsla(0, 0%, 0%, 0.7);
   border-radius: 0px 0px 5px 5px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0 1em;
 `
 
 const Code = styled.code`
-  display: block;
-  font-family: 'Lato';
-  word-spacing: ${props => (props.skills ? '15px' : null)};
-  color: ${props => props.skills};
+  grid-column: ${props => (props.skills ? 'auto' : '1 / -1')};
+  word-spacing: ${props => props.skills && '15px'};
+  color: ${props => props.skills && 'hsl(230, 65%, 60%)'};
 `
 
 export default () => (
@@ -70,9 +76,9 @@ export default () => (
     </Topbar>
     <Window>
       <Code children={`Last login: ${new Date().toString().slice(0, 15)}`} />
-      <Code skills="hsl(230, 65%, 60%)">
-        {SKILLS.reduce((output, skill) => (output += `${skill}\n`), '')}
-      </Code>
+      {SKILLS.map(skill => (
+        <Code skills children={skill} />
+      ))}
     </Window>
   </Terminal>
 )
