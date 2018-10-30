@@ -40,5 +40,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    // Generate the mafineste to be a PWA
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `David De Wulf's Portfolio`,
+        short_name: `De Wulf`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `minimal-ui`,
+        icon: `static/images/logo.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
