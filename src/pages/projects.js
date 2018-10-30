@@ -26,7 +26,7 @@ const ProjectsList = ({
     // You can filter your posts based on some criteria
     // .filter(edge => !!edge.node.frontmatter.date)
     .map(edge => {
-      const { id, frontmatter, fields } = edge.node
+      const { frontmatter, fields } = edge.node
 
       // Get cover name
       // Ex:/image/uploads/my-pic.png => my-pic
@@ -39,7 +39,7 @@ const ProjectsList = ({
 
       return (
         <ProjectCard
-          key={id}
+          key={fields.slug}
           url={frontmatter.templateKey + fields.slug}
           project={edge.node}
           cover={allImageSharp.edges[index].node}

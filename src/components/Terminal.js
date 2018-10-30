@@ -76,8 +76,8 @@ export default () => (
     </Topbar>
     <Window>
       <Code children={`Last login: ${new Date().toString().slice(0, 15)}`} />
-      {SKILLS.map(skill => (
-        <Code skills children={skill} />
+      {SKILLS.map((skill, index) => (
+        <Code key={index} skills children={skill} />
       ))}
     </Window>
   </Terminal>
