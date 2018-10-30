@@ -23,7 +23,7 @@ export default () => (
   <Footer>
     <SocialNetwork />
     <p>
-      Developed by me with the <Emoji symbol="💙" /> of code.
+      Developed by me with the <Emoji symbol="💙" label="Blue heart" /> of code.
     </p>
   </Footer>
 )

@@ -5,8 +5,7 @@ export default props => (
     className="emoji"
     role="img"
     arial-label={props.label ? props.label : 'emoji'}
-    arial-hidden={props.label ? 'true' : 'true'}
-    alt="Emoji"
+    arial-hidden={props.label ? true : false}
   >
     {props.symbol}
   </span>
