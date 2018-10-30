@@ -3,7 +3,7 @@ templateKey: project
 cover: /images/uploads/nao.jpg
 date: 2018-03-31T18:20:25.844Z
 title: NAO
-summary: Team Project Management and Development
+summary: Team Project Management and Development.
 git: 'https://github.com/Wolfy64/Project5'
 web: 'http://project5.dewulfdavid.com'
 tags: Symfony4 | Google Map
