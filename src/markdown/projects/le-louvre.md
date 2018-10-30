@@ -12,7 +12,7 @@ tags: Symfony4 | PHP | Stripe
 - Created a new system for booking and managing tickets online
 - Payment Management by credit card with the Stripe API
 - A confirmation email is being sent to the user and will act as a ticket
-- Front-End developed using the HTML5 & Twig template engine CSS 3 & Grid Layout as well as jQuery
+- Front-End developed using the HTML5 & Twig template engine CSS3 & Grid Layout as well as jQuery
 - Back-End developed using the PHP framework Symfony 4 (Doctrine / Swift-mailer )
-- Functional and unit test cases that can be performed (PHPUnit)
+- Wrote functional and unit test cases that can be performed (PHPUnit)
 - Managed Code on GitHub

@@ -11,10 +11,10 @@ tags: Symfony4 | Google Map
 
 - Built a production schedule
 - Created a website, from conception to delivery
-- Define a budget and its timetable
+- Defined a budget and its timetable
 - Set up an organizational chart (Gantt)
-- Organized and facilitate meetings, set agendas, write minutes
+- Organized and facilitated meetings, set agendas, wrote minutes
 - Wrote the functional and technical specifications
-- Wrote a quote and submit a service contract
+- Wrote a quote and submitted a service contract
 - Developed Front-End & Back-End
 - All Back-end and Google Map API

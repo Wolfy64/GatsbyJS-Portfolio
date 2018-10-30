@@ -8,7 +8,7 @@ summary: >-
   through sport.
 git: 'https://github.com/Wolfy64/High-Speeds-for-Good-Deeds'
 web: 'http://www.highspeedsforgooddeeds.com'
-tags: ReactJS | Firebase | Material UI |
+tags: ReactJS | Material UI | Firebase
 ---
 
 - Built and designed a charity website
