@@ -10,16 +10,22 @@ export default () => (
     <meta name="publisher" content="David De Wulf" />
     <meta name="creator" content="David De Wulf" />
     {/* Meta Open Graph */}
-    <meta property="og:title" content="David De Wulf Portfolio'" />
+    <meta property="og:title" content="David De Wulf Portfolio" />
     <meta property="og:description" content="Javascript Web Developer" />
-    <meta property="og:image" content="/images/logo.png" />
+    <meta
+      property="og:image"
+      content="https://dewulfdavid.com/images/logo.png"
+    />
     <meta property="og:url" content="https://dewulfdavid.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="David De Wulf" />
     {/* Meta Twitter */}
     <meta name="twitter:title" content="David De Wulf Portfolio" />
     <meta name="twitter:description" content="Javascript Web Developer" />
-    <meta name="twitter:image" content="/images/logo.png" />
+    <meta
+      name="twitter:image"
+      content="https://dewulfdavid.com/images/logo.png"
+    />
     <meta name="twitter:image:alt" content="David De Wulf" />
     <meta name="twitter:url" content="https://dewulfdavid.com" />
     <meta name="twitter:card" content="summary_large_image" />
