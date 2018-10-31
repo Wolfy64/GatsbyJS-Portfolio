@@ -57,7 +57,7 @@ const Window = styled.div`
   color: hsla(0, 0%, 0%, 0.7);
   border-radius: 0px 0px 5px 5px;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 0 1em;
 `
 
