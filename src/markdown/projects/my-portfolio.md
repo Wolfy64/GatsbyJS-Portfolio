@@ -19,6 +19,6 @@ Built and designed my portfolio using:
 
 Built to be a Serverless Progressive Web App 
 
-Audit [Lighthouse](https://developers.google.com/web/tools/lighthouse/#devtools)
+Audit [Lighthouse](https://developers.google.com/web/tools/lighthouse/#devtools):
 
 ![Audit on portfolio](/images/uploads/audit-portfolio.png)
