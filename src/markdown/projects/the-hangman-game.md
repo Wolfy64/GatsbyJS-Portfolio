@@ -13,3 +13,8 @@ Built and designed this game using:
 * React with the create-react-app boilerplate
 * Words API
 * CSS Grid
+* Progressive Web App
+
+Audit [Lighthouse](https://developers.google.com/web/tools/lighthouse/#devtools):
+
+![Audit Lighthouse](/images/uploads/audit-hangman.png)
