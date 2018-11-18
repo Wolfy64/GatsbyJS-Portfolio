@@ -21,6 +21,7 @@ const Card = styled.aside`
 
   .gatsby-image-wrapper {
     margin: auto auto -80px auto;
+    background-color: white;
   }
 `
 

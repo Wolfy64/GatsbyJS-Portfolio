@@ -10,13 +10,12 @@ git: 'https://github.com/Wolfy64/High-Speeds-for-Good-Deeds'
 web: 'http://www.highspeedsforgooddeeds.com'
 tags: ReactJS | Material UI | Firebase
 ---
+* Built and designed a charity website
+* Made with ReactJS - Material UI - Styled Components
+* Used the Firebase API for database, authentication and storage
+* Used the JustGiving API for users donation
+* Built to be a Progressive Web App
 
-- Built and designed a charity website
+Audit [Lighthouse](https://developers.google.com/web/tools/lighthouse/):
 
-- Made with ReactJS - Material UI - Styled Components
-
-- Used the Firebase API for database, authentication and storage
-
-- Used the JustGiving API for users donation
-
-- Built to be a Progressive Web App
+![Audit Lighthouse](/images/uploads/audit-hsfgd.png)
