@@ -1,6 +1,6 @@
 ---
 templateKey: project
-cover: /images/uploads/screen-shot-2018-11-07-at-11.53.37-am.png
+cover: /images/uploads/hangman.jpg
 date: 2018-11-17T01:08:16.158Z
 title: The Hangman Game
 summary: "A word-guessing game designed and made for fun.\nTry it out ! \U0001F579"
