@@ -16,3 +16,5 @@ Built and designed this game using:
 * Progressive Web App
 
 Audit [Lighthouse](https://developers.google.com/web/tools/lighthouse/#devtools):
+
+![Audit on the hangman game](/images/uploads/audit-hangmangame.png)
