@@ -2,18 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SKILLS = [
-  'JavaScript',
   'ReactJS',
-  'GatsbyJs',
+  'NodeJS',
+  'GatsbyJS',
+  'JavaScript',
   'HTML5',
   'CSS3',
-  'APIs',
   'GraphQL',
-  'PHP',
-  'Symfony4',
-  'MySQL',
   'NoSQL',
+  'MySQL',
+  'API',
   'Git',
+  'PHP',
 ]
 
 const Terminal = styled.div`
