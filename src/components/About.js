@@ -56,25 +56,25 @@ export default () => (
     <h1>About Me</h1>
     <p>
       I have always been passionate about coding, which is why after 15 years as
-      an optician I decided to seize the opportunity to turn my passion into a
-      career through a <mark>Computing Sciences Bachelors.</mark>
+      an optician I have decided to seize the opportunity to turn my passion
+      into a career through a <mark>Computing Sciences Bachelors.</mark>
       <br />
-      Throughout, hackathons, Open Source projects and online certifications (
-      {OpenClassrooms}, {WesBos}, {Udemy}, {FreeCodeCamp} …etc) I have since
+      Throughout hackathons, Open Source projects and online certifications (
+      {OpenClassrooms}, {WesBos}, {Udemy}, {FreeCodeCamp} …etc.) I have since
       then been able to build my own projects, contribute to team projects and
       join ever-expanding developer communities like {C0d3} without ever
       stopping to learn.
     </p>
     <p>
       Always looking to improve my set of skills, I am genuinely curious,
-      particularly meticulous and have an eye for the detail which is why I am
-      committed to building a clean, reusable, and easily maintainable as
+      particularly meticulous and have an eye for detail which is why I am
+      committed to building a clean, reusable, and easily maintainable
       well-commented code.
     </p>
     <p>
       I am currently specialized in Front-end development and actively working
-      on projects to building a <mark>FullStack App with ReactJS</mark> on the
-      front-end on my spare time.
+      on projects including building a <mark>FullStack App with ReactJS</mark>
+      on the front-end on my spare time.
     </p>
     <p>
       Interested in collaborating? Please reach out {Here}. I look forward to
