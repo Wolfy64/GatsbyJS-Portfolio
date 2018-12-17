@@ -11,6 +11,7 @@ const Title = styled.h1`
   span {
     white-space: nowrap;
     font-weight: 300;
+    color: hsl(230, 65%, 60%);
   }
 `
 
