@@ -3,73 +3,47 @@ date: 2018-10-29T18:20:25.844Z
 title: Resume
 ---
 
-## Summary
-
----
-
-I have just completed a Bachelor's Degree in Web Development with
-<a href="https://openclassrooms.com/en/for-business" target="\_blank" rel="noopener noreferrer">Open Classrooms</a>. Throughout this course I have learned how to effectively work independently and the importance of self-motivation, allowing me to be efficient as well as highly adaptable, one of the greatest assets for a profile in today’s working society.
-
-I would like to work as a <mark>Javascript web developer</mark>.
-
 ## Skills
 
 ---
 
-### Programming and query language
+### Technical skills
 
-<mark>Javascript</mark>
-<mark>PHP</mark>
-<mark>MySQL</mark>
-<mark>NoSQL</mark>
-<mark>GraphQL</mark>
-<mark>Doctrine</mark>
-
-### Markup and web technologies
-
-<mark>HTML5</mark>
+<mark>Javascript ES6</mark>
 <mark>CSS3</mark>
-<mark>SASS</mark>
-<mark>Json</mark>
-<mark>YAML</mark>
-<mark>Twig</mark>
+<mark>HTML5</mark>
+<mark>PHP</mark>
 
-### Library and Framework
+### Frameworks
 
 <mark>ReactJS</mark>
+<mark>NodeJS</mark>
 <mark>GatsbyJS</mark>
+<mark>Boostrap 4</mark>
 <mark>Symfony 4</mark>
-<mark>Bootstrap 4</mark>
-<mark>jQuery</mark>
 
-### Cms
+### More
 
+<mark>REST API</mark>
+<mark>Git</mark>
+<mark>GraphQL</mark>
+<mark>NoSQL</mark>
+<mark>MySQL</mark>
 <mark>Wordpress</mark>
-
-### Others
-
-<mark>Git/Github</mark>
-<mark>Oriented Object Programming</mark>
+<mark>OOP</mark>
 <mark>MVC</mark>
+<mark>ORM</mark>
 <mark>UML</mark>
-<mark>Object relational Mapping</mark>
-<mark>CLI</mark>
-<mark>Rest API</mark>
-<mark>Linux</mark>
-<mark>MacOS</mark>
-<mark>Wireframe</mark>
-<mark>VSCode</mark>
-<mark>LAMP Stack</mark>
+<mark>VIM</mark>
 
-## Experience
+## Last Experiences
 
 ---
 
-- Developed a charity website using ReactJS, Styled-Components JustGiving API, Firebase.
-- Developed a website, from conception to delivery as a team project
-- Developed a new system for booking and managing tickets online with Symfony 4
-- Developed a blog from scratch both the Front-End & Back-End with PHP OOP
-- Developed a website to promote the cultural activity of a town
+- Contributing to the [“SJParks”](https://github.com/Wolfy64/SJParks) project a FullStack App for the City of San José.
+- Contributing to the [“Quilt”](https://github.com/Wolfy64/Quilt) open source project started at a GitHub hackathon.
+- Developed from scratch a Progressive Web App for a charity: [“High Speed for Good Deeds”.](https://www.highspeedsforgooddeeds.com/)
+- Developed my JAMStack portfolio using the Gatsby JS framework.
 
 ## Education
 
