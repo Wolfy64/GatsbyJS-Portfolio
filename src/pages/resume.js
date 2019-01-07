@@ -5,7 +5,11 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Container from '../components/UI/Container'
 import Button from '../components/UI/Button'
-import resume from '../images/resume_david.pdf'
+
+// Quick fix!! Need to figure out this bug
+// import resume from '../images/resume_david.pdf'
+const resume =
+  'https://drive.google.com/open?id=10irF9K5W9YqWSf8AOKzn0AFI46RdwkD3'
 
 const Wrapper = styled.article`
   margin: 2em 0em;
