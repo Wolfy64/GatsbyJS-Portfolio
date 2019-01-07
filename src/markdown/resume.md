@@ -40,7 +40,7 @@ title: Resume
 
 ---
 
-- Contributing to the [“SJParks”](https://github.com/Wolfy64/SJParks) project a FullStack App for the City of San José.
+- Contributing to the [“SJParks”](https://github.com/Wolfy64/SJParks) open source project a FullStack App for the City of San José.
 - Contributing to the [“Quilt”](https://github.com/Wolfy64/Quilt) open source project started at a GitHub hackathon.
 - Developed from scratch a Progressive Web App for a charity: [“High Speed for Good Deeds”.](https://www.highspeedsforgooddeeds.com/)
 - Developed my JAMStack portfolio using the Gatsby JS framework.
