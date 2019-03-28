@@ -10,7 +10,7 @@ git: 'https://github.com/Wolfy64/SJParks'
 web: 'https://sjparks.herokuapp.com/'
 tags: ReactJS | NodeJS | MangoDB
 ---
-**Project** **Lead **and** ReactJS Frontend developer** for the open source project "SJParks".
+**Project Lead** and **ReactJS Frontend developer** for the open source project "SJParks".
 
 **This project is ongoing.**
 
