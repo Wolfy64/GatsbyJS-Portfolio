@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import A from './UI/A'
 
 const About = styled.article`
-  text-align: justify;
+  text-align: left;
   padding: 5em 0;
   background: white;
   border-radius: 5px;
@@ -20,7 +20,7 @@ const About = styled.article`
     padding: 1em;
     max-width: 600px;
     margin: auto;
-    text-align: justify;
+    text-align: left;
   }
 
   @media (max-width: 374px) {
@@ -60,10 +60,9 @@ export default () => (
       into a career through a <mark>Computing Sciences Bachelors.</mark>
       <br />
       Throughout hackathons, Open Source projects and online certifications (
-      {OpenClassrooms}, {WesBos}, {Udemy}, {FreeCodeCamp} …etc.) I have since
-      then been able to build my own projects, contribute to team projects and
-      join ever-expanding developer communities like {C0d3} without ever
-      stopping to learn.
+      {OpenClassrooms}, {WesBos}, {Udemy}, {FreeCodeCamp} …etc).
+      <br />
+      I have since then been able to build my own projects, contribute to team projects and join ever-expanding developer communities like {C0d3} without ever stopping to learn.
     </p>
     <p>
       Always looking to improve my set of skills, I am genuinely curious,

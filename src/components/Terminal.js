@@ -6,6 +6,7 @@ const SKILLS = [
   'NodeJS',
   'GatsbyJS',
   'JavaScript',
+  'TypeScript',
   'HTML5',
   'CSS3',
   'GraphQL',
@@ -13,7 +14,6 @@ const SKILLS = [
   'MySQL',
   'API',
   'Git',
-  'PHP',
 ]
 
 const Terminal = styled.div`
