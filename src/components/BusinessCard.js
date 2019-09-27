@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import SocialNetwork from '../components/SocialNetwork'
+import A from '../components/UI/A'
 
 const Card = styled.aside`
   align-self: center;
@@ -33,7 +34,7 @@ const Summary = styled.div`
 
 export default () => (
   <StaticQuery
-    query={graphql`
+    query={ graphql`
       query {
         imageOne: file(relativePath: { eq: "david.png" }) {
           childImageSharp {
@@ -44,18 +45,21 @@ export default () => (
         }
       }
     `}
-    render={data => (
+    render={ data => (
       <Card>
         <Img
           alt="David De Wulf"
-          fixed={data.imageOne.childImageSharp.fixed}
-          style={{ display: 'inherit' }}
+          fixed={ data.imageOne.childImageSharp.fixed }
+          style={ { display: 'inherit' } }
         />
         <Summary>
-          <p>Looking for a Front End position</p>
+          <p>
+            {`ReactJS Developer at `}
+            <A href='https://hwyhaul.com'>Hwy Haul</A>
+          </p>
           <SocialNetwork />
         </Summary>
       </Card>
-    )}
+    ) }
   />
 )
