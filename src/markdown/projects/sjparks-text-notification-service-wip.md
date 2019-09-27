@@ -2,7 +2,7 @@
 templateKey: project
 cover: /images/uploads/azur.jpeg
 date: 2019-03-28T17:12:17.723Z
-title: 'SJParks Text Notification Service - [WIP]'
+title: SJParks Text Notification Service
 summary: |2+
    San Jose Parks Department Staff and residents need a notification platform to improve communication with the regular visitors of these parks.
 
