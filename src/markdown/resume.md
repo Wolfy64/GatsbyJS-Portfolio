@@ -9,10 +9,10 @@ title: Resume
 
 ### Technical skills
 
-<mark>Javascript ES6</mark>
+<mark>JavaScript ES6</mark>
+<mark>TypeScript</mark>
 <mark>CSS3</mark>
 <mark>HTML5</mark>
-<mark>PHP</mark>
 
 ### Frameworks
 
@@ -20,7 +20,7 @@ title: Resume
 <mark>NodeJS</mark>
 <mark>GatsbyJS</mark>
 <mark>Boostrap 4</mark>
-<mark>Symfony 4</mark>
+<mark>Ant Design</mark>
 
 ### More
 
@@ -40,6 +40,8 @@ title: Resume
 
 ---
 
+- Front End ReactJS Engineer at ["Hwy Haul"](https://hwyhaul.com).
+- Full Stack Software Engineer at ["c0d3.com"](https://c0d3.com/) community to help people to learn JavaScript.
 - Contributing to the [“SJParks”](https://github.com/Wolfy64/SJParks) open source project a FullStack App for the City of San José.
 - Contributing to the [“Quilt”](https://github.com/Wolfy64/Quilt) open source project started at a GitHub hackathon.
 - Developed from scratch a Progressive Web App for a charity: [“High Speed for Good Deeds”.](https://www.highspeedsforgooddeeds.com/)
@@ -65,4 +67,4 @@ IESA multimédia School (Paris, FR) in partnership with Open Classrooms
 
 ---
 
-I am passionate about traveling and discovering new exciting sports (Surfing, Snowboarding, Krav Maga and hiking) as well as learning about new technologies.
+I am passionate about traveling and discovering new exciting sports (Krav Maga, Muay Thai, Surfing, Snowboarding) as well as learning about new technologies.
