@@ -18,6 +18,7 @@ const Card = styled.aside`
     text-align: center;
     padding-top: 3.5em;
     margin: 1em 1em 0.5em 1em;
+    white-space: nowrap;
   }
 
   .gatsby-image-wrapper {
@@ -54,8 +55,8 @@ export default () => (
         />
         <Summary>
           <p>
-            {`ReactJS Developer at `}
-            <A href='https://hwyhaul.com'>Hwy Haul</A>
+            {`Software Engineer at `}
+            <A href='https://hwyhaul.com'>HwyHaul</A>
           </p>
           <SocialNetwork />
         </Summary>
