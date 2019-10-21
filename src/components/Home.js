@@ -32,7 +32,7 @@ export default () => (
     <Title>
       Hi, I'm <span>David De Wulf</span>
     </Title>
-    <SubTitle>Web Developer</SubTitle>
+    <SubTitle>Software Engineer</SubTitle>
     <Wrapper>
       <BusinessCard />
       <Terminal />
