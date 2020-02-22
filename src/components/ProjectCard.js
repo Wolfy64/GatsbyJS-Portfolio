@@ -37,6 +37,7 @@ const SummaryCard = styled.p`
 const TagCard = styled.p`
   border-top: 1px solid hsla(0, 0%, 0%, 0.2);
   text-transform: uppercase;
+  letter-spacing: normal;
   font-size: 0.7em;
   font-weight: bolder;
   border-radius: 0 0 5px 5px;

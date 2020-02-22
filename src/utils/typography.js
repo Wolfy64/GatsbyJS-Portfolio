@@ -24,19 +24,22 @@ lincolnTheme.overrideThemeStyles = () => ({
     color: 'hsla(0,0%,0%,0.70)',
     fontWeight: '400',
   },
+  p: {
+    letterSpacing: '1px',
+  },
   mark: {
     color: 'hsla(0,0%,0%,0.70)',
     padding: '0.2rem 0.4rem',
     borderRadius: '3px',
     backgroundColor: 'hsl(230, 100%, 97%)',
     fontWeight: '400',
+    whiteSpace: 'nowrap',
   },
   strong: {
     color: 'hsla(0,0%,0%,0.70)',
     padding: '0 0.2rem',
     borderRadius: '3px',
     backgroundColor: 'hsl(230, 100%, 97%)',
-    fontWeight: '600',
   },
 })
 
