@@ -20,7 +20,7 @@ const Terminal = styled.div`
   width: 450px;
   height: 300px;
   margin: 2em 0;
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
   border-radius: 5px;
   background: white;
   @media (max-width: 850px) {

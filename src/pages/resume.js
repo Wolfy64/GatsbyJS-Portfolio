@@ -11,7 +11,7 @@ const Wrapper = styled.article`
   margin: 2em 0em;
   padding: 2em 0;
   border-radius: 5px;
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
   text-align: center;
 
   h2 {

@@ -10,13 +10,13 @@ import Button from '../components/UI/Button'
 const ImgCover = styled(Img)`
   margin: 2em auto;
   border-radius: 5px;
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
 `
 
 const Wrapper = styled.article`
   padding: 2em 0;
   border-radius: 5px;
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
   text-align: center;
 
   h1 {

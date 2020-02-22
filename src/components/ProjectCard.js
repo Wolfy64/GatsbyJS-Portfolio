@@ -10,12 +10,12 @@ const Card = styled.div`
   max-width: 270px;
   height: 450px;
   position: relative;
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
   transition: all ease-out 300ms;
   :hover {
     transform: scale(1.05);
     transition: all ease-out 300ms;
-    box-shadow: 0 6px 34px 0px hsl(230, 65%, 60%);
+    box-shadow: 0px 0px 20px 0px hsl(230, 65%, 60%);
   }
 
   hr{ margin: 0 1em; },
