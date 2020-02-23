@@ -26,7 +26,7 @@ const Wrapper = styled.article`
 
   .markdown {
     padding: 1em;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     text-align: justify;
 

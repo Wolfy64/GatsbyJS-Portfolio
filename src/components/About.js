@@ -18,7 +18,7 @@ const About = styled.article`
 
   p {
     padding: 1em;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     text-align: left;
   }
@@ -75,12 +75,12 @@ export default () => (
     </p>
     <p>
       I am currently specialized in Front-end development and actively working
-      on projects including building a <mark>FullStack App with ReactJS</mark>
+      on projects including building a <mark>FullStack App with ReactJS</mark>{' '}
       on the front-end on my spare time.
     </p>
     <p>
-      Interested in collaborating? Please reach out {Here}. I look forward to
-      speaking with you soon, be it hiring or building a website remotely.
+      Interested in collaborating? Please reach out {Here}.<br />I look forward
+      to speaking with you soon, be it hiring or building a website remotely.
     </p>
   </About>
 )

@@ -42,7 +42,7 @@ const Wrapper = styled.article`
     text-align: left;
     font-size: 0.9em;
     padding: 1em;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 
     a {
