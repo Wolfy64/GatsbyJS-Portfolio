@@ -88,35 +88,35 @@ title: Resume
 ---
 
 <mark>React JS Frontend Developer</mark><br/>
-[Hwy Haul](https://hwyhaul.com) Startup - Apr 2019 - Present ● 11 mos<br/>
+<b>[Hwy Haul](https://hwyhaul.com) Startup</b> - Apr 2019 - Present ● 11 mos<br/>
 As the main Frontend developer my daily job is to maintain and develop new features on 3 Web Portals.<br/>
 We use React JS - Redux - Sass - Ant Design - Google API and Twilio chat-sms.
 
 ---
 
 <mark>Full Stack Software Engineer</mark><br/>
-[c0d3.com](https://c0d3.com/) - June 2019 - Present ● 9 mos<br/>
+<b>[c0d3.com](https://c0d3.com/)</b> - June 2019 - Present ● 9 mos<br/>
 Maintain and create features for a non-profit organization to help people become full stack software engineers.<br/>
 Created and launched [MyProxy](https://garagescript.github.io/myProxy/) an open source app that creates and serves SSL certificates for your selected domains.
 
 ---
 
 <mark>React JS Frontend Developer</mark><br/>
-Azur Creative Solution - Nov 2018 - Apr 2019 ● 6 mos<br/>
+<b>Azur Creative Solution</b> - Nov 2018 - Apr 2019 ● 6 mos<br/>
 Volunteering for San José Parks and Recreations Department.<br/>
 Contributed to an open source app for the City of San José.
 
 ---
 
 <mark>React JS Frontend Developer</mark><br/>
-Freelance - June 2018 - Aug 2018 ● 3 mos<br/>
+<b>Freelance</b> - June 2018 - Aug 2018 ● 3 mos<br/>
 Developed from scratch a Progressive Web App for a charity: “High Speed for Good Deeds”.<br/>
 Charity website inspiring communities to do good deeds and donate to charity through sport.
 
 ---
 
 <mark>Optometrist Salesman</mark><br/>
-Biarritz Optique - June 2001 - Aug 2016 ● 15 yrs
+<b>Biarritz Optique</b> - June 2001 - Aug 2016 ● 15 yrs
 
 ## Education
 
@@ -124,11 +124,11 @@ Biarritz Optique - June 2001 - Aug 2016 ● 15 yrs
 
 <mark>2018 - Bachelor’s Degree</mark><br/>
 "Multimedia Project Manager & Development" from
-IESA multimédia School (Paris, FR) in partnership with Open Classrooms
+<b>IESA multimédia School</b> (Paris, FR) in partnership with <b>Open Classrooms</b>
 
 <mark>2003 - CAP Degree</mark><br/>
 “Optic Technician & Dispenser”
-CFA Muret Optics - Optical Sciences (Toulouse, FR)
+<b>CFA Muret Optics</b> - Optical Sciences (Toulouse, FR)
 
 ## Languages
 
@@ -137,7 +137,7 @@ CFA Muret Optics - Optical Sciences (Toulouse, FR)
 - <b>French</b> - Mother tongue
 - <b>English</b> - Conversational & Professional
 
-## Hobbies
+## Hobbi
 
 ---
 
