@@ -34,6 +34,7 @@ lincolnTheme.overrideThemeStyles = () => ({
     backgroundColor: 'hsl(230, 100%, 97%)',
     fontWeight: '400',
     whiteSpace: 'nowrap',
+    fontSize: 'initial',
   },
   strong: {
     color: 'hsla(0,0%,0%,0.70)',

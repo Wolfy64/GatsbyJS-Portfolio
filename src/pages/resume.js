@@ -4,8 +4,8 @@ import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Container from '../components/UI/Container'
-// import Button from '../components/UI/Button'
-// import resume from '../images/resume_david.pdf'
+import Button from '../components/UI/Button'
+import resume from '../images/david_dewulf_resume.pdf'
 
 const Wrapper = styled.article`
   margin: 2em 0em;
@@ -56,6 +56,18 @@ const Wrapper = styled.article`
         transition: all ease-out 300ms;
       }
     }
+
+    .category {
+      display: flex;
+
+      p {
+        margin: 0.2em;
+      }
+
+      mark {
+        font-size: small;
+      }
+    }
   }
 `
 
@@ -68,7 +80,7 @@ const Resume = ({ data }) => (
           className="markdown"
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         />
-        {/* <Button href={resume} download /> */}
+        <Button href={resume} download />
       </Wrapper>
     </Container>
   </Layout>
