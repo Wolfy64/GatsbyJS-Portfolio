@@ -2,17 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SKILLS = [
-  'ReactJS',
-  'NodeJS',
-  'GatsbyJS',
+  'React',
+  'Redux',
+  'GraphQL',
   'JavaScript',
-  'TypeScript',
   'HTML5',
   'CSS3',
-  'GraphQL',
-  'NoSQL',
+  'TypeScript',
+  'Node',
+  'Express',
+  'Gatsby',
+  'Next',
+  'REST',
   'MySQL',
-  'API',
+  'NoSQL',
   'Git',
 ]
 
