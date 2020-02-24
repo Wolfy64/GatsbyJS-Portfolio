@@ -21,7 +21,6 @@ const SKILLS = [
 
 const Terminal = styled.div`
   width: 450px;
-  height: 300px;
   margin: 2em 0;
   box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
   border-radius: 5px;
