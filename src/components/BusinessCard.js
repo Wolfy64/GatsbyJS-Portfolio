@@ -16,7 +16,7 @@ const Card = styled.aside`
 
   p {
     text-align: center;
-    padding-top: 3.8em;
+    padding-top: 75px;
     margin: 0.5em 0em;
     white-space: nowrap;
   }

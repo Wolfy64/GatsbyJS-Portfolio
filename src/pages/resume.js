@@ -73,6 +73,14 @@ const Wrapper = styled.article`
       mark {
         font-size: small;
       }
+
+      @media (max-width: 425px) {
+        flex-direction: column;
+        p:first-child {
+          line-height: initial;
+          margin-bottom: -5px;
+        }
+      }
     }
   }
 `
