@@ -16,26 +16,28 @@ const Card = styled.aside`
 
   p {
     text-align: center;
-    padding-top: 3.5em;
-    margin: 1em 1em 0.5em 1em;
+    padding-top: 3.8em;
+    margin: 0.5em 0em;
     white-space: nowrap;
   }
 
   .gatsby-image-wrapper {
     margin: auto auto -80px auto;
     background-color: white;
+    box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
+    border-radius: 50%;
   }
 `
 
 const Summary = styled.div`
   border-radius: 5px;
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
   height: 200px;
 `
 
 export default () => (
   <StaticQuery
-    query={ graphql`
+    query={graphql`
       query {
         imageOne: file(relativePath: { eq: "david.jpg" }) {
           childImageSharp {
@@ -46,21 +48,21 @@ export default () => (
         }
       }
     `}
-    render={ data => (
+    render={data => (
       <Card>
         <Img
           alt="David De Wulf"
-          fixed={ data.imageOne.childImageSharp.fixed }
-          style={ { display: 'inherit' } }
+          fixed={data.imageOne.childImageSharp.fixed}
+          style={{ display: 'inherit' }}
         />
         <Summary>
           <p>
             {`Software Engineer at `}
-            <A href='https://hwyhaul.com'>HwyHaul</A>
+            <A href="https://hwyhaul.com">HwyHaul</A>
           </p>
           <SocialNetwork />
         </Summary>
       </Card>
-    ) }
+    )}
   />
 )

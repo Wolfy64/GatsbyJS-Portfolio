@@ -10,7 +10,7 @@ const Nav = styled.nav`
   margin-bottom: 3em;
   font-weight: 400;
   background-color: hsl(230, 65%, 60%);
-  box-shadow: 0 6px 34px 0px hsl(230, 65%, 60%);
+  box-shadow: 0px 0px 20px 0px hsl(230, 65%, 60%);
   position: sticky;
   width: 100%;
   top: 0;

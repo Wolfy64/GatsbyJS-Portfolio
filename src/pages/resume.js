@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
 
 import Layout from '../components/Layout'
 import Container from '../components/UI/Container'
-// import Button from '../components/UI/Button'
-// import resume from '../images/resume_david.pdf'
+import Button from '../components/UI/Button'
+import resume from '../images/david_dewulf_resume.pdf'
+
+dayjs.extend(relativeTime)
+const workExperience = dayjs('2019-04-08').toNow(true)
+const C0D3Experience = dayjs('2019-06-01').toNow(true)
 
 const Wrapper = styled.article`
   margin: 2em 0em;
   padding: 2em 0;
   border-radius: 5px;
-  box-shadow: 0 6px 34px 0px hsl(230, 80%, 90%);
+  box-shadow: 0px 0px 20px 0px hsl(230, 80%, 90%);
   text-align: center;
 
   h2 {
@@ -42,7 +48,7 @@ const Wrapper = styled.article`
     text-align: left;
     font-size: 0.9em;
     padding: 1em;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 
     a {
@@ -56,23 +62,41 @@ const Wrapper = styled.article`
         transition: all ease-out 300ms;
       }
     }
+
+    .category {
+      display: flex;
+
+      p {
+        margin: 0.2em;
+      }
+
+      mark {
+        font-size: small;
+      }
+    }
   }
 `
 
-const Resume = ({ data }) => (
-  <Layout>
-    <h1 style={{ textAlign: 'center' }}>My Resume</h1>
-    <Container>
-      <Wrapper>
-        <div
-          className="markdown"
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
-        {/* <Button href={resume} download /> */}
-      </Wrapper>
-    </Container>
-  </Layout>
-)
+const Resume = ({ data }) => {
+  useEffect(() => {
+    document.querySelector('.workExperience').textContent = workExperience
+    document.querySelector('.C0D3Experience').textContent = C0D3Experience
+  })
+  return (
+    <Layout>
+      <h1 style={{ textAlign: 'center' }}>My Resume</h1>
+      <Container>
+        <Wrapper>
+          <div
+            className="markdown"
+            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+          />
+          <Button href={resume} download />
+        </Wrapper>
+      </Container>
+    </Layout>
+  )
+}
 
 export default Resume
 
