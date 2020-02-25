@@ -14,6 +14,7 @@ title: Resume
     <mark>TypeScript</mark>
     <mark>HTML5</mark>
     <mark>CSS3</mark>
+    <mark>PHP</mark>
   </p>
 </div>
 
@@ -87,36 +88,51 @@ title: Resume
 
 ---
 
-<mark>React JS Frontend Developer</mark><br/>
-<b>[Hwy Haul](https://hwyhaul.com) Startup</b> - Apr 2019 - Present ● <span class="workExperience">11 months</span><br/>
-As the main Frontend developer my daily job is to maintain and develop new features on 3 Web Portals.<br/>
-We use React JS - Redux - Sass - Ant Design - Google API and Twilio chat-sms.
+<mark>React JS Frontend Developer</mark> - Hwy Haul Startup - Apr 2010 - Present ● <span class="workExperience">11 months</span><br/>
+<b>Building software to enable shippers and drivers connect seamlessly in today’s \$800 billion trucking industry.</b><br/>
+We use React - Redux - Sass - Ant Design - Google API and Twilio chat-sms.
+
+- Maintain and develop new features on three web portals: OPS, Shipper, and Carrier portal.
+- Improving the codebase by resolving complex bugs and refactoring old components resulting in improved web performance, user happiness,
+  and more maintainable codebase.
+- Implemented a chat-sms using Twilio SDK, one of the OPS team's favorite features currently used as the main way of management which
+  improves communication between all Drivers / OPS.
+- Implemented and optimized forms to fulfill complex trucking logistics requirements.
+- Designed the new UI on Google Maps to allow a realtime truck monitoring key feature used by all clients.
+
+<mark>Optometrist Salesman</mark> - Biarritz Optique - June 2001 - Aug 2016 ● 15 years
+
+## Open Source Contribution
 
 ---
 
-<mark>Full Stack Software Engineer</mark><br/>
-<b>[c0d3.com](https://c0d3.com/)</b> - June 2019 - Present ● <span class="C0D3Experience">11 months</span><br/>
-Maintain and create features for a non-profit organization to help people become full stack software engineers.<br/>
-Created and launched [MyProxy](https://garagescript.github.io/myProxy/) an open source app that creates and serves SSL certificates for your selected domains.
+<mark>c0d3.com</mark> - June 2019 - Present ● <span class="C0D3Experience">11 months</span><br/>
+<b>
+An online learning platform that teaches people how to become great software engineers for free.<br/>
+</b>
+cod3.com v2.0 will be used for our public launch, which will get exponentially higher traffic than the current 400 beta users.
 
----
+- (v1) Migrated front end to use ApolloClient containers instead of complex Query / Mutation components for better readability.
+- (v1) Reduced complex loading logic in the single page app and decreased load time significantly.
+- (v1) Fixed bugs and helped maintain CLI tool on npm, used by 400 students for daily submission of their work.
+- (v1) Fixed broken tests for better code coverage and re-enabled functional tests (cypress).
+- (v2) Helped set the technical foundation for a version 2 rebuild using TypeScript and NextJS.
+- (v2) Researched and integrated story book for UI Component documentation as well as snapshot testing.
 
-<mark>React JS Frontend Developer</mark><br/>
-<b>Azur Creative Solution</b> - Nov 2018 - Apr 2019 ● 6 months<br/>
-Volunteering for San José Parks and Recreations Department.<br/>
-Contributed to an open source app for the City of San José.
+<mark>MyProxy</mark> - Aug 2019 - Present ● 6 months<br/>
+<b>
+An alternative to Nginx that allows automatic domain provider integration, ssl support for all domains, dynamic port proxy
+and automatic git deployment.
+</b>
 
----
-
-<mark>React JS Frontend Developer</mark><br/>
-<b>Freelance</b> - June 2018 - Aug 2018 ● 3 months<br/>
-Developed from scratch a Progressive Web App for a charity: “High Speed for Good Deeds”.<br/>
-Charity website inspiring communities to do good deeds and donate to charity through sport.
-
----
-
-<mark>Optometrist Salesman</mark><br/>
-<b>Biarritz Optique</b> - June 2001 - Aug 2016 ● 15 years
+- Created Initial Repository and led development efforts in TypeScript, testing environments, system setup, etc.
+- Implemented domain providers _(GoDaddy and Name.com)_ to retrieve and manage DNS settings for user's domains.
+- Implemented automatic SSL certification negotiation for root and wildcard subdomains for the domain names that the user selects.
+- Implemented admin cookie and password management with sha256 encryption.
+- Set up CircleCI for automatic tests, builds, and deployment during development workflow.
+- Created contributing standards for new domain providers to add support in MyProxy for their own domains and refactored existing code and
+  ensure a smooth contributing experience for developers.
+- Launched "MyProxy" which currently powers 3 production applications, including freedomains.dev, a faster and free Heroku alternative.
 
 ## Education
 
