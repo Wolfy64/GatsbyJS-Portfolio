@@ -93,16 +93,17 @@ title: Resume
 We use React - Redux - Sass - Ant Design - Google API and Twilio chat-sms.
 
 - Maintain and develop new features on three web portals: OPS, Shipper, and Carrier portal.
-- Improving the codebase by resolving complex bugs and refactoring old components resulting in improved web performance, user happiness,
+- Improved codebase by resolving complex bugs and refactoring old components resulting in improved web performance, user happiness,
   and more maintainable codebase.
-- Implemented a chat-sms using Twilio SDK, one of the OPS team's favorite features currently used as the main way of management which
+- Implemented chat-sms using Twilio SDK, which is currently used as the main communication method between between all Drivers / OPS. Currently one of OPS's favourite features
   improves communication between all Drivers / OPS.
 - Implemented and optimized forms to fulfill complex trucking logistics requirements.
-- Designed the new UI on Google Maps to allow a realtime truck monitoring key feature used by all clients.
+- Designed and implemented a new UI layout on Google Maps to allow realtime truck tracking and monitoring.
+  Currently a key feature used by all clients.
 
-<mark>Optometrist Salesman</mark> - Biarritz Optique - June 2001 - Aug 2016 ● 15 years
+<mark>Optician Salesman</mark> - Biarritz Optique - June 2001 - Aug 2016 ● 15 years
 
-## Open Source Contribution
+## Open Source Contributions
 
 ---
 
@@ -125,7 +126,7 @@ An alternative to Nginx that allows automatic domain provider integration, ssl s
 and automatic git deployment.
 </b>
 
-- Created Initial Repository and led development efforts in TypeScript, testing environments, system setup, etc.
+- Led development efforts in TypeScript, testing environments, system setup, etc.
 - Implemented domain providers _(GoDaddy and Name.com)_ to retrieve and manage DNS settings for user's domains.
 - Implemented automatic SSL certification negotiation for root and wildcard subdomains for the domain names that the user selects.
 - Implemented admin cookie and password management with sha256 encryption.
