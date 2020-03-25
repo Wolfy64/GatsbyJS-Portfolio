@@ -140,7 +140,8 @@ and automatic git deployment.
 ---
 
 <mark>2018 - Bachelor’s Degree</mark><br/>
-"Multimedia Project Manager & Development" from
+"Multimedia Project Manager & Development" (Web Development) </br >
+from
 <b>IESA multimédia School</b> (Paris, FR) in partnership with <b>Open Classrooms</b>
 
 <mark>2003 - CAP Degree</mark><br/>
