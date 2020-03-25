@@ -8,7 +8,7 @@ summary: >-
   engineers for free.
 git: 'https://github.com/garageScript/c0d3-app'
 web: 'https://c0d3.com/'
-tags: Typescript | React | GraphQL | Node
+tags: Typescript | GraphQL | Node
 ---
 Our **free learning** process platform is interactive and follows the same practice as a well functioning engineering team. From the first line of code you write, you will be **code reviewed by engineers** to ensure you are always following industry best practices.\
 
