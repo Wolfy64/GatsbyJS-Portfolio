@@ -12,7 +12,7 @@ tags: ReactJS | NodeJS | MangoDB
 ---
 **Project Lead** and **ReactJS Frontend developer** for the open source project "SJParks".
 
-**This project is ongoing.**
+**This project has been canceled..**
 
 They need as soon as possible an App that will be on an online web platform for San Jose use only.
 
