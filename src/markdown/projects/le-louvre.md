@@ -5,7 +5,7 @@ date: 2018-01-31T19:29:41.623Z
 title: Le Louvre
 summary: System for booking and managing tickets online with Stripe.
 git: 'https://github.com/Wolfy64/Project4'
-web: 'http://project4.dewulfdavid.com'
+web: ''
 tags: Symfony4 | PHP | Stripe
 ---
 
