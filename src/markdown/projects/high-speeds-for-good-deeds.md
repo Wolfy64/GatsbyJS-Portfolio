@@ -7,7 +7,7 @@ summary: >-
   Charity website inspiring communities to do good deeds and donate to charity
   through sport.
 git: 'https://github.com/Wolfy64/High-Speeds-for-Good-Deeds'
-web: 'http://www.highspeedsforgooddeeds.com'
+web: ''
 tags: ReactJS | Material UI | Firebase
 ---
 * Built and designed a charity website
