@@ -32,6 +32,7 @@ const About = styled.article`
 
 const c0d3 = <A href="https://c0d3.com/" name="c0d3.com" />
 const HwyHaul = <A href="https://hwyhaul.com" name="Hwy Haul" />
+const OpenClassrooms = <A href="https://openclassrooms.com/en/" name="OpenClassrooms" />
 const openEmail = (
   <A
     href="mailto:contact.dewulf@gmail.com"
@@ -44,8 +45,9 @@ export default () => (
     <h1>About Me</h1>
     <p>
       I have always been passionate about coding, which is why after 15 years as
-      an Optometrist I have decided to seize the opportunity to turn my passion
-      into a career and got a <mark>Computing Sciences Bachelors.</mark>
+      an Optician I have decided to seize the opportunity to turn my passion
+      into a career and got a <mark>Web Development Bachelors.</mark>{' '}
+      with {OpenClassrooms}.
       <br />
       Throughout hackathons, open source projects and online certifications I
       was then able to contribute to team projects and join ever-expanding
