@@ -5,7 +5,7 @@ date: 2017-02-28T08:00:00.000Z
 title: City of Biarritz
 summary: Website to promote the town’s cultural activity.
 git: 'https://github.com/Wolfy64/Project1'
-web: 'http://project1.dewulfdavid.com'
+web: ''
 tags: Wordpress | HTML5 | CSS3
 ---
 
