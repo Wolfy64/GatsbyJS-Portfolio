@@ -4,10 +4,10 @@ cover: /images/uploads/alaska.jpg
 date: 2017-09-30T18:35:56.114Z
 title: One-Way ticket to Alaska
 summary: >-
-  Blog from scratch, Front-End & Back-End MVC design patterns, C.R.U.D system and
-  MySql & OOP.
+  Blog from scratch, Front-End & Back-End MVC design patterns, C.R.U.D system
+  and MySql & OOP.
 git: 'https://github.com/Wolfy64/Project3'
-web: 'http://project3.dewulfdavid.com'
+web: ''
 tags: PHP | MySQL | Boostrap4
 ---
 
