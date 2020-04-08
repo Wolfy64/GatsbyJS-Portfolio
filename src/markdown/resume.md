@@ -88,7 +88,7 @@ title: Resume
 
 ---
 
-<mark>React JS Frontend Developer</mark> - Hwy Haul Startup - Apr 2010 - Present ● <span class="workExperience">11 months</span><br/>
+<mark>React JS Frontend Developer</mark> - Hwy Haul Startup - Apr 2019 - Present ● <span class="workExperience">11 months</span><br/>
 <b>Building software to enable shippers and drivers connect seamlessly in today’s \$800 billion trucking industry.</b><br/>
 We use React - Redux - Sass - Ant Design - Google API and Twilio chat-sms.
 
