@@ -88,8 +88,10 @@ title: Resume
 
 ---
 
-<mark>React JS Frontend Developer</mark> - Hwy Haul Startup - Apr 2019 - Present ● <span class="workExperience">11 months</span><br/>
-<b>Building software to enable shippers and drivers connect seamlessly in today’s \$800 billion trucking industry.</b><br/>
+<mark>Software Engineer</mark> - PayPal - Jun 2020 - Present ● <span class="workExperience">3 months</span><br/>
+
+<mark>React JS Frontend Developer</mark> - Hwy Haul Startup - Apr 2019 - May 2020 ● a year<br/>
+<b>Building software to enable shippers and drivers to connect seamlessly in today’s \$800 billion trucking industry.</b><br/>
 We use React - Redux - Sass - Ant Design - Google API and Twilio chat-sms.
 
 - Maintain and develop new features on three web portals: OPS, Shipper, and Carrier portal.
@@ -107,7 +109,7 @@ We use React - Redux - Sass - Ant Design - Google API and Twilio chat-sms.
 
 ---
 
-<mark>c0d3.com</mark> - June 2019 - Present ● <span class="C0D3Experience">11 months</span><br/>
+<mark>c0d3.com</mark> - June 2019 - June 2020 ● a year<br/>
 <b>
 An online learning platform that teaches people how to become great software engineers for free.<br/>
 </b>
@@ -120,7 +122,7 @@ cod3.com v2.0 will be used for our public launch, which will get exponentially h
 - (v2) Helped set the technical foundation for a version 2 rebuild using TypeScript and NextJS.
 - (v2) Researched and integrated story book for UI Component documentation as well as snapshot testing.
 
-<mark>MyProxy</mark> - Aug 2019 - Present ● 6 months<br/>
+<mark>MyProxy</mark> - Aug 2019 - June 2020 ● 9 months<br/>
 <b>
 An alternative to Nginx that allows automatic domain provider integration, ssl support for all domains, dynamic port proxy
 and automatic git deployment.

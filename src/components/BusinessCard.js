@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import SocialNetwork from '../components/SocialNetwork'
-import A from '../components/UI/A'
 
 const Card = styled.aside`
   align-self: center;
@@ -48,7 +47,7 @@ export default () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Card>
         <Img
           alt="David De Wulf"
@@ -56,10 +55,7 @@ export default () => (
           style={{ display: 'inherit' }}
         />
         <Summary>
-          <p>
-            {`Software Engineer at `}
-            <A href="https://hwyhaul.com">HwyHaul</A>
-          </p>
+          <p>Software Engineer at PayPal</p>
           <SocialNetwork />
         </Summary>
       </Card>

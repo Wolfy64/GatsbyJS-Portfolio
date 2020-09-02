@@ -58,15 +58,5 @@ export default () => (
       committed to building a clean, reusable, and easily maintainable
       well-commented code.
     </p>
-    <p>
-      I am currently working as a <mark>Front-end Developer</mark> at {HwyHaul}{' '}
-      startup and on my spare time actively working on open source projects for{' '}
-      {c0d3}.
-      <br />
-      I look forward to speaking with you soon, be it hiring or building a
-      website remotely.
-      <br />
-      {openEmail}
-    </p>
   </About>
 )
