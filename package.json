@@ -8,8 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop & tsc --watch",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
@@ -30,6 +29,10 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "theme-ui": "^0.3.5"
+    "theme-ui": "^0.3.5",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.2"
   }
 }
