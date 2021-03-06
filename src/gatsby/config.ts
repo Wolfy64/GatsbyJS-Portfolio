@@ -3,10 +3,10 @@ export default {
     title: "gatsby-v3",
   },
   plugins: [
-    "gatsby-plugin-theme-ui",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
