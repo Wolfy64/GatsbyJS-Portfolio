@@ -1,21 +1,31 @@
-export default {
+export type SiteMetadata = typeof config.siteMetadata
+
+const config = {
   siteMetadata: {
-    title: "gatsby-v3",
+    name: 'David De Wulf',
+    description: "Website of David De Wulf: Software Engineer",
+    url: "https://dewulfdavid.com",
+    type: 'website',
+    image: "/images/icon.png",
+    themeColor: "",
+    colorScheme: 'dark light',
+    lang: 'en',
+    twitterUsername: "TweetWolf64",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -34,3 +44,5 @@ export default {
     },
   ],
 };
+
+export default config
