@@ -11,6 +11,10 @@ const config = {
     colorScheme: 'dark light',
     lang: 'en',
     twitterUsername: "TweetWolf64",
+    twitter: 'https://twitter.com/TweetWolf64',
+    mail: 'mailto:contact.dewulf@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/dewulfdavid/',
+    github: 'https://github.com/Wolfy64'
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
