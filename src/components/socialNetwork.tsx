@@ -50,24 +50,16 @@ const SocialNetwork = () => {
   return (
     <Ul>
       <Li>
-        <a href={mail}>
-          <SvgMail />
-        </a>
+        <a href={mail} children={<SvgMail />} />
       </Li>
       <Li>
-        <a href={linkedin} target="_blank">
-          <SvgLinkedIn />
-        </a>
+        <a href={linkedin} target="_blank" children={<SvgLinkedIn />} />
       </Li>
       <Li>
-        <a href={github} target="_blank">
-          <SvgGithub />
-        </a>
+        <a href={github} target="_blank" children={<SvgGithub />} />
       </Li>
       <Li>
-        <a href={twitter} target="_blank">
-          <SvgTwitter />
-        </a>
+        <a href={twitter} target="_blank" children={<SvgTwitter />} />
       </Li>
     </Ul>
   )

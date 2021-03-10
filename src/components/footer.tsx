@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import SocialNetwork from './SocialNetwork'
+import SocialNetwork from './socialNetwork'
 
 const Wrapper = styled.footer`
   height: 92px;
