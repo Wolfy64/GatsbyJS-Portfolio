@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Header = styled.header`
-  font-size: 3.2rem;
+  font-size: 32px;
 
   h1 {
     text-align: center;
@@ -20,10 +20,6 @@ const Header = styled.header`
     white-space: nowrap;
     font-weight: 300;
     color: ${({ theme }) => theme.colors.primary};
-  }
-
-  @media (min-width: ${({ theme }) => theme.viewport.medium}) {
-    font-size: 4rem;
   }
 `
 

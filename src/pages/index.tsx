@@ -6,6 +6,7 @@ import Introduction from '../components/introduction'
 const IndexPage = () => {
   return (
     <Layout>
+      <Introduction />
     </Layout>
   )
 }

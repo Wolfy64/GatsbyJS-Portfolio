@@ -16,6 +16,7 @@ const Container = styled.main`
   grid-gap: 32px;
   padding: 32px 8px;
   max-width: 920px;
+  margin: 0 auto;
   min-height: calc(100vh - 140px);
 `
 
