@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../theme/globalStyles'
 import theme from '../theme/theme'
@@ -11,12 +11,20 @@ interface Props {
   children: React.ReactNode
 }
 
+const Container = styled.main`
+  display: grid;
+  grid-gap: 32px;
+  padding: 32px 8px;
+  max-width: 920px;
+  min-height: calc(100vh - 140px);
+`
+
 const Layout = ({ children }: Props) => (
-  <ThemeProvider theme={theme} >
+  <ThemeProvider theme={theme}>
     <GlobalStyle />
     <SEO />
     <Navbar />
-    {children}
+    <Container children={children} />
     <Footer />
   </ThemeProvider>
 )
