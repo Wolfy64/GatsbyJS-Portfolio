@@ -1,19 +1,19 @@
-import React from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
+import { SiteMetadata } from '../gatsby/config'
+interface Props {
+  name: SiteMetadata['name']
+  jobTitle: SiteMetadata['jobTitle']
+}
 
 const Header = styled.header`
-  font-size: 32px;
+  font-size: 24px;
 
-  h1 {
+  p {
     text-align: center;
     font-weight: 100;
     font-size: inherit;
-  }
-
-  h2 {
-    text-align: center;
-    font-weight: 100;
-    font-size: inherit;
+    line-height: 32px;
   }
 
   strong {
@@ -23,11 +23,13 @@ const Header = styled.header`
   }
 `
 
-export default () => (
+const Introduction = ({ name, jobTitle }: Props) => (
   <Header>
-    <h1>
-      Hi, I'm <strong>David De Wulf</strong>
-    </h1>
-    <h2>Software Engineer</h2>
+    <p>
+      Hi, I'm <strong>{name}</strong>
+    </p>
+    <p>{jobTitle}</p>
   </Header>
 )
+
+export default Introduction

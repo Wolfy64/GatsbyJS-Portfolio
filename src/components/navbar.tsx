@@ -9,7 +9,7 @@ const Nav = styled.nav`
   height: 48px;
   position: sticky;
   z-index: 1;
-  box-shadow: ${({ theme }) => theme.boxShadows.bold};
+  box-shadow: 0px 0px 16px 0px ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.primary};
 `
 

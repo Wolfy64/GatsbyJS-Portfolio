@@ -56,6 +56,11 @@ const SEO = () => {
       <meta name="twitter:url" content={url} />
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:card" content="summary_large_image" />
+
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     </Helmet>
   )
 }

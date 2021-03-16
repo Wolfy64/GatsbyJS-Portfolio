@@ -1,8 +1,8 @@
 import * as React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
-import GlobalStyle from '../theme/globalStyles'
 import theme from '../theme/theme'
+import GlobalStyle from '../theme/globalStyles'
 import SEO from './seo'
 import Navbar from './navbar'
 import Footer from './footer'
@@ -12,8 +12,6 @@ interface Props {
 }
 
 const Container = styled.main`
-  display: grid;
-  grid-gap: 32px;
   padding: 32px 8px;
   max-width: 920px;
   margin: 0 auto;

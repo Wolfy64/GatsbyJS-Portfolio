@@ -11,15 +11,27 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 10px;
-    font-family: ${({ theme }) => theme.fonts.body}
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    font-family: ${({ theme }) => theme.fonts.body};
+    font-weight: ${({ theme }) => theme.fontWeights.body};
+    color: ${({ theme }) => theme.colors.text};
   }
 
   body {
     font-size: ${({ theme }) => theme.fontSizes.paragraph}
   }
 
-  img { 
+  img, svg { 
     display: block;
+  }
+
+  mark { 
+    border-radius: 4px;
+    padding: 2px 4px;
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: ${({ theme }) => theme.fontWeights.bold};
+    background-color:${({ theme }) => theme.colors.secondary}
   }
 `;
 
