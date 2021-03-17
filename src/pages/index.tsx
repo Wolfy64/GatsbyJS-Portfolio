@@ -22,6 +22,8 @@ const Container = styled.div`
   justify-items: center;
   align-items: center;
   gap: 16px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
 `
 
 const IndexPage = () => {

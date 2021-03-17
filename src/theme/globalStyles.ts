@@ -11,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 10px;
-    line-height: 24px;
-    letter-spacing: 0.6px;
+    /* line-height: 24px; */
+    /* letter-spacing: 0.6px; */
     font-family: ${({ theme }) => theme.fonts.body};
     font-weight: ${({ theme }) => theme.fontWeights.body};
     color: ${({ theme }) => theme.colors.text};
