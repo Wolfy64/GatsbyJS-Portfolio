@@ -2,10 +2,27 @@ import * as React from 'react'
 import styled from 'styled-components'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
+import updateLocale from 'dayjs/plugin/updateLocale'
 
 import Layout from '../components/layout'
 
 dayjs.extend(relativeTime)
+dayjs.extend(updateLocale)
+dayjs.updateLocale('en', { relativeTime: {
+  future: "in %s",
+  past: "%s ago",
+  s: 'a few seconds',
+  m: "a minute",
+  mm: "%d minutes",
+  h: "an hour",
+  hh: "%d hours",
+  d: "a day",
+  dd: "%d days",
+  M: "a month",
+  MM: "%d months",
+  y: "1 year",
+  yy: "%d years"
+} })
 
 const SKILLS = [
   {
@@ -148,12 +165,14 @@ const ResumePage = () => {
         <div className="container">
           <div>
             <h3>PayPal</h3>
-            <span>as Software Engineer - Jun 2020 - Present ● {workExperience}</span>
+            <span>
+              as Software Engineer - Jun 2020 - Present ● {workExperience}
+            </span>
           </div>
 
           <div>
             <h3>Hwy Haul Startup</h3>
-            <span>as React Engineer - Apr 2019 - May 2020 ● a year</span>
+            <span>as React Engineer - Apr 2019 - May 2020 ● 1 year</span>
             <br />
             <mark>
               Building software to enable shippers and drivers to connect
@@ -206,7 +225,7 @@ const ResumePage = () => {
         <h2>OSS Contributions</h2>
         <div className="container">
           <div>
-            <h3>c0d3.com</h3>June 2019 - June 2020 ● a year
+            <h3>c0d3.com</h3>June 2019 - June 2020 ● 1 year
             <br />
             <mark>
               An online learning platform that teaches people how to become
