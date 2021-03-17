@@ -41,9 +41,15 @@ const config = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve('../components/Layout.tsx'),}
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -65,6 +71,14 @@ const config = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/posts/",
+      },
+      __key: "posts",
     },
   ],
 };
