@@ -1,7 +1,11 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
 
 import Layout from '../components/layout'
+
+dayjs.extend(relativeTime)
 
 const SKILLS = [
   {
@@ -120,6 +124,7 @@ const Languages = styled(Article)`
 const Hobbi = styled(Article)``
 
 const ResumePage = () => {
+  const workExperience = dayjs('2020-06-01').toNow(true)
   const displaySkills = SKILLS.map(({ key, value }) => {
     const listOfSkills = value.map((skill) => <li key={skill}>{skill}</li>)
     return (
@@ -143,8 +148,7 @@ const ResumePage = () => {
         <div className="container">
           <div>
             <h3>PayPal</h3>
-            <span>as Software Engineer - Jun 2020 - Present ● </span>
-            <span className="workExperience"> 3 months</span>
+            <span>as Software Engineer - Jun 2020 - Present ● {workExperience}</span>
           </div>
 
           <div>
