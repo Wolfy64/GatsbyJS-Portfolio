@@ -6,15 +6,10 @@ interface Props {
   jobTitle: SiteMetadata['jobTitle']
 }
 
-const Header = styled.header`
+const Name = styled.p`
+  text-align: center;
+  font-weight: 300;
   font-size: 24px;
-
-  p {
-    text-align: center;
-    font-weight: 100;
-    font-size: inherit;
-    line-height: 32px;
-  }
 
   strong {
     white-space: nowrap;
@@ -24,12 +19,12 @@ const Header = styled.header`
 `
 
 const Introduction = ({ name, jobTitle }: Props) => (
-  <Header>
-    <p>
+  <header>
+    <Name >
       Hi, I'm <strong>{name}</strong>
-    </p>
-    <p>{jobTitle}</p>
-  </Header>
+    </Name>
+    <p children={jobTitle} />
+  </header>
 )
 
 export default Introduction

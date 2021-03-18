@@ -166,17 +166,17 @@ const ResumePage = () => {
           <div>
             <h3>PayPal</h3>
             <span>
-              as Software Engineer - Jun 2020 - Present ● {workExperience}
+              as Software Engineer - Jun 2020 - Present • {workExperience}
             </span>
           </div>
 
           <div>
             <h3>Hwy Haul Startup</h3>
-            <span>as React Engineer - Apr 2019 - May 2020 ● 1 year</span>
+            <span>as React Engineer - Apr 2019 - May 2020 • 1 year</span>
             <br />
             <mark>
               Building software to enable shippers and drivers to connect
-              seamlessly in today’s \$800 billion trucking industry.
+              seamlessly in today’s $800 billion trucking industry.
             </mark>
 
             <p>
@@ -216,7 +216,7 @@ const ResumePage = () => {
 
           <div>
             <h3>Biarritz Optique</h3>
-            <span>as Optician Salesman - June 2001 - Aug 2016 ● 15 years</span>
+            <span>as Optician Salesman - June 2001 - Aug 2016 • 15 years</span>
           </div>
         </div>
       </Work>
@@ -225,7 +225,7 @@ const ResumePage = () => {
         <h2>OSS Contributions</h2>
         <div className="container">
           <div>
-            <h3>c0d3.com</h3>June 2019 - June 2020 ● 1 year
+            <h3>c0d3.com</h3>June 2019 - June 2020 • 1 year
             <br />
             <mark>
               An online learning platform that teaches people how to become
@@ -264,7 +264,7 @@ const ResumePage = () => {
           </div>
 
           <div>
-            <h3>MyProxy</h3>Aug 2019 - June 2020 ● 9 months
+            <h3>MyProxy</h3>Aug 2019 - June 2020 • 9 months
             <br />
             <mark>
               An alternative to Nginx that allows automatic domain provider

@@ -34,7 +34,7 @@ const Circle = styled.div`
 const Window = styled.div`
   padding: 8px;
   display: grid;
-  grid: auto / 110px 85px 85px;
+  grid: auto / 110px 75px 85px;
   gap: 8px;
 `
 

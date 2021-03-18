@@ -13,9 +13,9 @@ const theme = {
     512
   ],
   fonts: {
-    body: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+    body: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     heading: 'inherit',
-    monospace: 'Menlo, monospace'
+    monospace: 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
   },
   // fontSizes: [
   //   12,
@@ -30,7 +30,7 @@ const theme = {
   // ],
   fontSizes: {
     navLink: '1.8rem',
-    paragraph: '1.8rem'
+    paragraph: '1.6rem'
   },
   radii: '8px',
   fontWeights: {

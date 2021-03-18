@@ -8,6 +8,7 @@ const Nav = styled.nav`
   align-items: center;
   height: 48px;
   position: sticky;
+  top: 0;
   z-index: 1;
   box-shadow: 0px 0px 16px 0px ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.primary};
@@ -17,6 +18,7 @@ const NavLink = styled(Link)`
   text-transform: uppercase;
   text-decoration: none;
   font-size: ${({ theme }) => theme.fontSizes.navLink};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   color: ${({ theme }) => theme.colors.white};
   transition: ${({ theme }) => theme.transitions.standard};
   :hover {
@@ -41,7 +43,7 @@ const Navbar = () => (
   <Nav>
     <NavLink to="/" children="Home" />
     <NavSeparator />
-    <NavLink to="/projects" children="Projects" />
+    <NavLink to="/memo" children="Memo" />
     <NavSeparator />
     <NavLink to="/resume" children="Resume" />
   </Nav>

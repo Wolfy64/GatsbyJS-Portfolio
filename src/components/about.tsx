@@ -15,7 +15,7 @@ const Article = styled.article`
   }
 
   p:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 `
 
