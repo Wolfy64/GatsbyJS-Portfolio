@@ -43,11 +43,19 @@ const config = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-remark-images",
     {
       resolve: "gatsby-plugin-mdx",
       options: {
-        defaultLayouts: {
-          default: require.resolve('../components/Layout.tsx'),}
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          }
+        ],
+        extensions: [`.md`, `.mdx`]
       },
     },
     {
@@ -75,10 +83,18 @@ const config = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
+        name: "posts",
         path: "./src/posts/",
       },
       __key: "posts",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "markdown",
+        path: "./src/markdown/",
+      },
+      __key: "markdown",
     },
   ],
 };
