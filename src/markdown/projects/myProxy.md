@@ -1,6 +1,6 @@
 ---
 templateKey: project
-cover: /images/uploads/myproxy.jpeg
+cover: ../../images/projects/myproxy.jpeg
 date: 2019-09-27T08:13:53.760Z
 title: MyProxy
 summary: MyProxy is an application that proxies requests to other servers

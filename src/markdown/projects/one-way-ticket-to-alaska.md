@@ -1,6 +1,6 @@
 ---
 templateKey: project
-cover: /images/uploads/alaska.jpg
+cover: ../../images/projects/alaska.jpg
 date: 2017-09-30T18:35:56.114Z
 title: One-Way ticket to Alaska
 summary: >-

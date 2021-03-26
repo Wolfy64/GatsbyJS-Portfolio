@@ -1,6 +1,6 @@
 ---
 templateKey: project
-cover: /images/uploads/c0d3.jpg
+cover: ../../images/projects/c0d3.jpg
 date: 2020-03-25T06:49:22.030Z
 title: c0d3.com
 summary: >-

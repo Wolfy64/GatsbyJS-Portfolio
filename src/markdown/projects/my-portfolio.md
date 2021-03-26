@@ -1,6 +1,6 @@
 ---
 templateKey: project
-cover: /images/uploads/gatsbyjs.jpg
+cover: ../../images/projects/gatsbyjs.jpg
 date: 2018-10-31T22:07:17.769Z
 title: My Portfolio
 summary: JAMStack portfolio using the framework GatsbyJS
@@ -20,4 +20,4 @@ Built to be a Serverless Progressive Web App
 
 Audit [Lighthouse](https://developers.google.com/web/tools/lighthouse/#devtools):
 
-![Audit on portfolio](/images/uploads/audit-portfolio.png)
+![Audit on portfolio](../../images/projects/audit-portfolio.png)

@@ -1,6 +1,6 @@
 ---
 templateKey: project
-cover: /images/uploads/louvre.jpg
+cover: ../../images/projects/louvre.jpg
 date: 2018-01-31T19:29:41.623Z
 title: Le Louvre
 summary: System for booking and managing tickets online with Stripe.

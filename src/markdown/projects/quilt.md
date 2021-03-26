@@ -1,6 +1,6 @@
 ---
 templateKey: project
-cover: /images/uploads/jamstack_hackathon.jpeg
+cover: ../../images/projects/jamstack_hackathon.jpeg
 date: 2018-11-03T07:00:00.000Z
 title: Quilt
 summary: >-

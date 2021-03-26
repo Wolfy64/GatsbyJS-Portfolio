@@ -1,6 +1,6 @@
 ---
 templateKey: project
-cover: /images/uploads/hsgd.jpg
+cover: ../../images/projects/hsgd.jpg
 date: 2018-07-31T18:10:59.065Z
 title: High Speeds for Good Deeds
 summary: >-
@@ -18,4 +18,4 @@ tags: ReactJS | Material UI | Firebase
 
 Audit [Lighthouse](https://developers.google.com/web/tools/lighthouse/):
 
-![Audit Lighthouse](/images/uploads/audit-hsfgd.png)
+![Audit Lighthouse](../../images/projects/audit-hsfgd.png)
