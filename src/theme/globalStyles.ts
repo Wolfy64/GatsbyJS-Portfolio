@@ -11,8 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 10px;
-    /* line-height: 24px; */
-    /* letter-spacing: 0.6px; */
+    line-height: 24px;
     font-family: ${({ theme }) => theme.fonts.body};
     font-weight: ${({ theme }) => theme.fontWeights.body};
     color: ${({ theme }) => theme.colors.text};
@@ -26,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     display: block;
   }
 
-  mark { 
+  mark, strong { 
     border-radius: 4px;
     padding: 2px 4px;
     color: ${({ theme }) => theme.colors.primary};
