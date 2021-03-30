@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import Alink from './Alink'
+import Alink from './aLink'
 
 const Article = styled.article`
   max-width: 624px;

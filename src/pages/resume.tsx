@@ -5,6 +5,7 @@ import relativeTime from 'dayjs/plugin/relativeTime'
 import updateLocale from 'dayjs/plugin/updateLocale'
 
 import Layout from '../components/layout'
+import Alist from '../components/aList'
 
 dayjs.extend(relativeTime)
 dayjs.extend(updateLocale)
@@ -109,17 +110,6 @@ const Article = styled.article`
       padding-right: 8px;
     }
   }
-
-  .summary {
-    li {
-      :before {
-        content: '\f120';
-        padding-right: 4px;
-        font-family: 'FontAwesome';
-        color: ${({ theme }) => theme.colors.primary};
-      }
-    }
-  }
 `
 
 const Skills = styled(Article)``
@@ -184,33 +174,33 @@ const ResumePage = () => {
               chat-sms.
             </p>
 
-            <ul className="summary">
-              <li>
+            <ul>
+              <Alist>
                 Maintain and develop new features on three web portals: OPS,
                 Shipper, and Carrier portal.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Improved codebase by resolving complex bugs and refactoring old
                 components resulting in improved web performance, user
                 happiness, and more maintainable codebase.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Implemented chat-sms using Twilio SDK, which is currently used
                 as the main communication method between all Drivers / OPS.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Currently one of OPS's favourite features improves communication
                 between all Drivers / OPS.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Implemented and optimized forms to fulfill complex trucking
                 logistics requirements.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Designed and implemented a new UI layout on Google Maps to allow
                 realtime truck tracking and monitoring. Currently a key feature
                 used by all clients.
-              </li>
+              </Alist>
             </ul>
           </div>
 
@@ -235,31 +225,31 @@ const ResumePage = () => {
               cod3.com v2.0 will be used for our public launch, which will get
               exponentially higher traffic than the current 400 beta users.
             </p>
-            <ul className="summary">
-              <li>
+            <ul>
+              <Alist>
                 v1: Migrated front end to use ApolloClient containers instead of
                 complex Query / Mutation components for better readability.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 v1: Reduced complex loading logic in the single page app and
                 decreased load time significantly.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 v1: Fixed bugs and helped maintain CLI tool on npm, used by 400
                 students for daily submission of their work.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 v1: Fixed broken tests for better code coverage and re-enabled
                 functional tests (cypress).
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 v2: Helped set the technical foundation for a version 2 rebuild
                 using TypeScript and NextJS.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 v2: Researched and integrated story book for UI Component
                 documentation as well as snapshot testing.
-              </li>
+              </Alist>
             </ul>
           </div>
 
@@ -271,37 +261,37 @@ const ResumePage = () => {
               integration, ssl support for all domains, dynamic port proxy and
               automatic git deployment.
             </mark>
-            <ul className="summary">
-              <li>
+            <ul>
+              <Alist>
                 Led development efforts in TypeScript, testing environments,
                 system setup, etc.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Implemented domain providers _(GoDaddy and Name.com)_ to
                 retrieve and manage DNS settings for user's domains.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Implemented automatic SSL certification negotiation for root and
                 wildcard subdomains for the domain names that the user selects.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Implemented admin cookie and password management with sha256
                 encryption.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Set up CircleCI for automatic tests, builds, and deployment
                 during development workflow.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Created contributing standards for new domain providers to add
                 support in MyProxy for their own domains and refactored existing
                 code and ensure a smooth contributing experience for developers.
-              </li>
-              <li>
+              </Alist>
+              <Alist>
                 Launched "MyProxy" which currently powers 3 production
                 applications, including freedomains.dev, a faster and free
                 Heroku alternative.
-              </li>
+              </Alist>
             </ul>
           </div>
         </div>
