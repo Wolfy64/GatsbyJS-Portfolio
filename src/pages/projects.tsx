@@ -54,7 +54,7 @@ const ProjectsPage = () => {
                 summary={summary}
                 tags={tags}
                 title={title}
-                cover={cover}
+                cover={cover.childImageSharp.gatsbyImageData}
               />
             )
           }

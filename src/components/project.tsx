@@ -43,20 +43,11 @@ const H1 = styled.h1`
 const Project = ({ pageContext }: Props) => {
   const { frontmatter, body } = pageContext
   const { title, cover, git = '', web = '' } = frontmatter
-  const coverImage = cover ? (
-    <GatsbyImage image={getImage(cover) as any} alt={title} loading="eager" />
-  ) : (
-    <StaticImage
-      src="../images/projects/default.jpg"
-      alt="Project cover"
-      height={300}
-    />
-  )
 
   return (
     <Layout>
       <Container>
-        {coverImage}
+      <GatsbyImage image={getImage(cover)!} alt={title} loading="eager" />
         <H1>{title}</H1>
         <MDXProvider components={{ a: Alink, li: Alist }}>
           <MDXRenderer children={body} />
