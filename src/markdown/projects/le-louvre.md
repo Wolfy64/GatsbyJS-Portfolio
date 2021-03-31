@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/louvre.jpg
 date: 2018-01-31T19:29:41.623Z
 title: Le Louvre

@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/azur.jpeg
 date: 2019-03-28T17:12:17.723Z
 title: SJParks Text Notification Service

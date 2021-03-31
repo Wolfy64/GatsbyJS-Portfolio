@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/react16.jpg
 date: 2018-06-07T07:00:00.000Z
 title: React 16 - The Complete Guide

@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/myproxy.jpeg
 date: 2019-09-27T08:13:53.760Z
 title: MyProxy

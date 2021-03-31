@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/nao.jpg
 date: 2018-03-31T18:20:25.844Z
 title: NAO

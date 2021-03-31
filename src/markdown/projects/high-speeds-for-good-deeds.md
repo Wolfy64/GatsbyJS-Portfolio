@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/hsgd.jpg
 date: 2018-07-31T18:10:59.065Z
 title: High Speeds for Good Deeds

@@ -69,7 +69,7 @@ export default ProjectsPage
 const query = graphql`
   {
     allMdx(
-      filter: { frontmatter: { templateKey: { eq: "project" } } }
+      filter: { frontmatter: { template: { eq: "project" } } }
       sort: { order: DESC, fields: frontmatter___date }
     ) {
       nodes {

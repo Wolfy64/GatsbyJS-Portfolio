@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/gatsbyjs.jpg
 date: 2018-10-31T22:07:17.769Z
 title: My Portfolio

@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/biarritz.jpg
 date: 2017-02-28T08:00:00.000Z
 title: City of Biarritz

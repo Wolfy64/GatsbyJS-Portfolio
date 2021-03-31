@@ -1,5 +1,5 @@
 ---
-templateKey: project
+template: project
 cover: ../../images/projects/smiley.jpg
 date: 2018-11-17T01:08:16.158Z
 title: The Hangman Game

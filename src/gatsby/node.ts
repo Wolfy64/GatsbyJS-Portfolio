@@ -1,5 +1,4 @@
 import path from 'path';
-// import { createFilePath } from 'gatsby-source-filesystem';
 import { GatsbyNode } from 'gatsby';
 import { IGatsbyImageData } from 'gatsby-plugin-image'
 
@@ -10,13 +9,13 @@ export interface Node {
   frontmatter: {
     web?: string
     title: string
-    templateKey?: 'project'
+    template?: 'project'
     tags?: string
     summary?: string
     path?: string
     git?: string
     date?: Date
-    cover?: IGatsbyImageData
+    cover: IGatsbyImageData
   }
 }
 
@@ -38,7 +37,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ actions, graphql 
           frontmatter {
             web
             title
-            templateKey
+            template
             tags
             summary
             path
@@ -58,7 +57,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ actions, graphql 
   if (request.errors) throw new Error(request.errors)
   if (!request.data) throw new Error('No data from createPage')
 
-  const mdxFiles = request.data.allMdx.nodes.filter(({ frontmatter }) => frontmatter.templateKey)
+  const mdxFiles = request.data.allMdx.nodes.filter(({ frontmatter }) => frontmatter.template)
 
   mdxFiles.forEach(({ id, body, slug, frontmatter }) => {
     actions.createPage({
@@ -73,13 +72,3 @@ export const createPages: GatsbyNode['createPages'] = async ({ actions, graphql 
   })
 }
 
-// export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions, getNode }) => {
-//   if (node.internal.type === `MarkdownRemark`) {
-//     const value = createFilePath({ node, getNode })
-//     actions.createNodeField({
-//       name: `slug`,
-//       node,
-//       value,
-//     })
-//   }
-// }
