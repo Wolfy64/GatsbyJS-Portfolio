@@ -9,7 +9,7 @@ export interface Node {
   frontmatter: {
     web?: string
     title: string
-    template?: 'project'
+    template: 'project' | 'memo'
     tags?: string
     summary?: string
     path?: string
@@ -38,9 +38,9 @@ export const createPages: GatsbyNode['createPages'] = async ({ actions, graphql 
             web
             title
             template
+            category
             tags
             summary
-            path
             git
             date
             cover {
@@ -57,12 +57,12 @@ export const createPages: GatsbyNode['createPages'] = async ({ actions, graphql 
   if (request.errors) throw new Error(request.errors)
   if (!request.data) throw new Error('No data from createPage')
 
-  const mdxFiles = request.data.allMdx.nodes.filter(({ frontmatter }) => frontmatter.template)
+  request.data.allMdx.nodes.forEach(({ id, body, slug, frontmatter }) => {
+    const component = frontmatter.template === 'memo' ? 'memo' : 'project'
 
-  mdxFiles.forEach(({ id, body, slug, frontmatter }) => {
     actions.createPage({
       path: slug,
-      component: path.resolve(`src/components/project.tsx`),
+      component: path.resolve(`src/components/${component}.tsx`),
       context: {
         id,
         body,
