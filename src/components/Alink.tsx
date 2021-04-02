@@ -11,7 +11,6 @@ const A = styled.a`
   border-bottom: 1px solid ${({ theme }) => theme.colors.secondary};
   box-shadow: inset 0 -2px 0 0 ${({ theme }) => theme.colors.secondary};
   padding: 0 4px 2px;
-  white-space: nowrap;
   color: ${({ theme }) => theme.colors.text};
   transition: ${({ theme }) => theme.transitions.standard};
   :hover {
