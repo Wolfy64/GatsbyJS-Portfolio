@@ -29,9 +29,6 @@ const Container = styled.div`
 
   .buttons {
     text-align: center;
-    a:not(last) {
-      margin-right: 8px;
-    }
   }
 `
 

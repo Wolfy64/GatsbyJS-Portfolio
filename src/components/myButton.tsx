@@ -10,6 +10,7 @@ interface Props {
 const Button = styled.a`
   display: inline-block;
   padding: 8px;
+  margin: 0 4px;
   text-decoration: none;
   border-radius: ${({ theme }) => theme.radii};
   border: 1px solid ${({ theme }) => theme.colors.primary};

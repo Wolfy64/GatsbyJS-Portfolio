@@ -7,7 +7,6 @@ interface Props {
 }
 
 const Li = styled.li`
-    list-style: none;
     margin: 8px;
     :before {
       content: '\f120';
