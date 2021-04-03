@@ -21,16 +21,71 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${({ theme }) => theme.fontSizes.paragraph}
   }
 
-  img, svg { 
-    display: block;
+  h1,h2,h3,h4,h5,h6,p,table,ul,ol, hr {
+    margin-bottom: 16px;
   }
 
-  mark, strong { 
+  img, svg { 
+    display: block;
+    max-width: 100%;
+  }
+
+  mark, strong, code { 
     border-radius: 4px;
     padding: 2px 4px;
     color: ${({ theme }) => theme.colors.primary};
     font-weight: ${({ theme }) => theme.fontWeights.bold};
     background-color:${({ theme }) => theme.colors.secondary}
+  }
+
+  ul, ol {
+    margin-left: 1em;
+    ul,ol {
+      margin-bottom: unset;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid ${({ theme }) => theme.colors.secondary}
+  }
+
+  blockquote {
+    padding: 0 1em;
+    color: ${({ theme }) => theme.colors.primary};
+    border-left: .25em solid ${({ theme }) => theme.colors.secondary};
+  }
+
+  table { 
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+  }
+
+  thead { 
+    display: table-header-group;
+    text-align: center;
+    background-color: white;
+  }
+
+  tbody {
+    display: table-row-group;
+    text-align: left;
+
+    tr:nth-child(even){
+      background-color: hsl(210deg 29% 97%);
+    }
+  }
+
+  th, td {
+    padding: 6px 13px;
+    text-align: inherit;
+    background-color: inherit;
+    border: 1px solid #dfe2e5;
   }
 `;
 
