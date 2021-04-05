@@ -74,6 +74,7 @@ const Article = styled.article`
     padding-left: 8px;
     line-height: 28px;
     width: 304px;
+    margin: unset;
     color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.primary};
   }
@@ -82,16 +83,17 @@ const Article = styled.article`
     display: unset;
     font-size: 16px;
     padding-right: 8px;
+    margin: unset;
     color: ${({ theme }) => theme.colors.primary};
   }
 
   ul {
     list-style: none;
+    margin: unset;
   }
 
   .container {
     display: grid;
-    gap: 8px;
     padding: 8px;
   }
 

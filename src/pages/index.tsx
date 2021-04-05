@@ -18,7 +18,7 @@ type UrlProps = {
 
 const Container = styled.div`
   display: grid;
-  grid: auto / repeat(auto-fit, minmax(304px, 1fr));
+  grid: auto / repeat(auto-fit, minmax(288px, 1fr));
   justify-items: center;
   align-items: center;
   gap: 16px;

@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Card = styled.div`
-  width: 304px;
+  width: 288px;
   text-align: center;
   margin: 52px 0px 16px;
 `
@@ -32,7 +32,6 @@ const ImageWrapper = styled.div`
 
 const Container = styled.div`
   display: grid;
-  gap: 16px;
   padding: 64px 8px 16px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.radii};

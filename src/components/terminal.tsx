@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Terminal = styled.div`
-  width: 304px;
+  width: 288px;
   overflow: hidden;
   border-radius: ${({ theme }) => theme.radii};
   border: 1px solid ${({ theme }) => theme.colors.primary};
@@ -34,15 +34,17 @@ const Circle = styled.div`
 const Window = styled.div`
   padding: 8px;
   display: grid;
-  grid: auto / 110px 75px 85px;
+  grid: auto / 108px 66px 80px;
   gap: 8px;
 `
 
 const Code = styled.code`
   font-family: inherit;
   white-space: pre-line;
+  background: unset;
   grid-column: ${({ oneLine }: { oneLine?: boolean }) => oneLine && '1/-1'};
-  color: ${({ oneLine, theme }) => !oneLine && theme.colors.primary};
+  color: ${({ oneLine, theme }) => oneLine && theme.colors.text};
+  font-weight: ${({ oneLine, theme }) => oneLine && theme.fontWeights.body};
 `
 
 export default ({ skills, prompt }: Props) => {

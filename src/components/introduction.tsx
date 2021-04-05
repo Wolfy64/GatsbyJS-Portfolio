@@ -13,7 +13,7 @@ const Name = styled.p`
 
   strong {
     white-space: nowrap;
-    font-weight: 300;
+    background-color: unset;
     color: ${({ theme }) => theme.colors.primary};
   }
 `

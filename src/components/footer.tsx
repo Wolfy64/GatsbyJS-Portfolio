@@ -11,4 +11,4 @@ const Wrapper = styled.footer`
 
 const Footer = () => <Wrapper children={<SocialNetwork />} />
 
- export default Footer;
+export default Footer

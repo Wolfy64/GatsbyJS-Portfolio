@@ -12,7 +12,7 @@ interface Props {
 }
 
 const Container = styled.main`
-  padding: 32px 8px;
+  padding: 32px 16px;
   max-width: 920px;
   margin: 0 auto;
   min-height: calc(100vh - 140px);
