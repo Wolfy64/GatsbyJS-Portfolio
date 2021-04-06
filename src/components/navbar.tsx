@@ -10,7 +10,7 @@ const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 1;
-  box-shadow: 0px 0px 16px 0px ${({ theme }) => theme.colors.primary};
+  box-shadow: 0px 0px 8px 0px ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.primary};
 `
 

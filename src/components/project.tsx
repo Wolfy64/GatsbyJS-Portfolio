@@ -15,6 +15,11 @@ interface Props {
 }
 
 const Container = styled.div`
+  li {
+    display: flex;
+    list-style-type: none;
+  }
+
   .gatsby-image-wrapper {
     margin-bottom: 16px;
     border-radius: ${({ theme }) => theme.radii};
@@ -44,12 +49,12 @@ const Project = ({ pageContext }: Props) => {
   return (
     <Layout>
       <Container>
-      <GatsbyImage image={getImage(cover)!} alt={title} loading="eager" />
+        <GatsbyImage image={getImage(cover)!} alt={title} loading="eager" />
         <H1>{title}</H1>
         <MDXProvider components={{ a: Alink, li: Alist }}>
           <MDXRenderer children={body} />
         </MDXProvider>
-        <div className='buttons'>
+        <div className="buttons">
           <MyButton type="git" href={git} />
           <MyButton type="web" href={web} />
         </div>

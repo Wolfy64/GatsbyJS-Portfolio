@@ -32,6 +32,10 @@ const Container = styled.div`
   grid-template-columns: repeat(auto-fill, 280px);
   gap: 32px;
 
+  h1 {
+    margin: unset;
+  }
+
   a {
     text-decoration: none;
   }

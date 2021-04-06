@@ -9,21 +9,23 @@ import Alist from '../components/aList'
 
 dayjs.extend(relativeTime)
 dayjs.extend(updateLocale)
-dayjs.updateLocale('en', { relativeTime: {
-  future: "in %s",
-  past: "%s ago",
-  s: 'a few seconds',
-  m: "a minute",
-  mm: "%d minutes",
-  h: "an hour",
-  hh: "%d hours",
-  d: "a day",
-  dd: "%d days",
-  M: "a month",
-  MM: "%d months",
-  y: "1 year",
-  yy: "%d years"
-} })
+dayjs.updateLocale('en', {
+  relativeTime: {
+    future: 'in %s',
+    past: '%s ago',
+    s: 'a few seconds',
+    m: 'a minute',
+    mm: '%d minutes',
+    h: 'an hour',
+    hh: '%d hours',
+    d: 'a day',
+    dd: '%d days',
+    M: 'a month',
+    MM: '%d months',
+    y: '1 year',
+    yy: '%d years',
+  },
+})
 
 const SKILLS = [
   {
@@ -73,7 +75,7 @@ const Article = styled.article`
     font-weight: 400;
     padding-left: 8px;
     line-height: 28px;
-    width: 304px;
+    width: 286px;
     margin: unset;
     color: ${({ theme }) => theme.colors.white};
     background: ${({ theme }) => theme.colors.primary};
@@ -90,6 +92,11 @@ const Article = styled.article`
   ul {
     list-style: none;
     margin: unset;
+  }
+
+  time {
+    display: inline-block;
+    margin-bottom: 8px;
   }
 
   .container {
@@ -116,9 +123,17 @@ const Article = styled.article`
 
 const Skills = styled(Article)``
 
-const Work = styled(Article)``
+const Work = styled(Article)`
+  section {
+    margin-bottom: 16px;
+  }
+`
 
-const OSS = styled(Article)``
+const OSS = styled(Article)`
+  section {
+    margin-bottom: 16px;
+  }
+`
 
 const Education = styled(Article)``
 
@@ -155,16 +170,19 @@ const ResumePage = () => {
         <h2>Work Experiences</h2>
 
         <div className="container">
-          <div>
+          <section>
             <h3>PayPal</h3>
             <span>
-              as Software Engineer - Jun 2020 - Present • {workExperience}
+              as Software Engineer -{' '}
+              <time>Jun 2020 - Present • {workExperience} </time>
             </span>
-          </div>
+          </section>
 
-          <div>
+          <section>
             <h3>Hwy Haul Startup</h3>
-            <span>as React Engineer - Apr 2019 - May 2020 • 1 year</span>
+            <span>
+              as React Engineer - <time>Apr 2019 - May 2020 • 1 year</time>
+            </span>
             <br />
             <mark>
               Building software to enable shippers and drivers to connect
@@ -204,20 +222,24 @@ const ResumePage = () => {
                 used by all clients.
               </Alist>
             </ul>
-          </div>
+          </section>
 
-          <div>
+          <section>
             <h3>Biarritz Optique</h3>
-            <span>as Optician Salesman - June 2001 - Aug 2016 • 15 years</span>
-          </div>
+            <span>
+              as Optician Salesman -{' '}
+              <time>June 2001 - Aug 2016 • 15 years</time>
+            </span>
+          </section>
         </div>
       </Work>
 
       <OSS>
         <h2>OSS Contributions</h2>
         <div className="container">
-          <div>
-            <h3>c0d3.com</h3>June 2019 - June 2020 • 1 year
+          <section>
+            <h3>c0d3.com</h3>
+            <time>June 2019 - June 2020 • 1 year</time>
             <br />
             <mark>
               An online learning platform that teaches people how to become
@@ -253,10 +275,10 @@ const ResumePage = () => {
                 documentation as well as snapshot testing.
               </Alist>
             </ul>
-          </div>
+          </section>
 
-          <div>
-            <h3>MyProxy</h3>Aug 2019 - June 2020 • 9 months
+          <section>
+            <h3>MyProxy</h3><time>Aug 2019 - June 2020 • 9 months</time>
             <br />
             <mark>
               An alternative to Nginx that allows automatic domain provider
@@ -295,43 +317,43 @@ const ResumePage = () => {
                 Heroku alternative.
               </Alist>
             </ul>
-          </div>
+          </section>
         </div>
       </OSS>
 
       <Education>
         <h2>Education</h2>
         <div className="container">
-          <div>
+          <section>
             <h3>2018 - Bachelor’s Degree</h3>
             <p>
               "Multimedia Project Manager &amp; Development" (Web Development)
               from IESA multimédia School (Paris, FR) in partnership with Open
               Classrooms
             </p>
-          </div>
+          </section>
 
-          <div>
+          <section>
             <h3>2003 - CAP Degree</h3>
             <p>
               “Optic Technician &amp; Dispenser” CFA Muret Optics - Optical
               Sciences (Toulouse, FR)
             </p>
-          </div>
+          </section>
         </div>
       </Education>
 
       <Languages>
         <h2>Languages</h2>
         <div className="container">
-          <div>
+          <section>
             <h3>French</h3>
             <p>Mother tongue</p>
-          </div>
-          <div>
+          </section>
+          <section>
             <h3>English</h3>
             <p>Conversational &amp; Professional</p>
-          </div>
+          </section>
         </div>
       </Languages>
 
