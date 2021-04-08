@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { MDXProvider } from '@mdx-js/react'
 import Layout from './layout'
@@ -15,11 +15,6 @@ interface Props {
 }
 
 const Container = styled.div`
-  li {
-    display: flex;
-    list-style-type: none;
-  }
-
   .gatsby-image-wrapper {
     margin-bottom: 16px;
     border-radius: ${({ theme }) => theme.radii};

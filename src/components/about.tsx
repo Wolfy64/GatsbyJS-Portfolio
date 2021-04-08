@@ -14,8 +14,17 @@ const Article = styled.article`
     color: ${({ theme }) => theme.colors.primary};
   }
 
-  p:not(:last-child) {
-    margin-bottom: 16px;
+  p {
+    :first-letter {
+      font-size: 1.5em;
+      text-transform: uppercase;
+      font-weight: ${({ theme }) => theme.fontWeights.heading};
+      color: ${({ theme }) => theme.colors.primary};
+    }
+
+    :not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
 `
 

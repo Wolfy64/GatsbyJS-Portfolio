@@ -7,14 +7,13 @@ interface Props {
 }
 
 const Li = styled.li`
-    margin: 8px;
-    :before {
-      content: '\f120';
-      font-size: 0.7em;
-      padding-right: 4px;
-      font-family: 'FontAwesome';
-      color: ${({ theme }) => theme.colors.primary};
-    }
+  padding-left: 0.5em;
+  ::marker {
+    content: '\f120';
+    font-size: 0.7em;
+    font-family: 'FontAwesome';
+    color: ${({ theme }) => theme.colors.primary};
+  }
 `
 
 const Alist = (props: Props) => <Li {...props} />

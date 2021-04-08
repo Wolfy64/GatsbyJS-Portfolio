@@ -10,6 +10,7 @@ export interface Node {
     web?: string
     title: string
     template: 'project' | 'memo'
+    category?: string
     tags?: string
     summary?: string
     path?: string

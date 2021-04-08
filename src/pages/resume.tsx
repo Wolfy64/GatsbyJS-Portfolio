@@ -64,124 +64,106 @@ const SKILLS = [
 
 const Article = styled.article`
   overflow: hidden;
+  font-size: 16px;
+  line-height: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.radii};
+  :not(:last-child) {
+    margin-bottom: 16px;
+  }
+`
+
+const Container = styled.div`
+  display: grid;
+  padding: 8px;
+`
+
+const H2 = styled.h2`
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 8px;
+  line-height: 28px;
+  width: 286px;
+  margin: unset;
+  color: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.primary};
+`
+
+const H3 = styled.h3`
+  display: unset;
   font-size: 16px;
-  margin-bottom: 16px;
-  line-height: 24px;
+  padding-right: 8px;
+  margin: unset;
+  color: ${({ theme }) => theme.colors.primary};
+`
 
-  h2 {
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 8px;
-    line-height: 28px;
-    width: 286px;
-    margin: unset;
-    color: ${({ theme }) => theme.colors.white};
-    background: ${({ theme }) => theme.colors.primary};
+const Time = styled.time`
+  display: inline-block;
+`
+
+const Ul = styled.ul`
+  margin: unset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 8px;
+  line-height: 32px;
+
+  :nth-child(odd) {
+    background: ${({ theme }) => theme.colors.secondary};
   }
+`
 
-  h3 {
-    display: unset;
-    font-size: 16px;
+const Li = styled.li`
+  list-style-type: none;
+
+  :not(:last-child) {
     padding-right: 8px;
+  }
+`
+
+const Section = styled.section`
+  margin-bottom: 16px;
+  p {
     margin: unset;
-    color: ${({ theme }) => theme.colors.primary};
-  }
-
-  ul {
-    list-style: none;
-    margin: unset;
-  }
-
-  time {
-    display: inline-block;
-    margin-bottom: 8px;
-  }
-
-  .container {
-    display: grid;
-    padding: 8px;
-  }
-
-  .category {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 8px;
-    line-height: 32px;
-
-    :nth-child(odd) {
-      background: ${({ theme }) => theme.colors.secondary};
-    }
-
-    li:not(:last-child) {
-      padding-right: 8px;
-    }
   }
 `
-
-const Skills = styled(Article)``
-
-const Work = styled(Article)`
-  section {
-    margin-bottom: 16px;
-  }
-`
-
-const OSS = styled(Article)`
-  section {
-    margin-bottom: 16px;
-  }
-`
-
-const Education = styled(Article)``
-
-const Languages = styled(Article)`
-  div {
-    div {
-      display: flex;
-    }
-  }
-`
-
-const Hobbi = styled(Article)``
 
 const ResumePage = () => {
   const workExperience = dayjs('2020-06-01').toNow(true)
   const displaySkills = SKILLS.map(({ key, value }) => {
-    const listOfSkills = value.map((skill) => <li key={skill}>{skill}</li>)
+    const listOfSkills = value.map((skill) => <Li key={skill}>{skill}</Li>)
     return (
-      <ul key={key} className="category">
-        <h3>{key}:</h3>
+      <Ul key={key} className="category">
+        <H3>{key}:</H3>
         {listOfSkills}
-      </ul>
+      </Ul>
     )
   })
 
   return (
     <Layout>
-      <Skills>
-        <h2>Skills &amp; Expertise</h2>
+      <Article>
+        <H2>Article &amp; Expertise</H2>
         {displaySkills}
-      </Skills>
+      </Article>
 
-      <Work>
-        <h2>Work Experiences</h2>
+      <Article>
+        <H2>Work Experiences</H2>
 
-        <div className="container">
-          <section>
-            <h3>PayPal</h3>
+        <Container>
+          <Section>
+            <H3>PayPal</H3>
             <span>
               as Software Engineer -{' '}
-              <time>Jun 2020 - Present • {workExperience} </time>
+              <Time>Jun 2020 - Present • {workExperience} </Time>
             </span>
-          </section>
+          </Section>
 
-          <section>
-            <h3>Hwy Haul Startup</h3>
+          <Section>
+            <H3>Hwy Haul Startup</H3>
             <span>
-              as React Engineer - <time>Apr 2019 - May 2020 • 1 year</time>
+              as React Engineer - <Time>Apr 2019 - May 2020 • 1 year</Time>
             </span>
             <br />
             <mark>
@@ -222,24 +204,24 @@ const ResumePage = () => {
                 used by all clients.
               </Alist>
             </ul>
-          </section>
+          </Section>
 
-          <section>
-            <h3>Biarritz Optique</h3>
+          <Section>
+            <H3>Biarritz Optique</H3>
             <span>
               as Optician Salesman -{' '}
-              <time>June 2001 - Aug 2016 • 15 years</time>
+              <Time>June 2001 - Aug 2016 • 15 years</Time>
             </span>
-          </section>
-        </div>
-      </Work>
+          </Section>
+        </Container>
+      </Article>
 
-      <OSS>
-        <h2>OSS Contributions</h2>
-        <div className="container">
-          <section>
-            <h3>c0d3.com</h3>
-            <time>June 2019 - June 2020 • 1 year</time>
+      <Article>
+        <H2>OSS Contributions</H2>
+        <Container>
+          <Section>
+            <H3>c0d3.com</H3>
+            <Time>June 2019 - June 2020 • 1 year</Time>
             <br />
             <mark>
               An online learning platform that teaches people how to become
@@ -256,7 +238,7 @@ const ResumePage = () => {
               </Alist>
               <Alist>
                 v1: Reduced complex loading logic in the single page app and
-                decreased load time significantly.
+                decreased load Time significantly.
               </Alist>
               <Alist>
                 v1: Fixed bugs and helped maintain CLI tool on npm, used by 400
@@ -275,10 +257,11 @@ const ResumePage = () => {
                 documentation as well as snapshot testing.
               </Alist>
             </ul>
-          </section>
+          </Section>
 
-          <section>
-            <h3>MyProxy</h3><time>Aug 2019 - June 2020 • 9 months</time>
+          <Section>
+            <H3>MyProxy</H3>
+            <Time>Aug 2019 - June 2020 • 9 months</Time>
             <br />
             <mark>
               An alternative to Nginx that allows automatic domain provider
@@ -317,55 +300,55 @@ const ResumePage = () => {
                 Heroku alternative.
               </Alist>
             </ul>
-          </section>
-        </div>
-      </OSS>
+          </Section>
+        </Container>
+      </Article>
 
-      <Education>
-        <h2>Education</h2>
-        <div className="container">
-          <section>
-            <h3>2018 - Bachelor’s Degree</h3>
+      <Article>
+        <H2>Education</H2>
+        <Container>
+          <Section>
+            <H3>2018 - Bachelor’s Degree</H3>
             <p>
               "Multimedia Project Manager &amp; Development" (Web Development)
               from IESA multimédia School (Paris, FR) in partnership with Open
               Classrooms
             </p>
-          </section>
+          </Section>
 
-          <section>
-            <h3>2003 - CAP Degree</h3>
+          <Section>
+            <H3>2003 - CAP Degree</H3>
             <p>
               “Optic Technician &amp; Dispenser” CFA Muret Optics - Optical
               Sciences (Toulouse, FR)
             </p>
-          </section>
-        </div>
-      </Education>
+          </Section>
+        </Container>
+      </Article>
 
-      <Languages>
-        <h2>Languages</h2>
-        <div className="container">
-          <section>
-            <h3>French</h3>
+      <Article>
+        <H2>Languages</H2>
+        <Container>
+          <Section>
+            <H3>French</H3>
             <p>Mother tongue</p>
-          </section>
-          <section>
-            <h3>English</h3>
+          </Section>
+          <Section>
+            <H3>English</H3>
             <p>Conversational &amp; Professional</p>
-          </section>
-        </div>
-      </Languages>
+          </Section>
+        </Container>
+      </Article>
 
-      <Hobbi>
-        <h2>Hobbi</h2>
-        <div className="container">
+      <Article>
+        <H2>Hobbi</H2>
+        <Container>
           <p>I am passionate about traveling and learning new technologies.</p>
           <p>
             Krav Maga (Black belt) - Muay Thai - Snowboarding - Surf - Hiking
           </p>
-        </div>
-      </Hobbi>
+        </Container>
+      </Article>
     </Layout>
   )
 }
