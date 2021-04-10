@@ -6,7 +6,7 @@ import { MDXProvider } from '@mdx-js/react'
 import Layout from './layout'
 import Alink from './aLink'
 import Alist from './aList'
-import MyButton from './myButton'
+import LinkAsButton from './linkAsButton'
 import { Node } from '../gatsby/node'
 
 interface Props {
@@ -26,15 +26,21 @@ const Container = styled.div`
     border-radius: ${({ theme }) => theme.radii};
     box-shadow: 0px 0px 16px 0px ${({ theme }) => theme.colors.secondary};
   }
-
-  .buttons {
-    text-align: center;
-  }
 `
 
 const H1 = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
   margin-bottom: 16px;
+`
+
+const Footer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+
+const MyLinkAsButton = styled(LinkAsButton)`
+  margin: 8px;
 `
 
 const Project = ({ pageContext }: Props) => {
@@ -49,10 +55,19 @@ const Project = ({ pageContext }: Props) => {
         <MDXProvider components={{ a: Alink, li: Alist }}>
           <MDXRenderer children={body} />
         </MDXProvider>
-        <div className="buttons">
-          <MyButton type="git" href={git} />
-          <MyButton type="web" href={web} />
-        </div>
+        <Footer>
+          <MyLinkAsButton
+            to={git}
+            classFA="fa fa-github fa-sm"
+            children="Check the code"
+          />
+
+          <MyLinkAsButton
+            to={web}
+            classFA="fa fa-external-link fa-sm"
+            children="Take a look"
+          />
+        </Footer>
       </Container>
     </Layout>
   )

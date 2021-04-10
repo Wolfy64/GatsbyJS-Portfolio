@@ -17,7 +17,9 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
   }
 
-  body {
+  body, input, textarea, button {
+    font-family: inherit;
+    font-weight: inherit;
     font-size: ${({ theme }) => theme.fontSizes.paragraph}
   }
 
