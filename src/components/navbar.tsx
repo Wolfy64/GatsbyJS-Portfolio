@@ -15,7 +15,7 @@ const Nav = styled.nav`
 `
 
 const NavLink = styled(Link)`
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   font-size: ${({ theme }) => theme.fontSizes.navLink};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
@@ -41,11 +41,11 @@ const NavSeparator = styled.span`
 
 const Navbar = () => (
   <Nav>
-    <NavLink to="/" children="Home" />
-    <NavSeparator />
-    <NavLink to="/memos" children="Memo" />
-    <NavSeparator />
-    <NavLink to="/resume" children="Resume" />
+    <NavLink to="/" children="David De Wulf" />
+    {/* <NavSeparator /> */}
+    {/* <NavLink to="/memos" children="Memos" /> */}
+    {/* <NavSeparator /> */}
+    {/* <NavLink to="/resume" children="Resume" /> */}
   </Nav>
 )
 

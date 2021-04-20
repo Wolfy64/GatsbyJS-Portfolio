@@ -18,6 +18,7 @@ const Terminal = styled.div`
 const Topbar = styled.div`
   display: flex;
   height: 32px;
+  padding: 4px;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.primary};
 `

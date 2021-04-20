@@ -13,17 +13,17 @@ const A = styled.a`
   padding: 0 4px 2px;
   color: ${({ theme }) => theme.colors.text};
   transition: ${({ theme }) => theme.transitions.standard};
+  :after {
+    content: ' \f08e';
+    font-family: 'FontAwesome';
+    font-size: 0.8em;
+    color: ${({ theme }) => theme.colors.primary};
+  }
   :hover {
     border-radius: 4px 4px 0 0;
     background: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.primary};
     transition: ${({ theme }) => theme.transitions.standard};
-    &::after {
-      content: ' \f08e';
-      font-family: 'FontAwesome';
-      font-size: 16px;
-      color: ${({ theme }) => theme.colors.primary};
-    }
   }
 `
 

@@ -26,19 +26,6 @@ const Container = styled.div`
   margin: auto;
   display: grid;
   gap: 16px;
-
-  /* a {
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.text};
-    padding: 4px 8px;
-
-    :hover {
-      color: #ffffff;
-      font-weight: ${({ theme }) => theme.fontWeights.heading};
-      background: ${({ theme }) => theme.colors.primary};
-      border-radius: ${({ theme }) => theme.radii};
-    }
-  } */
 `
 
 const Li = styled(Alist)`
