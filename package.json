@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "start": "gatsby develop & tsc --watch",
-    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
