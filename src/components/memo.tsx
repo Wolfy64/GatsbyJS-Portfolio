@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { MDXProvider } from '@mdx-js/react'
 import Layout from './layout'
-import Alink from './aLink'
+import Alink from './alink'
 import CodeBlock from './codeBlock'
 import { Node } from '../gatsby/node'
 

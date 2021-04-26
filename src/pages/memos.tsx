@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Alist from '../components/aList'
-import Alink from '../components/aLink'
+import Alink from '../components/alink'
 
 interface Memo {
   id: string
