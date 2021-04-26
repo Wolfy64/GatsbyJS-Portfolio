@@ -24,7 +24,7 @@ const ImageWrapper = styled.div`
     ${({ theme }) => theme.colors.white} 50%
   );
 
-  .gatsby-image-wrapper {
+  .gatsby-image-wrapper, img {
     border-radius: 50%;
     background: white;
   }
