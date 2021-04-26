@@ -61,7 +61,7 @@ const config = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "./src/images/icon.png",
       },
     },
     {
@@ -79,14 +79,6 @@ const config = {
         path: "./src/pages/",
       },
       __key: "pages",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "posts",
-        path: "./src/posts/",
-      },
-      __key: "posts",
     },
     {
       resolve: "gatsby-source-filesystem",
